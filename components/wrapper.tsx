@@ -1,4 +1,4 @@
-import Navigation from './navigation'
+import Navigation from './navigation';
 
 export default function Wrapper({ children }: { children: React.ReactNode }) {
   return (
@@ -6,5 +6,5 @@ export default function Wrapper({ children }: { children: React.ReactNode }) {
       <Navigation />
       {children}
     </div>
-  )
+  );
 }

@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use client";
+'use client';
 
-import { useState, Fragment } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Menu, X, ChevronDown, Globe, Phone, Mail } from "lucide-react";
-import { useLanguage } from "@/contexts/language-context";
+import { useState, Fragment } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Menu, X, ChevronDown, Globe, Phone, Mail } from 'lucide-react';
+import { useLanguage } from '@/contexts/language-context';
 import {
   Menu as HeadlessMenu,
   Transition,
@@ -14,7 +14,7 @@ import {
   DisclosurePanel,
   Dialog,
   Listbox,
-} from "@headlessui/react";
+} from '@headlessui/react';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +22,9 @@ export default function Navigation() {
   const { language, setLanguage, t } = useLanguage();
 
   const languages = [
-    { code: "id", name: "Bahasa Indonesia", flag: "🇮🇩" },
-    { code: "ar", name: "العربية", flag: "🇸🇦" },
-    { code: "en", name: "English", flag: "🇺🇸" },
+    { code: 'id', name: 'Bahasa Indonesia', flag: '🇮🇩' },
+    { code: 'ar', name: 'العربية', flag: '🇸🇦' },
+    { code: 'en', name: 'English', flag: '🇺🇸' },
   ];
 
   const currentLanguage =
@@ -50,7 +50,7 @@ export default function Navigation() {
                 />
                 <div className="hidden sm:block">
                   <h1 className="text-xl font-bold text-accent-800">
-                    {t("hero.title")}
+                    {t('hero.title')}
                   </h1>
                   <p className="text-sm text-gray-600">Sulawesi Tengah</p>
                 </div>
@@ -60,13 +60,13 @@ export default function Navigation() {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
               <Link href="/" className="btn-ghost">
-                {t("nav.home")}
+                {t('nav.home')}
               </Link>
 
               {/* Program Dropdown */}
               <HeadlessMenu as="div" className="relative">
                 <HeadlessMenu.Button className="btn-ghost flex items-center">
-                  {t("nav.program")}
+                  {t('nav.program')}
                   <ChevronDown className="ml-1 h-4 w-4 transition-transform ui-open:rotate-180" />
                 </HeadlessMenu.Button>
                 <Transition
@@ -86,11 +86,11 @@ export default function Navigation() {
                             href="/program/pondok-pesantren"
                             className={`${
                               active
-                                ? "bg-primary-50 text-primary-700"
-                                : "text-gray-700"
+                                ? 'bg-primary-50 text-primary-700'
+                                : 'text-gray-700'
                             } block px-6 py-4 transition-colors`}
                           >
-                            <div className="font-medium">{t("nav.pondok")}</div>
+                            <div className="font-medium">{t('nav.pondok')}</div>
                             <p className="text-xs text-gray-500 mt-1">
                               Putra & Putri
                             </p>
@@ -103,13 +103,11 @@ export default function Navigation() {
                             href="/program/komunitas"
                             className={`${
                               active
-                                ? "bg-primary-50 text-primary-700"
-                                : "text-gray-700"
+                                ? 'bg-primary-50 text-primary-700'
+                                : 'text-gray-700'
                             } block px-6 py-4 transition-colors`}
                           >
-                            <div className="font-medium">
-                              {t("nav.komunitas")}
-                            </div>
+                            <div className="font-medium">{t('nav.komunitas')}</div>
                             <p className="text-xs text-gray-500 mt-1">Palu</p>
                           </Link>
                         )}
@@ -120,16 +118,16 @@ export default function Navigation() {
               </HeadlessMenu>
 
               <Link href="/about" className="btn-ghost">
-                {t("nav.about")}
+                {t('nav.about')}
               </Link>
               <Link href="/laporan" className="btn-ghost">
-                {t("nav.reports")}
+                {t('nav.reports')}
               </Link>
 
               {/* Publications Dropdown */}
               <HeadlessMenu as="div" className="relative">
                 <HeadlessMenu.Button className="btn-ghost flex items-center">
-                  {t("nav.publications")}
+                  {t('nav.publications')}
                   <ChevronDown className="ml-1 h-4 w-4 transition-transform ui-open:rotate-180" />
                 </HeadlessMenu.Button>
                 <Transition
@@ -149,11 +147,11 @@ export default function Navigation() {
                             href="/publikasi/tulisan"
                             className={`${
                               active
-                                ? "bg-primary-50 text-primary-700"
-                                : "text-gray-700"
+                                ? 'bg-primary-50 text-primary-700'
+                                : 'text-gray-700'
                             } block px-4 py-3 font-medium transition-colors`}
                           >
-                            {t("nav.tulisan")}
+                            {t('nav.tulisan')}
                           </Link>
                         )}
                       </HeadlessMenu.Item>
@@ -163,11 +161,11 @@ export default function Navigation() {
                             href="/publikasi/buku"
                             className={`${
                               active
-                                ? "bg-primary-50 text-primary-700"
-                                : "text-gray-700"
+                                ? 'bg-primary-50 text-primary-700'
+                                : 'text-gray-700'
                             } block px-4 py-3 font-medium transition-colors`}
                           >
-                            {t("nav.buku")}
+                            {t('nav.buku')}
                           </Link>
                         )}
                       </HeadlessMenu.Item>
@@ -180,7 +178,7 @@ export default function Navigation() {
                 onClick={() => setIsContactModalOpen(true)}
                 className="btn-ghost"
               >
-                {t("nav.contact")}
+                {t('nav.contact')}
               </button>
 
               {/* Language Selector with Listbox */}
@@ -206,13 +204,13 @@ export default function Navigation() {
                             className={({ active, selected }) =>
                               `${
                                 active
-                                  ? "bg-primary-50 text-primary-700"
-                                  : "text-gray-700"
+                                  ? 'bg-primary-50 text-primary-700'
+                                  : 'text-gray-700'
                               }
                                ${
                                  selected
-                                   ? "bg-primary-100 text-primary-800 font-medium"
-                                   : ""
+                                   ? 'bg-primary-100 text-primary-800 font-medium'
+                                   : ''
                                }
                                cursor-pointer select-none relative px-4 py-3 transition-colors`
                             }
@@ -237,11 +235,7 @@ export default function Navigation() {
                 className="btn-ghost p-2"
                 aria-label="Toggle menu"
               >
-                {isOpen ? (
-                  <X className="h-6 w-6" />
-                ) : (
-                  <Menu className="h-6 w-6" />
-                )}
+                {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
             </div>
           </div>
@@ -262,17 +256,17 @@ export default function Navigation() {
                   href="/"
                   className="block px-3 py-2 btn-ghost w-full text-left"
                 >
-                  {t("nav.home")}
+                  {t('nav.home')}
                 </Link>
 
                 <Disclosure>
                   {({ open }) => (
                     <div>
                       <DisclosureButton className="flex justify-between w-full px-3 py-2 btn-ghost text-left">
-                        <span>{t("nav.program")}</span>
+                        <span>{t('nav.program')}</span>
                         <ChevronDown
                           className={`${
-                            open ? "rotate-180" : ""
+                            open ? 'rotate-180' : ''
                           } h-5 w-5 transition-transform`}
                         />
                       </DisclosureButton>
@@ -281,13 +275,13 @@ export default function Navigation() {
                           href="/program/pondok-pesantren"
                           className="block px-3 py-2 text-sm text-gray-600 hover:text-primary-600 transition-colors"
                         >
-                          {t("nav.pondok")}
+                          {t('nav.pondok')}
                         </Link>
                         <Link
                           href="/program/komunitas"
                           className="block px-3 py-2 text-sm text-gray-600 hover:text-primary-600 transition-colors"
                         >
-                          {t("nav.komunitas")}
+                          {t('nav.komunitas')}
                         </Link>
                       </DisclosurePanel>
                     </div>
@@ -298,23 +292,23 @@ export default function Navigation() {
                   href="/about"
                   className="block px-3 py-2 btn-ghost w-full text-left"
                 >
-                  {t("nav.about")}
+                  {t('nav.about')}
                 </Link>
                 <Link
                   href="/laporan"
                   className="block px-3 py-2 btn-ghost w-full text-left"
                 >
-                  {t("nav.reports")}
+                  {t('nav.reports')}
                 </Link>
 
                 <Disclosure>
                   {({ open }) => (
                     <div>
                       <DisclosureButton className="flex justify-between w-full px-3 py-2 btn-ghost text-left">
-                        <span>{t("nav.publications")}</span>
+                        <span>{t('nav.publications')}</span>
                         <ChevronDown
                           className={`${
-                            open ? "rotate-180" : ""
+                            open ? 'rotate-180' : ''
                           } h-5 w-5 transition-transform`}
                         />
                       </DisclosureButton>
@@ -323,13 +317,13 @@ export default function Navigation() {
                           href="/publikasi/tulisan"
                           className="block px-3 py-2 text-sm text-gray-600 hover:text-primary-600 transition-colors"
                         >
-                          {t("nav.tulisan")}
+                          {t('nav.tulisan')}
                         </Link>
                         <Link
                           href="/publikasi/buku"
                           className="block px-3 py-2 text-sm text-gray-600 hover:text-primary-600 transition-colors"
                         >
-                          {t("nav.buku")}
+                          {t('nav.buku')}
                         </Link>
                       </DisclosurePanel>
                     </div>
@@ -340,7 +334,7 @@ export default function Navigation() {
                   onClick={() => setIsContactModalOpen(true)}
                   className="block px-3 py-2 btn-ghost w-full text-left"
                 >
-                  {t("nav.contact")}
+                  {t('nav.contact')}
                 </button>
 
                 {/* Mobile Language Selector */}
@@ -353,8 +347,8 @@ export default function Navigation() {
                         onClick={() => setLanguage(lang.code as any)}
                         className={`block w-full text-left px-3 py-2 text-sm rounded-lg transition-colors ${
                           language === lang.code
-                            ? "bg-primary-100 text-primary-700 font-medium"
-                            : "text-gray-600 hover:text-primary-600 hover:bg-gray-50"
+                            ? 'bg-primary-100 text-primary-700 font-medium'
+                            : 'text-gray-600 hover:text-primary-600 hover:bg-gray-50'
                         }`}
                       >
                         <span className="mr-2">{lang.flag}</span>
@@ -371,11 +365,7 @@ export default function Navigation() {
 
       {/* Contact Modal */}
       <Transition appear show={isContactModalOpen} as={Fragment}>
-        <Dialog
-          as="div"
-          className="relative z-50"
-          onClose={setIsContactModalOpen}
-        >
+        <Dialog as="div" className="relative z-50" onClose={setIsContactModalOpen}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -404,7 +394,7 @@ export default function Navigation() {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900 mb-4"
                   >
-                    {t("footer.contact")}
+                    {t('footer.contact')}
                   </Dialog.Title>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
@@ -419,11 +409,8 @@ export default function Navigation() {
                     </div>
                   </div>
                   <div className="mt-6 flex space-x-3">
-                    <Link
-                      href="/kontak"
-                      className="btn-primary flex-1 text-center"
-                    >
-                      {t("nav.contact")} Lengkap
+                    <Link href="/kontak" className="btn-primary flex-1 text-center">
+                      {t('nav.contact')} Lengkap
                     </Link>
                     <button
                       type="button"

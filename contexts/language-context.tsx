@@ -40,6 +40,7 @@ const translations = {
     "vision.title": "Visi & Misi",
     "vision.text":
       "Menjadi lembaga pendidikan Islam terdepan dalam mencetak generasi Qur'ani yang berakhlak mulia dan bermanfaat bagi umat.",
+    "visi.title": "Visi",
     "mission.title": "Misi",
     "mission.1": "Menyelenggarakan pendidikan Islam berkualitas",
     "mission.2": "Mengembangkan program tahfidz Al-Qur'an",
@@ -100,6 +101,7 @@ const translations = {
     "vision.title": "الرؤية والرسالة",
     "vision.text":
       "أن نكون مؤسسة تعليمية إسلامية رائدة في إعداد جيل قرآني ذو أخلاق كريمة ونافع للأمة.",
+    "visi.title": "رؤية",
     "mission.title": "الرسالة",
     "mission.1": "تقديم تعليم إسلامي عالي الجودة",
     "mission.2": "تطوير برامج تحفيظ القرآن الكريم",
@@ -159,6 +161,7 @@ const translations = {
     "vision.title": "Vision & Mission",
     "vision.text":
       "To become a leading Islamic educational institution in producing a Quranic generation with noble character and beneficial to the ummah.",
+    "visi.title": "Vision",
     "mission.title": "Mission",
     "mission.1": "Provide quality Islamic education",
     "mission.2": "Develop Quran memorization programs",

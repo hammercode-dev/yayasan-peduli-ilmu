@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter, Amiri } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/language-context";
+import Navigation from "@/components/layout/navigation";
+import Footer from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const amiri = Amiri({
@@ -25,7 +27,11 @@ export default function RootLayout({
   return (
     <html lang="id" className={`${inter.variable} ${amiri.variable}`}>
       <body className="font-sans antialiased">
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          <Navigation />
+          {children}
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

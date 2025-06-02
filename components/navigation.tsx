@@ -267,7 +267,7 @@ export default function Navigation() {
 
                 <Disclosure>
                   {({ open }) => (
-                    <>
+                    <div>
                       <DisclosureButton className="flex justify-between w-full px-3 py-2 btn-ghost text-left">
                         <span>{t("nav.program")}</span>
                         <ChevronDown
@@ -290,7 +290,7 @@ export default function Navigation() {
                           {t("nav.komunitas")}
                         </Link>
                       </DisclosurePanel>
-                    </>
+                    </div>
                   )}
                 </Disclosure>
 
@@ -309,7 +309,7 @@ export default function Navigation() {
 
                 <Disclosure>
                   {({ open }) => (
-                    <>
+                    <div>
                       <DisclosureButton className="flex justify-between w-full px-3 py-2 btn-ghost text-left">
                         <span>{t("nav.publications")}</span>
                         <ChevronDown
@@ -332,7 +332,7 @@ export default function Navigation() {
                           {t("nav.buku")}
                         </Link>
                       </DisclosurePanel>
-                    </>
+                    </div>
                   )}
                 </Disclosure>
 

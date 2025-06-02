@@ -13,6 +13,7 @@ import {
   Target,
 } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
+import Wrapper from "@/components/wrapper";
 
 export default function HomePage() {
   const { t, language } = useLanguage();
@@ -66,9 +67,8 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <Wrapper>
       <Navigation />
-
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 via-white to-accent-50 py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -450,6 +450,6 @@ export default function HomePage() {
       </section>
 
       <Footer />
-    </div>
+    </Wrapper>
   );
 }

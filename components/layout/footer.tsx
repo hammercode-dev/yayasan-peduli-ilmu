@@ -1,16 +1,9 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Image from "next/image";
-import {
-  Facebook,
-  Instagram,
-  Youtube,
-  Mail,
-  Phone,
-  MapPin,
-} from "lucide-react";
-import { useLanguage } from "@/contexts/language-context";
+import Link from 'next/link';
+import Image from 'next/image';
+import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { useLanguage } from '@/contexts/language-context';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -30,13 +23,11 @@ export default function Footer() {
                 className="h-15 w-auto"
               />
               <div>
-                <h3 className="text-xl font-bold">{t("hero.title")}</h3>
+                <h3 className="text-xl font-bold">{t('hero.title')}</h3>
                 <p className="text-gray-300">Sulawesi Tengah</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-6 max-w-md">
-              {t("hero.description")}
-            </p>
+            <p className="text-gray-300 mb-6 max-w-md">{t('hero.description')}</p>
             <div className="flex space-x-4">
               <a
                 href="#"
@@ -68,7 +59,7 @@ export default function Footer() {
                   href="/"
                   className="text-gray-300 hover:text-primary-400 transition-colors"
                 >
-                  {t("nav.home")}
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
@@ -76,7 +67,7 @@ export default function Footer() {
                   href="/tentang"
                   className="text-gray-300 hover:text-primary-400 transition-colors"
                 >
-                  {t("footer.about")}
+                  {t('footer.about')}
                 </Link>
               </li>
               <li>
@@ -84,7 +75,7 @@ export default function Footer() {
                   href="/program/pondok-pesantren"
                   className="text-gray-300 hover:text-primary-400 transition-colors"
                 >
-                  {t("footer.programs")}
+                  {t('footer.programs')}
                 </Link>
               </li>
               <li>
@@ -92,7 +83,7 @@ export default function Footer() {
                   href="/laporan"
                   className="text-gray-300 hover:text-primary-400 transition-colors"
                 >
-                  {t("nav.reports")}
+                  {t('nav.reports')}
                 </Link>
               </li>
               <li>
@@ -100,7 +91,7 @@ export default function Footer() {
                   href="/kontak"
                   className="text-gray-300 hover:text-primary-400 transition-colors"
                 >
-                  {t("footer.contact")}
+                  {t('footer.contact')}
                 </Link>
               </li>
             </ul>
@@ -108,9 +99,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">
-              {t("footer.contact")}
-            </h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.contact')}</h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary-400 mt-0.5 flex-shrink-0" />
@@ -136,8 +125,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300 text-sm">
-            © {new Date().getFullYear()} {t("hero.title")}. {t("footer.rights")}
-            .
+            © {new Date().getFullYear()} {t('hero.title')}. {t('footer.rights')}.
           </p>
         </div>
       </div>

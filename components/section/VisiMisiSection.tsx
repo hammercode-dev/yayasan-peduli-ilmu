@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import { useLanguage } from "@/contexts/language-context";
+import { useLanguage } from '@/contexts/language-context';
 
-import { Target, BookOpen } from "lucide-react";
-import CardWithIcon from "../ui/CardWithICon";
+import { Target, BookOpen } from 'lucide-react';
+import CardWithIcon from '../ui/CardWithICon';
 
 const VisiMisiSection = () => {
   const { t, language } = useLanguage();
@@ -15,10 +15,10 @@ const VisiMisiSection = () => {
         <div className="text-center mb-16">
           <h2
             className={`text-3xl lg:text-4xl font-bold text-accent-900 mb-6 ${
-              language === "ar" ? "font-arabic" : ""
+              language === 'ar' ? 'font-arabic' : ''
             }`}
           >
-            {t("vision.title")}
+            {t('vision.title')}
           </h2>
         </div>
 
@@ -26,8 +26,8 @@ const VisiMisiSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* visi */}
           <CardWithIcon
-            title={t("visi.title")}
-            content={<p>{t("vision.text")}</p>}
+            title={t('visi.title')}
+            content={<p>{t('vision.text')}</p>}
             icon={Target}
             language={language}
             gradientFrom="from-primary-50"
@@ -37,26 +37,24 @@ const VisiMisiSection = () => {
 
           {/* misi */}
           <CardWithIcon
-            title={t("mission.title")}
+            title={t('mission.title')}
             content={
-              <ul
-                className={`space-y-3 ${language === "ar" ? "text-right" : ""}`}
-              >
+              <ul className={`space-y-3 ${language === 'ar' ? 'text-right' : ''}`}>
                 {[1, 2, 3, 4].map((i) => (
                   <li
                     key={i}
                     className={`flex items-start ${
-                      language === "ar" ? "flex-row-reverse" : ""
+                      language === 'ar' ? 'flex-row-reverse' : ''
                     }`}
                   >
                     <div
                       className={`w-2 h-2 bg-secondary-500 rounded-full mt-2 ${
-                        language === "ar" ? "ml-3" : "mr-3"
+                        language === 'ar' ? 'ml-3' : 'mr-3'
                       } flex-shrink-0`}
                     />
                     <span
                       className={`text-gray-700 ${
-                        language === "ar" ? "font-arabic" : ""
+                        language === 'ar' ? 'font-arabic' : ''
                       }`}
                     >
                       {t(`mission.${i}`)}

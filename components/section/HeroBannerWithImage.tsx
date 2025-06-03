@@ -1,14 +1,14 @@
-import React from "react";
-import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import React from 'react';
+import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
 
-import { useLanguage } from "@/contexts/language-context";
-import { Button } from "../ui/Button";
+import { useLanguage } from '@/contexts/language-context';
+import { Button } from '../ui/Button';
 
 const HeroBannerWithImage = () => {
   const { t, language } = useLanguage();
 
-  const isRTL = language === "ar";
+  const isRTL = language === 'ar';
 
   return (
     <section className="bg-gradient-to-br from-primary-50 via-white to-accent-50 py-20 lg:py-32">
@@ -17,52 +17,44 @@ const HeroBannerWithImage = () => {
           {/* TEXT SECTION */}
           <div
             className={`
-            ${isRTL ? "lg:order-2 text-right" : "lg:order-1 text-left"}
+            ${isRTL ? 'lg:order-2 text-right' : 'lg:order-1 text-left'}
           `}
           >
             <h1
               className={`text-4xl lg:text-6xl font-bold text-accent-900 mb-6 ${
-                isRTL ? "font-arabic" : ""
+                isRTL ? 'font-arabic' : ''
               }`}
             >
-              {t("hero.title")}
+              {t('hero.title')}
             </h1>
             <h2
               className={`text-xl lg:text-2xl text-secondary-600 font-semibold mb-6 ${
-                isRTL ? "font-arabic" : ""
+                isRTL ? 'font-arabic' : ''
               }`}
             >
-              {t("hero.subtitle")}
+              {t('hero.subtitle')}
             </h2>
             <p
               className={`text-lg text-gray-600 mb-8 leading-relaxed ${
-                isRTL ? "font-arabic" : ""
+                isRTL ? 'font-arabic' : ''
               }`}
             >
-              {t("hero.description")}
+              {t('hero.description')}
             </p>
-            <div
-              className={`flex ${
-                isRTL ? "flex-row-reverse" : "flex-row"
-              } gap-4`}
-            >
-              <Button
-                variant="primary"
-                size={"lg"}
-                href="/program/pondok-pesantren"
-              >
-                {t("hero.cta.primary")}
+            <div className={`flex ${isRTL ? 'flex-row-reverse' : 'flex-row'} gap-4`}>
+              <Button variant="primary" size={'lg'} href="/program/pondok-pesantren">
+                {t('hero.cta.primary')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
 
-              <Button variant="secondary" size={"lg"} href="/tentang">
-                {t("hero.cta.secondary")}
+              <Button variant="secondary" size={'lg'} href="/tentang">
+                {t('hero.cta.secondary')}
               </Button>
             </div>
           </div>
 
           {/* IMAGE SECTION */}
-          <div className={`${isRTL ? "lg:order-1" : "lg:order-2"} relative`}>
+          <div className={`${isRTL ? 'lg:order-1' : 'lg:order-2'} relative`}>
             <div className="relative z-10">
               <Image
                 src="/logo.png"

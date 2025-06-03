@@ -1,6 +1,6 @@
-import React from "react";
-import { useLanguage } from "@/contexts/language-context";
-import CardDonation from "../ui/CardDonation";
+import React from 'react';
+import { useLanguage } from '@/contexts/language-context';
+import CardDonation from '../ui/CardDonation';
 
 const DonationsSection = () => {
   const { t, language } = useLanguage();
@@ -8,24 +8,24 @@ const DonationsSection = () => {
   const donationProjects = [
     {
       id: 1,
-      name: "Pembangunan Gedung Serbaguna",
-      needed: "Rp 500.000.000",
+      name: 'Pembangunan Gedung Serbaguna',
+      needed: 'Rp 500.000.000',
       progress: 25,
-      description: "Gedung untuk kegiatan pembelajaran dan acara besar",
+      description: 'Gedung untuk kegiatan pembelajaran dan acara besar',
     },
     {
       id: 2,
-      name: "Renovasi Asrama Putri",
-      needed: "Rp 300.000.000",
+      name: 'Renovasi Asrama Putri',
+      needed: 'Rp 300.000.000',
       progress: 60,
-      description: "Perbaikan dan perluasan asrama untuk santri putri",
+      description: 'Perbaikan dan perluasan asrama untuk santri putri',
     },
     {
       id: 3,
-      name: "Pembangunan Fasilitas WC",
-      needed: "Rp 150.000.000",
+      name: 'Pembangunan Fasilitas WC',
+      needed: 'Rp 150.000.000',
       progress: 80,
-      description: "Fasilitas sanitasi yang layak untuk santri",
+      description: 'Fasilitas sanitasi yang layak untuk santri',
     },
   ];
 
@@ -36,17 +36,17 @@ const DonationsSection = () => {
         <div className="text-center mb-16">
           <h2
             className={`text-3xl lg:text-4xl font-bold text-accent-900 mb-6 ${
-              language === "ar" ? "font-arabic" : ""
+              language === 'ar' ? 'font-arabic' : ''
             }`}
           >
-            {t("donations.title")}
+            {t('donations.title')}
           </h2>
           <p
             className={`text-lg text-gray-600 max-w-2xl mx-auto ${
-              language === "ar" ? "font-arabic" : ""
+              language === 'ar' ? 'font-arabic' : ''
             }`}
           >
-            {t("donations.subtitle")}
+            {t('donations.subtitle')}
           </p>
         </div>
 
@@ -56,12 +56,12 @@ const DonationsSection = () => {
             <CardDonation
               key={project.id}
               progress={project.progress}
-              isRtl={language === "ar"}
+              isRtl={language === 'ar'}
               title={project.name}
               description={project.description}
-              textTotal={t("donations.needed")}
+              textTotal={t('donations.needed')}
               total={project.needed}
-              textButton={t("donations.donate")}
+              textButton={t('donations.donate')}
             />
           ))}
         </div>

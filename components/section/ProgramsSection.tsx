@@ -1,7 +1,7 @@
-import React from "react";
-import { BookOpen, Users } from "lucide-react";
-import { useLanguage } from "@/contexts/language-context";
-import { CardFeature } from "../ui/CardFeature";
+import React from 'react';
+import { BookOpen, Users } from 'lucide-react';
+import { useLanguage } from '@/contexts/language-context';
+import { CardFeature } from '../ui/CardFeature';
 
 const ProgramsSection = () => {
   const { t, language } = useLanguage();
@@ -13,10 +13,10 @@ const ProgramsSection = () => {
         <div className="text-center mb-16">
           <h2
             className={`text-3xl lg:text-4xl font-bold text-accent-900 mb-6 ${
-              language === "ar" ? "font-arabic" : ""
+              language === 'ar' ? 'font-arabic' : ''
             }`}
           >
-            {t("programs.title")}
+            {t('programs.title')}
           </h2>
         </div>
 
@@ -24,23 +24,23 @@ const ProgramsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <CardFeature
             icon={BookOpen}
-            title={t("programs.pondok.title")}
-            description={t("programs.pondok.desc")}
+            title={t('programs.pondok.title')}
+            description={t('programs.pondok.desc')}
             href="/program/pondok-pesantren"
             gradient="bg-gradient-to-br from-primary-400 to-primary-600"
             textColor="text-primary-600"
-            textLink={t("hero.cta.primary")}
-            isRTL={language === "ar"}
+            textLink={t('hero.cta.primary')}
+            isRTL={language === 'ar'}
           />
           <CardFeature
             icon={Users}
-            title={t("programs.komunitas.title")}
-            description={t("programs.komunitas.desc")}
+            title={t('programs.komunitas.title')}
+            description={t('programs.komunitas.desc')}
             href="/program/komunitas"
             gradient="bg-gradient-to-br from-secondary-400 to-secondary-600"
             textColor="text-secondary-600"
-            textLink={t("hero.cta.secondary")}
-            isRTL={language === "ar"}
+            textLink={t('hero.cta.secondary')}
+            isRTL={language === 'ar'}
           />
         </div>
       </div>

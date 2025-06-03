@@ -1,6 +1,6 @@
-import React from "react";
-import { useLanguage } from "@/contexts/language-context";
-import CardEvent from "../ui/CardEvent";
+import React from 'react';
+import { useLanguage } from '@/contexts/language-context';
+import CardEvent from '../ui/CardEvent';
 
 const AnnouncementsSection = () => {
   const { t, language } = useLanguage();
@@ -8,24 +8,24 @@ const AnnouncementsSection = () => {
   const announcements = [
     {
       id: 1,
-      title: "Pendaftaran Santri Baru 2024/2025",
-      date: "2024-01-15",
+      title: 'Pendaftaran Santri Baru 2024/2025',
+      date: '2024-01-15',
       excerpt:
-        "Dibuka pendaftaran santri baru untuk tahun ajaran 2024/2025. Kuota terbatas.",
+        'Dibuka pendaftaran santri baru untuk tahun ajaran 2024/2025. Kuota terbatas.',
     },
     {
       id: 2,
-      title: "Program Tahfidz Intensif",
-      date: "2024-01-10",
+      title: 'Program Tahfidz Intensif',
+      date: '2024-01-10',
       excerpt:
-        "Program tahfidz intensif untuk santri yang ingin menyelesaikan hafalan dengan cepat.",
+        'Program tahfidz intensif untuk santri yang ingin menyelesaikan hafalan dengan cepat.',
     },
     {
       id: 3,
-      title: "Kegiatan Bakti Sosial",
-      date: "2024-01-05",
+      title: 'Kegiatan Bakti Sosial',
+      date: '2024-01-05',
       excerpt:
-        "Yayasan mengadakan bakti sosial untuk masyarakat sekitar pondok pesantren.",
+        'Yayasan mengadakan bakti sosial untuk masyarakat sekitar pondok pesantren.',
     },
   ];
 
@@ -36,10 +36,10 @@ const AnnouncementsSection = () => {
         <div className="text-center mb-16">
           <h2
             className={`text-3xl lg:text-4xl font-bold text-accent-900 mb-6 ${
-              language === "ar" ? "font-arabic" : ""
+              language === 'ar' ? 'font-arabic' : ''
             }`}
           >
-            {t("announcements.title")}
+            {t('announcements.title')}
           </h2>
         </div>
         {/* events */}
@@ -48,12 +48,12 @@ const AnnouncementsSection = () => {
             <CardEvent
               key={announcement.id}
               date={announcement.date}
-              isRTL={language === "ar"}
+              isRTL={language === 'ar'}
               title={announcement.title}
               shortDesc={announcement.excerpt}
               href={`/pengumuman/${announcement.id}`}
               textColor="primary"
-              textLink={t("announcements.readmore")}
+              textLink={t('announcements.readmore')}
             />
           ))}
         </div>

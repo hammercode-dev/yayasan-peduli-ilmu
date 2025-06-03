@@ -1,18 +1,12 @@
-"use client";
+'use client';
 
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  ArrowRight,
-  BookOpen,
-  Users,
-  Heart,
-  Calendar,
-  Target,
-} from "lucide-react";
-import { useLanguage } from "@/contexts/language-context";
+import Navigation from '@/components/navigation';
+import Footer from '@/components/footer';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ArrowRight, BookOpen, Users, Heart, Calendar, Target } from 'lucide-react';
+import { useLanguage } from '@/contexts/language-context';
+import Wrapper from '@/components/wrapper';
 
 export default function HomePage() {
   const { t, language } = useLanguage();
@@ -20,96 +14,92 @@ export default function HomePage() {
   const announcements = [
     {
       id: 1,
-      title: "Pendaftaran Santri Baru 2024/2025",
-      date: "2024-01-15",
+      title: 'Pendaftaran Santri Baru 2024/2025',
+      date: '2024-01-15',
       excerpt:
-        "Dibuka pendaftaran santri baru untuk tahun ajaran 2024/2025. Kuota terbatas.",
+        'Dibuka pendaftaran santri baru untuk tahun ajaran 2024/2025. Kuota terbatas.',
     },
     {
       id: 2,
-      title: "Program Tahfidz Intensif",
-      date: "2024-01-10",
+      title: 'Program Tahfidz Intensif',
+      date: '2024-01-10',
       excerpt:
-        "Program tahfidz intensif untuk santri yang ingin menyelesaikan hafalan dengan cepat.",
+        'Program tahfidz intensif untuk santri yang ingin menyelesaikan hafalan dengan cepat.',
     },
     {
       id: 3,
-      title: "Kegiatan Bakti Sosial",
-      date: "2024-01-05",
+      title: 'Kegiatan Bakti Sosial',
+      date: '2024-01-05',
       excerpt:
-        "Yayasan mengadakan bakti sosial untuk masyarakat sekitar pondok pesantren.",
+        'Yayasan mengadakan bakti sosial untuk masyarakat sekitar pondok pesantren.',
     },
   ];
 
   const donationProjects = [
     {
       id: 1,
-      name: "Pembangunan Gedung Serbaguna",
-      needed: "Rp 500.000.000",
+      name: 'Pembangunan Gedung Serbaguna',
+      needed: 'Rp 500.000.000',
       progress: 25,
-      description: "Gedung untuk kegiatan pembelajaran dan acara besar",
+      description: 'Gedung untuk kegiatan pembelajaran dan acara besar',
     },
     {
       id: 2,
-      name: "Renovasi Asrama Putri",
-      needed: "Rp 300.000.000",
+      name: 'Renovasi Asrama Putri',
+      needed: 'Rp 300.000.000',
       progress: 60,
-      description: "Perbaikan dan perluasan asrama untuk santri putri",
+      description: 'Perbaikan dan perluasan asrama untuk santri putri',
     },
     {
       id: 3,
-      name: "Pembangunan Fasilitas WC",
-      needed: "Rp 150.000.000",
+      name: 'Pembangunan Fasilitas WC',
+      needed: 'Rp 150.000.000',
       progress: 80,
-      description: "Fasilitas sanitasi yang layak untuk santri",
+      description: 'Fasilitas sanitasi yang layak untuk santri',
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
-
+    <Wrapper>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 via-white to-accent-50 py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div
-              className={`${language === "ar" ? "text-right" : "text-left"}`}
-            >
+            <div className={`${language === 'ar' ? 'text-right' : 'text-left'}`}>
               <h1
                 className={`text-4xl lg:text-6xl font-bold text-accent-900 mb-6 ${
-                  language === "ar" ? "font-arabic" : ""
+                  language === 'ar' ? 'font-arabic' : ''
                 }`}
               >
-                {t("hero.title")}
+                {t('hero.title')}
               </h1>
               <h2
                 className={`text-xl lg:text-2xl text-secondary-600 font-semibold mb-6 ${
-                  language === "ar" ? "font-arabic" : ""
+                  language === 'ar' ? 'font-arabic' : ''
                 }`}
               >
-                {t("hero.subtitle")}
+                {t('hero.subtitle')}
               </h2>
               <p
                 className={`text-lg text-gray-600 mb-8 leading-relaxed ${
-                  language === "ar" ? "font-arabic" : ""
+                  language === 'ar' ? 'font-arabic' : ''
                 }`}
               >
-                {t("hero.description")}
+                {t('hero.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/program/pondok-pesantren"
                   className="btn-primary inline-flex items-center justify-center"
                 >
-                  {t("hero.cta.primary")}
+                  {t('hero.cta.primary')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <Link
                   href="/tentang"
                   className="btn-secondary inline-flex items-center justify-center"
                 >
-                  {t("hero.cta.secondary")}
+                  {t('hero.cta.secondary')}
                 </Link>
               </div>
             </div>
@@ -135,10 +125,10 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2
               className={`text-3xl lg:text-4xl font-bold text-accent-900 mb-6 ${
-                language === "ar" ? "font-arabic" : ""
+                language === 'ar' ? 'font-arabic' : ''
               }`}
             >
-              {t("vision.title")}
+              {t('vision.title')}
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -147,7 +137,7 @@ export default function HomePage() {
                 <Target className="h-8 w-8 text-primary-600 mr-3" />
                 <h3
                   className={`text-2xl font-bold text-accent-900 ${
-                    language === "ar" ? "font-arabic" : ""
+                    language === 'ar' ? 'font-arabic' : ''
                   }`}
                 >
                   Visi
@@ -155,10 +145,10 @@ export default function HomePage() {
               </div>
               <p
                 className={`text-gray-700 leading-relaxed ${
-                  language === "ar" ? "font-arabic text-right" : ""
+                  language === 'ar' ? 'font-arabic text-right' : ''
                 }`}
               >
-                {t("vision.text")}
+                {t('vision.text')}
               </p>
             </div>
             <div className="bg-gradient-to-br from-secondary-50 to-secondary-100 p-8 rounded-2xl">
@@ -166,85 +156,83 @@ export default function HomePage() {
                 <BookOpen className="h-8 w-8 text-secondary-600 mr-3" />
                 <h3
                   className={`text-2xl font-bold text-accent-900 ${
-                    language === "ar" ? "font-arabic" : ""
+                    language === 'ar' ? 'font-arabic' : ''
                   }`}
                 >
-                  {t("mission.title")}
+                  {t('mission.title')}
                 </h3>
               </div>
-              <ul
-                className={`space-y-3 ${language === "ar" ? "text-right" : ""}`}
-              >
+              <ul className={`space-y-3 ${language === 'ar' ? 'text-right' : ''}`}>
                 <li
                   className={`flex items-start ${
-                    language === "ar" ? "flex-row-reverse" : ""
+                    language === 'ar' ? 'flex-row-reverse' : ''
                   }`}
                 >
                   <div
                     className={`w-2 h-2 bg-secondary-500 rounded-full mt-2 ${
-                      language === "ar" ? "ml-3" : "mr-3"
+                      language === 'ar' ? 'ml-3' : 'mr-3'
                     } flex-shrink-0`}
                   ></div>
                   <span
                     className={`text-gray-700 ${
-                      language === "ar" ? "font-arabic" : ""
+                      language === 'ar' ? 'font-arabic' : ''
                     }`}
                   >
-                    {t("mission.1")}
+                    {t('mission.1')}
                   </span>
                 </li>
                 <li
                   className={`flex items-start ${
-                    language === "ar" ? "flex-row-reverse" : ""
+                    language === 'ar' ? 'flex-row-reverse' : ''
                   }`}
                 >
                   <div
                     className={`w-2 h-2 bg-secondary-500 rounded-full mt-2 ${
-                      language === "ar" ? "ml-3" : "mr-3"
+                      language === 'ar' ? 'ml-3' : 'mr-3'
                     } flex-shrink-0`}
                   ></div>
                   <span
                     className={`text-gray-700 ${
-                      language === "ar" ? "font-arabic" : ""
+                      language === 'ar' ? 'font-arabic' : ''
                     }`}
                   >
-                    {t("mission.2")}
+                    {t('mission.2')}
                   </span>
                 </li>
                 <li
                   className={`flex items-start ${
-                    language === "ar" ? "flex-row-reverse" : ""
+                    language === 'ar' ? 'flex-row-reverse' : ''
                   }`}
                 >
                   <div
                     className={`w-2 h-2 bg-secondary-500 rounded-full mt-2 ${
-                      language === "ar" ? "ml-3" : "mr-3"
+                      language === 'ar' ? 'ml-3' : 'mr-3'
                     } flex-shrink-0`}
                   ></div>
                   <span
                     className={`text-gray-700 ${
-                      language === "ar" ? "font-arabic" : ""
+                      language === 'ar' ? 'font-arabic' : ''
                     }`}
                   >
-                    {t("mission.3")}
+                    {t('mission.3')}
                   </span>
                 </li>
                 <li
                   className={`flex items-start ${
-                    language === "ar" ? "flex-row-reverse" : ""
+                    language === 'ar' ? 'flex-row-reverse' : ''
                   }`}
                 >
                   <div
                     className={`w-2 h-2 bg-secondary-500 rounded-full mt-2 ${
-                      language === "ar" ? "ml-3" : "mr-3"
+                      language === 'ar' ? 'ml-3' : 'mr-3'
                     } flex-shrink-0`}
                   ></div>
                   <span
                     className={`text-gray-700 ${
-                      language === "ar" ? "font-arabic" : ""
+                      language === 'ar' ? 'font-arabic' : ''
                     }`}
                   >
-                    {t("mission.4")}
+                    {t('mission.4')}
                   </span>
                 </li>
               </ul>
@@ -259,10 +247,10 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2
               className={`text-3xl lg:text-4xl font-bold text-accent-900 mb-6 ${
-                language === "ar" ? "font-arabic" : ""
+                language === 'ar' ? 'font-arabic' : ''
               }`}
             >
-              {t("programs.title")}
+              {t('programs.title')}
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -273,24 +261,24 @@ export default function HomePage() {
                   <BookOpen className="h-8 w-8 text-primary-600 mr-3" />
                   <h3
                     className={`text-xl font-bold text-accent-900 ${
-                      language === "ar" ? "font-arabic" : ""
+                      language === 'ar' ? 'font-arabic' : ''
                     }`}
                   >
-                    {t("programs.pondok.title")}
+                    {t('programs.pondok.title')}
                   </h3>
                 </div>
                 <p
                   className={`text-gray-600 mb-6 ${
-                    language === "ar" ? "font-arabic text-right" : ""
+                    language === 'ar' ? 'font-arabic text-right' : ''
                   }`}
                 >
-                  {t("programs.pondok.desc")}
+                  {t('programs.pondok.desc')}
                 </p>
                 <Link
                   href="/program/pondok-pesantren"
                   className="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold"
                 >
-                  {t("hero.cta.secondary")}
+                  {t('hero.cta.secondary')}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
@@ -302,24 +290,24 @@ export default function HomePage() {
                   <Users className="h-8 w-8 text-secondary-600 mr-3" />
                   <h3
                     className={`text-xl font-bold text-accent-900 ${
-                      language === "ar" ? "font-arabic" : ""
+                      language === 'ar' ? 'font-arabic' : ''
                     }`}
                   >
-                    {t("programs.komunitas.title")}
+                    {t('programs.komunitas.title')}
                   </h3>
                 </div>
                 <p
                   className={`text-gray-600 mb-6 ${
-                    language === "ar" ? "font-arabic text-right" : ""
+                    language === 'ar' ? 'font-arabic text-right' : ''
                   }`}
                 >
-                  {t("programs.komunitas.desc")}
+                  {t('programs.komunitas.desc')}
                 </p>
                 <Link
                   href="/program/komunitas"
                   className="inline-flex items-center text-secondary-600 hover:text-secondary-700 font-semibold"
                 >
-                  {t("hero.cta.secondary")}
+                  {t('hero.cta.secondary')}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
@@ -334,10 +322,10 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2
               className={`text-3xl lg:text-4xl font-bold text-accent-900 mb-6 ${
-                language === "ar" ? "font-arabic" : ""
+                language === 'ar' ? 'font-arabic' : ''
               }`}
             >
-              {t("announcements.title")}
+              {t('announcements.title')}
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -348,20 +336,18 @@ export default function HomePage() {
               >
                 <div className="flex items-center mb-4">
                   <Calendar className="h-5 w-5 text-primary-600 mr-2" />
-                  <span className="text-sm text-gray-500">
-                    {announcement.date}
-                  </span>
+                  <span className="text-sm text-gray-500">{announcement.date}</span>
                 </div>
                 <h3
                   className={`text-lg font-bold text-accent-900 mb-3 ${
-                    language === "ar" ? "font-arabic text-right" : ""
+                    language === 'ar' ? 'font-arabic text-right' : ''
                   }`}
                 >
                   {announcement.title}
                 </h3>
                 <p
                   className={`text-gray-600 mb-4 ${
-                    language === "ar" ? "font-arabic text-right" : ""
+                    language === 'ar' ? 'font-arabic text-right' : ''
                   }`}
                 >
                   {announcement.excerpt}
@@ -370,7 +356,7 @@ export default function HomePage() {
                   href={`/pengumuman/${announcement.id}`}
                   className="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold text-sm"
                 >
-                  {t("announcements.readmore")}
+                  {t('announcements.readmore')}
                   <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
@@ -385,17 +371,17 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2
               className={`text-3xl lg:text-4xl font-bold text-accent-900 mb-6 ${
-                language === "ar" ? "font-arabic" : ""
+                language === 'ar' ? 'font-arabic' : ''
               }`}
             >
-              {t("donations.title")}
+              {t('donations.title')}
             </h2>
             <p
               className={`text-lg text-gray-600 max-w-2xl mx-auto ${
-                language === "ar" ? "font-arabic" : ""
+                language === 'ar' ? 'font-arabic' : ''
               }`}
             >
-              {t("donations.subtitle")}
+              {t('donations.subtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -407,19 +393,19 @@ export default function HomePage() {
                 <div className="flex items-center mb-4">
                   <Heart className="h-6 w-6 text-secondary-600 mr-2" />
                   <span className="text-sm font-semibold text-secondary-600">
-                    {t("donations.progress")}: {project.progress}%
+                    {t('donations.progress')}: {project.progress}%
                   </span>
                 </div>
                 <h3
                   className={`text-lg font-bold text-accent-900 mb-3 ${
-                    language === "ar" ? "font-arabic text-right" : ""
+                    language === 'ar' ? 'font-arabic text-right' : ''
                   }`}
                 >
                   {project.name}
                 </h3>
                 <p
                   className={`text-gray-600 mb-4 text-sm ${
-                    language === "ar" ? "font-arabic text-right" : ""
+                    language === 'ar' ? 'font-arabic text-right' : ''
                   }`}
                 >
                   {project.description}
@@ -427,7 +413,7 @@ export default function HomePage() {
                 <div className="mb-4">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-sm font-medium text-gray-700">
-                      {t("donations.needed")}
+                      {t('donations.needed')}
                     </span>
                     <span className="text-sm font-bold text-accent-900">
                       {project.needed}
@@ -441,7 +427,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <button className="w-full btn-primary">
-                  {t("donations.donate")} test
+                  {t('donations.donate')} test
                 </button>
               </div>
             ))}
@@ -450,6 +436,6 @@ export default function HomePage() {
       </section>
 
       <Footer />
-    </div>
+    </Wrapper>
   );
 }

@@ -1,55 +1,53 @@
-"use client";
+'use client';
 
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
-import Image from "next/image";
-import { Target, Heart, Mail, Phone, MapPin } from "lucide-react";
-import { useLanguage } from "@/contexts/language-context";
+import Footer from '@/components/footer';
+import Image from 'next/image';
+import { Target, Heart, Mail, Phone, MapPin } from 'lucide-react';
+import { useLanguage } from '@/contexts/language-context';
+import Wrapper from '@/components/wrapper';
 
 export default function TentangPage() {
   const { t, language } = useLanguage();
 
   const pengurus = [
     {
-      name: "Dr. Ahmad Syahid, M.A.",
-      position: "Ketua Yayasan",
-      image: "/placeholder.svg?height=200&width=200",
+      name: 'Dr. Ahmad Syahid, M.A.',
+      position: 'Ketua Yayasan',
+      image: '/placeholder.svg?height=200&width=200',
     },
     {
-      name: "Ustadz Muhammad Farid, Lc.",
-      position: "Direktur Pendidikan",
-      image: "/placeholder.svg?height=200&width=200",
+      name: 'Ustadz Muhammad Farid, Lc.',
+      position: 'Direktur Pendidikan',
+      image: '/placeholder.svg?height=200&width=200',
     },
     {
-      name: "Ustadzah Fatimah, S.Pd.I.",
-      position: "Koordinator Putri",
-      image: "/placeholder.svg?height=200&width=200",
+      name: 'Ustadzah Fatimah, S.Pd.I.',
+      position: 'Koordinator Putri',
+      image: '/placeholder.svg?height=200&width=200',
     },
     {
-      name: "Ustadz Abdullah, M.Pd.",
-      position: "Kepala Asrama Putra",
-      image: "/placeholder.svg?height=200&width=200",
+      name: 'Ustadz Abdullah, M.Pd.',
+      position: 'Kepala Asrama Putra',
+      image: '/placeholder.svg?height=200&width=200',
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
-
+    <Wrapper>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-50 via-white to-accent-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1
               className={`text-4xl lg:text-5xl font-bold text-accent-900 mb-6 ${
-                language === "ar" ? "font-arabic" : ""
+                language === 'ar' ? 'font-arabic' : ''
               }`}
             >
-              {t("nav.about")}
+              {t('nav.about')}
             </h1>
             <p
               className={`text-xl text-gray-600 max-w-3xl mx-auto ${
-                language === "ar" ? "font-arabic" : ""
+                language === 'ar' ? 'font-arabic' : ''
               }`}
             >
               Mengenal lebih dekat Yayasan Peduli Ilmu dan komitmen kami dalam
@@ -66,36 +64,35 @@ export default function TentangPage() {
             <div>
               <h2
                 className={`text-3xl font-bold text-accent-900 mb-6 ${
-                  language === "ar" ? "font-arabic" : ""
+                  language === 'ar' ? 'font-arabic' : ''
                 }`}
               >
                 Tentang Yayasan Peduli Ilmu
               </h2>
               <div
                 className={`space-y-4 text-gray-600 leading-relaxed ${
-                  language === "ar" ? "font-arabic text-right" : ""
+                  language === 'ar' ? 'font-arabic text-right' : ''
                 }`}
               >
                 <p>
-                  Yayasan Peduli Ilmu Sulawesi Tengah didirikan dengan visi
-                  mulia untuk membangun generasi Qur&apos;ani yang berakhlak
-                  mulia dan bermanfaat bagi umat. Kami berkomitmen dalam
-                  pengembangan pendidikan Islam yang berkualitas dan
-                  pemberdayaan masyarakat.
+                  Yayasan Peduli Ilmu Sulawesi Tengah didirikan dengan visi mulia
+                  untuk membangun generasi Qur&apos;ani yang berakhlak mulia dan
+                  bermanfaat bagi umat. Kami berkomitmen dalam pengembangan
+                  pendidikan Islam yang berkualitas dan pemberdayaan masyarakat.
                 </p>
                 <p>
-                  Dengan pengalaman bertahun-tahun dalam bidang pendidikan
-                  Islam, yayasan ini telah melahirkan banyak santri yang hafal
+                  Dengan pengalaman bertahun-tahun dalam bidang pendidikan Islam,
+                  yayasan ini telah melahirkan banyak santri yang hafal
                   Al-Qur&apos;an dan memiliki pemahaman agama yang mendalam.
-                  Program-program kami dirancang untuk mengintegrasikan
-                  pendidikan agama dengan pengembangan karakter islami.
+                  Program-program kami dirancang untuk mengintegrasikan pendidikan
+                  agama dengan pengembangan karakter islami.
                 </p>
                 <p>
                   Lokasi strategis di Sulawesi Tengah memungkinkan kami untuk
-                  melayani masyarakat luas dan menjadi pusat pengembangan ilmu
-                  agama di wilayah ini. Fasilitas yang memadai dan tenaga
-                  pengajar yang berkualitas menjadi kekuatan utama dalam
-                  mencapai visi dan misi yayasan.
+                  melayani masyarakat luas dan menjadi pusat pengembangan ilmu agama
+                  di wilayah ini. Fasilitas yang memadai dan tenaga pengajar yang
+                  berkualitas menjadi kekuatan utama dalam mencapai visi dan misi
+                  yayasan.
                 </p>
               </div>
             </div>
@@ -120,7 +117,7 @@ export default function TentangPage() {
                 <Target className="h-8 w-8 text-primary-600 mr-3" />
                 <h3
                   className={`text-2xl font-bold text-accent-900 ${
-                    language === "ar" ? "font-arabic" : ""
+                    language === 'ar' ? 'font-arabic' : ''
                   }`}
                 >
                   Visi
@@ -128,10 +125,10 @@ export default function TentangPage() {
               </div>
               <p
                 className={`text-gray-700 leading-relaxed ${
-                  language === "ar" ? "font-arabic text-right" : ""
+                  language === 'ar' ? 'font-arabic text-right' : ''
                 }`}
               >
-                {t("vision.text")}
+                {t('vision.text')}
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
@@ -139,85 +136,83 @@ export default function TentangPage() {
                 <Heart className="h-8 w-8 text-secondary-600 mr-3" />
                 <h3
                   className={`text-2xl font-bold text-accent-900 ${
-                    language === "ar" ? "font-arabic" : ""
+                    language === 'ar' ? 'font-arabic' : ''
                   }`}
                 >
-                  {t("mission.title")}
+                  {t('mission.title')}
                 </h3>
               </div>
-              <ul
-                className={`space-y-3 ${language === "ar" ? "text-right" : ""}`}
-              >
+              <ul className={`space-y-3 ${language === 'ar' ? 'text-right' : ''}`}>
                 <li
                   className={`flex items-start ${
-                    language === "ar" ? "flex-row-reverse" : ""
+                    language === 'ar' ? 'flex-row-reverse' : ''
                   }`}
                 >
                   <div
                     className={`w-2 h-2 bg-secondary-500 rounded-full mt-2 ${
-                      language === "ar" ? "ml-3" : "mr-3"
+                      language === 'ar' ? 'ml-3' : 'mr-3'
                     } flex-shrink-0`}
                   ></div>
                   <span
                     className={`text-gray-700 ${
-                      language === "ar" ? "font-arabic" : ""
+                      language === 'ar' ? 'font-arabic' : ''
                     }`}
                   >
-                    {t("mission.1")}
+                    {t('mission.1')}
                   </span>
                 </li>
                 <li
                   className={`flex items-start ${
-                    language === "ar" ? "flex-row-reverse" : ""
+                    language === 'ar' ? 'flex-row-reverse' : ''
                   }`}
                 >
                   <div
                     className={`w-2 h-2 bg-secondary-500 rounded-full mt-2 ${
-                      language === "ar" ? "ml-3" : "mr-3"
+                      language === 'ar' ? 'ml-3' : 'mr-3'
                     } flex-shrink-0`}
                   ></div>
                   <span
                     className={`text-gray-700 ${
-                      language === "ar" ? "font-arabic" : ""
+                      language === 'ar' ? 'font-arabic' : ''
                     }`}
                   >
-                    {t("mission.2")}
+                    {t('mission.2')}
                   </span>
                 </li>
                 <li
                   className={`flex items-start ${
-                    language === "ar" ? "flex-row-reverse" : ""
+                    language === 'ar' ? 'flex-row-reverse' : ''
                   }`}
                 >
                   <div
                     className={`w-2 h-2 bg-secondary-500 rounded-full mt-2 ${
-                      language === "ar" ? "ml-3" : "mr-3"
+                      language === 'ar' ? 'ml-3' : 'mr-3'
                     } flex-shrink-0`}
                   ></div>
                   <span
                     className={`text-gray-700 ${
-                      language === "ar" ? "font-arabic" : ""
+                      language === 'ar' ? 'font-arabic' : ''
                     }`}
                   >
-                    {t("mission.3")}
+                    {t('mission.3')}
                   </span>
                 </li>
                 <li
                   className={`flex items-start ${
-                    language === "ar" ? "flex-row-reverse" : ""
+                    language === 'ar' ? 'flex-row-reverse' : ''
                   }`}
                 >
                   <div
                     className={`w-2 h-2 bg-secondary-500 rounded-full mt-2 ${
-                      language === "ar" ? "ml-3" : "mr-3"
+                      language === 'ar' ? 'ml-3' : 'mr-3'
                     } flex-shrink-0`}
                   ></div>
                   <span
                     className={`text-gray-700 ${
-                      language === "ar" ? "font-arabic" : ""
+                      language === 'ar' ? 'font-arabic' : ''
                     }`}
                   >
-                    {t("mission.4")}
+                    {t('mission.4')}
                   </span>
                 </li>
               </ul>
@@ -232,18 +227,18 @@ export default function TentangPage() {
           <div className="text-center mb-16">
             <h2
               className={`text-3xl lg:text-4xl font-bold text-accent-900 mb-6 ${
-                language === "ar" ? "font-arabic" : ""
+                language === 'ar' ? 'font-arabic' : ''
               }`}
             >
               Pengurus Yayasan
             </h2>
             <p
               className={`text-lg text-gray-600 max-w-2xl mx-auto ${
-                language === "ar" ? "font-arabic" : ""
+                language === 'ar' ? 'font-arabic' : ''
               }`}
             >
-              Tim pengurus yang berpengalaman dan berkomitmen dalam
-              mengembangkan pendidikan Islam
+              Tim pengurus yang berpengalaman dan berkomitmen dalam mengembangkan
+              pendidikan Islam
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -254,7 +249,7 @@ export default function TentangPage() {
               >
                 <div className="relative mb-6">
                   <Image
-                    src={person.image || "/placeholder.svg"}
+                    src={person.image || '/placeholder.svg'}
                     alt={person.name}
                     width={200}
                     height={200}
@@ -263,14 +258,14 @@ export default function TentangPage() {
                 </div>
                 <h3
                   className={`text-lg font-bold text-accent-900 mb-2 ${
-                    language === "ar" ? "font-arabic" : ""
+                    language === 'ar' ? 'font-arabic' : ''
                   }`}
                 >
                   {person.name}
                 </h3>
                 <p
                   className={`text-primary-600 font-semibold ${
-                    language === "ar" ? "font-arabic" : ""
+                    language === 'ar' ? 'font-arabic' : ''
                   }`}
                 >
                   {person.position}
@@ -287,7 +282,7 @@ export default function TentangPage() {
           <div className="text-center mb-16">
             <h2
               className={`text-3xl lg:text-4xl font-bold text-accent-900 mb-6 ${
-                language === "ar" ? "font-arabic" : ""
+                language === 'ar' ? 'font-arabic' : ''
               }`}
             >
               Informasi Kontak
@@ -300,15 +295,13 @@ export default function TentangPage() {
               </div>
               <h3
                 className={`text-xl font-bold text-accent-900 mb-4 ${
-                  language === "ar" ? "font-arabic" : ""
+                  language === 'ar' ? 'font-arabic' : ''
                 }`}
               >
                 Alamat
               </h3>
               <p
-                className={`text-gray-600 ${
-                  language === "ar" ? "font-arabic" : ""
-                }`}
+                className={`text-gray-600 ${language === 'ar' ? 'font-arabic' : ''}`}
               >
                 Jl. Contoh Alamat No. 123
                 <br />
@@ -323,15 +316,13 @@ export default function TentangPage() {
               </div>
               <h3
                 className={`text-xl font-bold text-accent-900 mb-4 ${
-                  language === "ar" ? "font-arabic" : ""
+                  language === 'ar' ? 'font-arabic' : ''
                 }`}
               >
                 Telepon
               </h3>
               <p
-                className={`text-gray-600 ${
-                  language === "ar" ? "font-arabic" : ""
-                }`}
+                className={`text-gray-600 ${language === 'ar' ? 'font-arabic' : ''}`}
               >
                 +62 451 123456
                 <br />
@@ -344,15 +335,13 @@ export default function TentangPage() {
               </div>
               <h3
                 className={`text-xl font-bold text-accent-900 mb-4 ${
-                  language === "ar" ? "font-arabic" : ""
+                  language === 'ar' ? 'font-arabic' : ''
                 }`}
               >
                 Email
               </h3>
               <p
-                className={`text-gray-600 ${
-                  language === "ar" ? "font-arabic" : ""
-                }`}
+                className={`text-gray-600 ${language === 'ar' ? 'font-arabic' : ''}`}
               >
                 info@yayasanpeduliilmu.org
                 <br />
@@ -364,6 +353,6 @@ export default function TentangPage() {
       </section>
 
       <Footer />
-    </div>
+    </Wrapper>
   );
 }

@@ -1,12 +1,13 @@
 import React from 'react';
+import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 
-import { useLanguage } from '@/contexts/language-context';
 import { Button } from '../ui/Button';
 
 const HeroBannerWithImage = () => {
-  const { t, language } = useLanguage();
+  const t = useTranslations('HomePage');
+  const language = useLocale();
 
   const isRTL = language === 'ar';
 
@@ -25,30 +26,30 @@ const HeroBannerWithImage = () => {
                 isRTL ? 'font-arabic' : ''
               }`}
             >
-              {t('hero.title')}
+              {t('HeroSection.title')}
             </h1>
             <h2
               className={`text-xl lg:text-2xl text-secondary-600 font-semibold mb-6 ${
                 isRTL ? 'font-arabic' : ''
               }`}
             >
-              {t('hero.subtitle')}
+              {t('HeroSection.subtitle')}
             </h2>
             <p
               className={`text-lg text-gray-600 mb-8 leading-relaxed ${
                 isRTL ? 'font-arabic' : ''
               }`}
             >
-              {t('hero.description')}
+              {t('HeroSection.description')}
             </p>
             <div className={`flex ${isRTL ? 'flex-row-reverse' : 'flex-row'} gap-4`}>
               <Button variant="primary" size={'lg'} href="/program/pondok-pesantren">
-                {t('hero.cta.primary')}
+                {t('HeroSection.cta.primary')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
 
               <Button variant="secondary" size={'lg'} href="/tentang">
-                {t('hero.cta.secondary')}
+                {t('HeroSection.cta.secondary')}
               </Button>
             </div>
           </div>

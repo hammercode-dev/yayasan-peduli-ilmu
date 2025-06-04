@@ -1,10 +1,8 @@
 'use client';
 
-import Footer from '@/components/footer';
 import Image from 'next/image';
 import { Target, Heart, Mail, Phone, MapPin } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
-import Wrapper from '@/components/wrapper';
 
 export default function TentangPage() {
   const { t, language } = useLanguage();
@@ -33,7 +31,7 @@ export default function TentangPage() {
   ];
 
   return (
-    <Wrapper>
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-50 via-white to-accent-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -351,8 +349,6 @@ export default function TentangPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </Wrapper>
+    </div>
   );
 }

@@ -1,0 +1,30 @@
+{
+  "Navigation": {
+    "title": "Yayasan Peduli Ilmu",
+    "region": "Sulawesi Tengah",
+    "home": "Home",
+    "program": "Programs",
+    "about": "About",
+    "reports": "Reports",
+    "publications": "Publications",
+    "contact": "Contact",
+    "cottage": "Darul Hadits Islamic Boarding School",
+    "community": "Ta'shil Ilmi Community (Palu)",
+    "article": "Articles",
+    "book": "Books / Treatises"
+  },
+  "HomePage": {
+    "HeroSection": {
+      "title": "Yayasan Peduli Ilmu",
+      "subtitle": "Building a Quranic Generation with Noble Character",
+      "description": "A foundation committed to developing Islamic education and community empowerment through quality programs.",
+      "cta": {
+        "primary": "Learn more",
+        "secondary": "Contact us"
+      }
+    }
+  },
+  "AboutPage": {
+    "title": "Examples"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "Navigation": {
+    "title": "Yayasan Peduli Ilmu",
+    "region": "Sulawesi Tengah",
+    "home": "Beranda",
+    "program": "Program",
+    "about": "Tentang",
+    "reports": "Laporan",
+    "publications": "Publikasi",
+    "contact": "Kontak",
+    "cottage": "Pondok Pesantren Darul Hadits",
+    "community": "Komunitas Ta'shil Ilmi (Palu)",
+    "article": "Tulisan",
+    "book": "Buku / Risalah"
+  },
+  "HomePage": {
+    "HeroSection": {
+      "title": "Yayasan Peduli Ilmu",
+      "subtitle": "Membangun Generasi Qur'ani Berakhlak Mulia",
+      "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan pemberdayaan masyarakat melalui program-program berkualitas.",
+      "cta": {
+        "primary": "Bergabung Sekarang",
+        "secondary": "Pelajari Lebih Lanjut"
+      }
+    }
+  },
+  "AboutPage": {
+    "title": "Contoh"
+  }
+}

@@ -1,7 +1,6 @@
-import React from "react";
-
-import Link from "next/link";
-import { ArrowRight, Calendar } from "lucide-react";
+import React from 'react';
+import { Link } from '@/i18n/navigation';
+import { ArrowRight, Calendar } from 'lucide-react';
 
 interface CardEventProps {
   date: string;
@@ -9,7 +8,7 @@ interface CardEventProps {
   title: string;
   shortDesc: string;
   href: string;
-  textColor: "primary" | "secondary";
+  textColor: 'primary' | 'secondary';
   textLink: string;
 }
 
@@ -30,16 +29,12 @@ const CardEvent = ({
       </div>
       <h3
         className={`text-lg font-bold text-accent-900 mb-3 ${
-          isRTL ? "font-arabic text-right" : ""
+          isRTL ? 'font-arabic text-right' : ''
         }`}
       >
         {title}
       </h3>
-      <p
-        className={`text-gray-600 mb-4 ${
-          isRTL ? "font-arabic text-right" : ""
-        }`}
-      >
+      <p className={`text-gray-600 mb-4 ${isRTL ? 'font-arabic text-right' : ''}`}>
         {shortDesc}
       </p>
 

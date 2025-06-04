@@ -1,7 +1,6 @@
-// components/ui/program-card.tsx
-import React from "react";
-import Link from "next/link";
-import { LucideIcon, ArrowRight } from "lucide-react";
+import React from 'react';
+import { Link } from '@/i18n/navigation';
+import { LucideIcon, ArrowRight } from 'lucide-react';
 
 interface CardFeatureProps {
   icon: LucideIcon;
@@ -32,17 +31,13 @@ export const CardFeature = ({
           <Icon className={`h-8 w-8 ${textColor} mr-3`} />
           <h3
             className={`text-xl font-bold text-accent-900 ${
-              isRTL ? "font-arabic" : ""
+              isRTL ? 'font-arabic' : ''
             }`}
           >
             {title}
           </h3>
         </div>
-        <p
-          className={`text-gray-600 mb-6 ${
-            isRTL ? "font-arabic text-right" : ""
-          }`}
-        >
+        <p className={`text-gray-600 mb-6 ${isRTL ? 'font-arabic text-right' : ''}`}>
           {description}
         </p>
         <Link

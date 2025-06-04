@@ -1,8 +1,8 @@
-import React from "react";
-import { Heart } from "lucide-react";
+import React from 'react';
+import { Heart } from 'lucide-react';
 
 interface CardDonationProps {
-  progress: number;
+  progress?: number | string;
   isRtl: boolean;
   title: string;
   description: string;
@@ -25,21 +25,16 @@ function CardDonation({
       <div className="flex items-center mb-4">
         <Heart className="h-6 w-6 text-secondary-600 mr-2" />
         <span className="text-sm font-semibold text-secondary-600">
-          {progress}%
+          {Number(progress)}%
         </span>
       </div>
       <h3
-        className={`text-lg font-bold text-accent-900 mb-3 ${
-          isRtl ? "font-arabic text-right" : ""
-        }`}
+        className={`text-lg font-bold text-accent-900 ${isRtl ? 'text-right' : ''}`}
       >
         {title}
       </h3>
-      <p
-        className={`text-gray-600 mb-4 text-sm ${
-          isRtl ? "font-arabic text-right" : ""
-        }`}
-      >
+      <p className="mb-3 text-xs">Kab. Sigi, Sulawesi Tengah</p>
+      <p className={`text-gray-600 mb-4 text-sm ${isRtl ? 'text-right' : ''}`}>
         {description}
       </p>
       <div className="mb-4">
@@ -50,11 +45,11 @@ function CardDonation({
         <div className="w-full bg-gray-200 rounded-full h-2">
           <div
             className="bg-gradient-to-r from-primary-500 to-secondary-500 h-2 rounded-full transition-all duration-300"
-            style={{ width: `${progress}%` }}
+            style={{ width: `${Number(progress)}%` }}
           ></div>
         </div>
       </div>
-      <button className="w-full btn-primary">{textButton}</button>
+      <button className="w-full btn-primary rounded-full">{textButton}</button>
     </div>
   );
 }

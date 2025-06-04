@@ -1,7 +1,7 @@
 {
   "Navigation": {
     "title": "Yayasan Peduli Ilmu",
-    "region": "Sulawesi Tengah",
+    "region": "Central Sulawesi",
     "home": "Home",
     "program": "Programs",
     "about": "About",
@@ -14,7 +14,7 @@
     "book": "Books / Treatises"
   },
   "HomePage": {
-    "HeroSection": {
+    "hero-section": {
       "title": "Yayasan Peduli Ilmu",
       "subtitle": "Building a Quranic Generation with Noble Character",
       "description": "A foundation committed to developing Islamic education and community empowerment through quality programs.",
@@ -22,9 +22,110 @@
         "primary": "Learn more",
         "secondary": "Contact us"
       }
+    },
+    "visimisi-section": {
+      "title": "Vision & Mission",
+      "visi": {
+        "title": "Vision",
+        "desc": "To become a leading Islamic educational institution in nurturing a Qur'anic generation with noble character and benefit to the community."
+      },
+      "misi": {
+        "title": "Mission",
+        "mission-1": "Provide quality Islamic education",
+        "mission-2": "Develop Al-Qur'an memorization programs",
+        "mission-3": "Empower communities through education",
+        "mission-4": "Build strong Islamic character"
+      }
+    },
+    "program-section": {
+      "title": "Flagship Programs",
+      "cottage": {
+        "title": "Darul Hadith Islamic Boarding School",
+        "desc": "An integrated Islamic education program for boys and girls with a focus on Qur'an memorization and specialization."
+      },
+      "community": {
+        "title": "Ta'shil Ilmi Community",
+        "desc": "A learning program focusing on foundational sciences, including Arabic language, Usul al-Fiqh, and Usul al-Tafsir."
+      }
+    },
+    "announcement-section": {
+      "title": "Latest Announcements",
+      "notice-1": {
+        "id": 1,
+        "title": "New Student Registration 2024/2025",
+        "shortDesc": "Registration for new students for the 2024/2025 academic year is now open. Limited quota available.",
+        "date": "2024-01-15"
+      },
+      "notice-2": {
+        "id": 2,
+        "title": "Intensive Tahfidz Program",
+        "shortDesc": "An intensive Tahfidz program for students who want to complete their memorization quickly.",
+        "date": "2024-01-10"
+      },
+      "notice-3": {
+        "id": 3,
+        "title": "Social Service Activities",
+        "shortDesc": "The foundation organizes social service activities for the community around the pesantren.",
+        "date": "2024-01-10"
+      },
+      "readmore": "Read More"
+    },
+    "donation-section": {
+      "title": "Ta'awun (Open Donation)",
+      "subTitle": "Let’s participate in building educational facilities",
+      "donation-1": {
+        "id": 1,
+        "name": "Multipurpose Building Construction",
+        "needed": "Rp 500,000,000",
+        "progress": "25",
+        "desc": "A building for learning activities and large events"
+      },
+      "donation-2": {
+        "id": 2,
+        "name": "Girls’ Dormitory Renovation",
+        "needed": "Rp 300,000,000",
+        "progress": "85",
+        "desc": "Improvement and expansion of dormitory for female students"
+      },
+      "donation-3": {
+        "id": 3,
+        "name": "Toilet Facility Construction",
+        "needed": "Rp 150,000,000",
+        "progress": "45",
+        "desc": "Proper sanitation facilities for students"
+      },
+      "attributes": {
+        "needed": "Needed",
+        "progress": "Progress",
+        "action": "Donate Now"
+      }
     }
   },
   "AboutPage": {
     "title": "Examples"
+  },
+  "Footer": {
+    "logo": {
+      "title": "Yayasan Peduli Ilmu",
+      "region": "Central Sulawesi",
+      "desc": "A foundation committed to the development of Islamic education and community empowerment through quality programs."
+    },
+    "menu": {
+      "title": "Menu",
+      "home": "Home",
+      "program": "Programs",
+      "about": "About",
+      "reports": "Reports",
+      "publications": "Publications",
+      "contact": "Contact",
+      "cottage": "Darul Hadith Islamic Boarding School",
+      "community": "Ta'shil Ilmi Community (Palu)",
+      "article": "Articles",
+      "book": "Books / Treatises"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "rights": "All Rights Reserved"
   }
 }

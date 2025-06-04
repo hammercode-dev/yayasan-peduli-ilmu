@@ -1,12 +1,23 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
-import { useLanguage } from '@/contexts/language-context';
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const t = useTranslations('Footer');
+
+  const links = [
+    { href: '/', label: 'home' },
+    { href: '/tentang', label: 'about' },
+    { href: '/laporan', label: 'reports' },
+    { href: '/kontak', label: 'contact' },
+    { href: '/program/pondok-pesantren', label: 'cottage' },
+    { href: '/komunitas', label: 'community' },
+    { href: '/artikel', label: 'article' },
+    { href: '/publikasi/buku', label: 'book' },
+  ];
 
   return (
     <footer className="bg-accent-900 text-white">
@@ -23,11 +34,11 @@ export default function Footer() {
                 className="h-15 w-auto"
               />
               <div>
-                <h3 className="text-xl font-bold">{t('hero.title')}</h3>
-                <p className="text-gray-300">Sulawesi Tengah</p>
+                <h3 className="text-xl font-bold">{t('logo.title')}</h3>
+                <p className="text-gray-300">{t('logo.region')}</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-6 max-w-md">{t('hero.description')}</p>
+            <p className="text-gray-300 mb-6 max-w-md">{t('logo.desc')}</p>
             <div className="flex space-x-4">
               <a
                 href="#"
@@ -52,54 +63,24 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Menu</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('menu.title')}</h4>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-300 hover:text-primary-400 transition-colors"
-                >
-                  {t('nav.home')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/tentang"
-                  className="text-gray-300 hover:text-primary-400 transition-colors"
-                >
-                  {t('footer.about')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/program/pondok-pesantren"
-                  className="text-gray-300 hover:text-primary-400 transition-colors"
-                >
-                  {t('footer.programs')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/laporan"
-                  className="text-gray-300 hover:text-primary-400 transition-colors"
-                >
-                  {t('nav.reports')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/kontak"
-                  className="text-gray-300 hover:text-primary-400 transition-colors"
-                >
-                  {t('footer.contact')}
-                </Link>
-              </li>
+              {links.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-gray-300 hover:text-primary-400 transition-colors"
+                  >
+                    {t(`menu.${label}`)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">{t('footer.contact')}</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('contact.title')}</h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary-400 mt-0.5 flex-shrink-0" />
@@ -125,7 +106,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300 text-sm">
-            © {new Date().getFullYear()} {t('hero.title')}. {t('footer.rights')}.
+            © {new Date().getFullYear()} {t('logo.title')}. {t('rights')}.
           </p>
         </div>
       </div>

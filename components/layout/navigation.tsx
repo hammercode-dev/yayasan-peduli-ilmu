@@ -21,7 +21,7 @@ const NAV_ITEMS = [
 
 const PROGRAM_ITEMS = [
   { href: '/program/pondok-pesantren', label: 'cottage', desc: 'Putra & Putri' },
-  { href: '/program/komunitas', label: 'community', desc: 'Palu' },
+  { href: '/program/komunitas-tashil', label: 'community', desc: 'Palu' },
 ];
 
 const PUBLICATION_ITEMS = [

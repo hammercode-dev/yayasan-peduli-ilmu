@@ -26,7 +26,7 @@ const ProgramSection = () => {
             description={t('program-section.cottage.desc')}
             href="/program/pondok-pesantren"
             gradient="bg-gradient-to-br from-primary-400 to-primary-600"
-            textColor="text-primary-600"
+            textColor="primary"
             textLink={t('hero-section.cta.primary')}
             isRTL={language === 'ar'}
           />
@@ -36,7 +36,7 @@ const ProgramSection = () => {
             description={t('program-section.community.desc')}
             href="/program/komunitas"
             gradient="bg-gradient-to-br from-secondary-400 to-secondary-600"
-            textColor="text-secondary-600"
+            textColor="secondary"
             textLink={t('hero-section.cta.secondary')}
             isRTL={language === 'ar'}
           />

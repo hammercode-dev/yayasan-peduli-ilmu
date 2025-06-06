@@ -8,7 +8,7 @@ import { Inter, Amiri } from 'next/font/google';
 import { locales } from '@/config';
 
 import Navigation from '@/components/layout/navigation';
-import './globals.css';
+import '../globals.css';
 
 type Props = {
   children: ReactNode;

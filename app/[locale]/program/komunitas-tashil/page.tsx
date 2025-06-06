@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/Button';
 import {
   BookOpen,
   Clock,
-  MapPin,
   GraduationCap,
   Calendar,
   Eye,
@@ -69,18 +68,19 @@ export default function KomunitasTashilPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-secondary-600 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Komunitas Ta&apos;shil Ilmi
-            </h1>
-            <p className="text-xl text-primary-100 mb-2">Pembelajaran Ilmu Alat</p>
-            <div className="flex items-center justify-center text-primary-100">
-              <MapPin className="h-5 w-5 mr-2" />
-              <span>Palu, Sulawesi Tengah</span>
-            </div>
-          </div>
+      <section className="bg-primary-400 text-primary-foreground py-20 sm:py-28">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
+            Komunitas Ta&apos;shil Ilmi
+          </h1>
+
+          {/* Decorative underline */}
+          <div className="mx-auto mb-8 w-20 h-1 rounded bg-primary-600"></div>
+
+          <p className="text-lg sm:text-xl text-primary-foreground/90 max-w-xl mx-auto leading-relaxed">
+            Kami siap membantu dan menjawab pertanyaan Anda. Jangan ragu untuk
+            menghubungi kami kapan saja.
+          </p>
         </div>
       </section>
 

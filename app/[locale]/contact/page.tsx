@@ -1,6 +1,5 @@
 'use client';
 import { useState, Fragment } from 'react';
-import { Link } from '@/i18n/navigation';
 
 import {
   Mail,
@@ -78,17 +77,16 @@ export default function Contact() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-
-      <section className="relative bg-gradient-to-r from-primary-500 to-secondary-600 text-white py-20 sm:py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          {/* Optional: subtle background pattern or SVG blob */}
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+      <section className="bg-primary-400 text-primary-foreground py-20 sm:py-28">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
             Hubungi Kami
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
+
+          {/* Decorative underline */}
+          <div className="mx-auto mb-8 w-20 h-1 rounded bg-primary-600"></div>
+
+          <p className="text-lg sm:text-xl text-primary-foreground/90 max-w-xl mx-auto leading-relaxed">
             Kami siap membantu dan menjawab pertanyaan Anda. Jangan ragu untuk
             menghubungi kami kapan saja.
           </p>

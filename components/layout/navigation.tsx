@@ -15,7 +15,7 @@ import DropdownMenu from '../ui/DropdownMenu';
 const NAV_ITEMS = [
   { href: '/', label: 'home' },
   { href: '/about', label: 'about' },
-  { href: '/laporan', label: 'reports' },
+  { href: '/report', label: 'reports' },
   { href: '/contact', label: 'contact' },
 ];
 
@@ -25,8 +25,8 @@ const PROGRAM_ITEMS = [
 ];
 
 const PUBLICATION_ITEMS = [
-  { href: '/publikasi/tulisan', label: 'article' },
-  { href: '/publikasi/buku', label: 'book' },
+  { href: '/publications/article', label: 'article' },
+  { href: '/publications/book', label: 'book' },
 ];
 
 export default function Navigation() {

@@ -2,7 +2,6 @@ import {
   BookOpen,
   Users,
   Clock,
-  MapPin,
   GraduationCap,
   Eye,
   Target,
@@ -51,18 +50,19 @@ export default function PondokPesantrenPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-primary-100 py-20 sm:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+      <section className="bg-primary-400 text-primary-foreground py-20 sm:py-28">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
             Pondok Pesantren Darul Hadits
           </h1>
-          <p className="text-lg sm:text-xl text-primary-600 mb-4 font-medium">
-            (Putra &mdash; Putri)
+
+          {/* Decorative underline */}
+          <div className="mx-auto mb-8 w-20 h-1 rounded bg-primary-600"></div>
+
+          <p className="text-lg sm:text-xl text-primary-foreground/90 max-w-xl mx-auto leading-relaxed">
+            Kami siap membantu dan menjawab pertanyaan Anda. Jangan ragu untuk
+            menghubungi kami kapan saja.
           </p>
-          <div className="flex items-center justify-center gap-2 text-primary-600 text-base sm:text-lg">
-            <MapPin className="h-5 w-5" aria-hidden="true" />
-            <span>Sibowi, Sulawesi Tengah</span>
-          </div>
         </div>
       </section>
 

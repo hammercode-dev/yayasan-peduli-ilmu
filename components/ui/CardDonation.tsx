@@ -3,7 +3,6 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
 import { Button } from './Button';
-import { motion } from 'motion/react';
 
 interface CardDonationProps {
   progress?: number | string;
@@ -27,11 +26,7 @@ function CardDonation({
   const numericProgress = Number(progress);
 
   return (
-    <motion.div
-      whileHover={{ scale: 1.03, boxShadow: '0 10px 20px rgba(0,0,0,0.12)' }}
-      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-      className="bg-white rounded-3xl shadow-md p-6 card-hover flex flex-col h-full cursor-pointer"
-    >
+    <div className="bg-white rounded-3xl shadow-md p-6 card-hover flex flex-col h-full cursor-pointer">
       {/* Top Content */}
       <div className="flex-1">
         <div className="flex items-center mb-4">
@@ -70,30 +65,20 @@ function CardDonation({
             <span className="text-sm font-bold text-green-800">Rp. 50.000.000</span>
           </div>
           <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-            <motion.div
-              className="bg-gradient-to-r from-primary-500 to-secondary-500 h-2 rounded-full"
-              initial={{ width: 0 }}
-              animate={{ width: `${numericProgress}%` }}
-              transition={{ duration: 0.8, ease: 'easeInOut' }}
-            />
+            <div className="bg-gradient-to-r from-primary-500 to-secondary-500 h-2 rounded-full" />
           </div>
         </div>
 
-        <motion.div
-          className="space-y-3"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 }}
-        >
+        <div className="space-y-3">
           <Button variant="secondary" href="" className="w-full">
             See More Detail
           </Button>
           <Button variant="primary" href="" className="w-full">
             {textButton}
           </Button>
-        </motion.div>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

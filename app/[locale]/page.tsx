@@ -24,7 +24,6 @@ export default function Index({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* These section components may contain localized content */}
       <HeroBannerWithImage />
       <VisiMisiSection />
       <ProgramSection />

@@ -14,6 +14,10 @@
     "book": "Books / Treatises"
   },
   "HomePage": {
+    "meta": {
+      "title": "Home - Yayasan Peduli Ilmu",
+      "description": "Yayasan Peduli Ilmu is committed to advancing Islamic education and empowering communities through high-quality and sustainable programs."
+    },
     "hero-section": {
       "title": "Yayasan Peduli Ilmu",
       "subtitle": "Building a Quranic Generation with Noble Character",

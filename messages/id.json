@@ -14,6 +14,10 @@
     "book": "Buku / Risalah"
   },
   "HomePage": {
+    "meta": {
+      "title": "Beranda - Yayasan Peduli Ilmu",
+      "description": "Yayasan Peduli Ilmu berkomitmen terhadap pengembangan pendidikan Islam dan pemberdayaan masyarakat melalui program-program yang berkualitas dan berkelanjutan."
+    },
     "hero-section": {
       "title": "Yayasan Peduli Ilmu",
       "subtitle": "Membangun Generasi Qur'ani Berakhlak Mulia",

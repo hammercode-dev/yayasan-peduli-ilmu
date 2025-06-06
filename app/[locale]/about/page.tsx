@@ -38,25 +38,19 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-accent-50 via-white to-primary-50   py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1
-              className={`text-4xl lg:text-5xl font-bold text-accent-900 mb-6 ${
-                language === 'ar' ? 'font-arabic' : ''
-              }`}
-            >
-              Tentang Kami
-            </h1>
-            <p
-              className={`text-xl text-gray-600 max-w-3xl mx-auto ${
-                language === 'ar' ? 'font-arabic' : ''
-              }`}
-            >
-              Mengenal lebih dekat Yayasan Peduli Ilmu dan komitmen kami dalam
-              membangun generasi Qur&apos;ani
-            </p>
-          </div>
+      <section className="bg-primary-400 text-primary-foreground py-20 sm:py-28">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
+            Tentang Kami
+          </h1>
+
+          {/* Decorative underline */}
+          <div className="mx-auto mb-8 w-20 h-1 rounded bg-primary-600"></div>
+
+          <p className="text-lg sm:text-xl text-primary-foreground/90 max-w-xl mx-auto leading-relaxed">
+            Mengenal lebih dekat Yayasan Peduli Ilmu dan komitmen kami dalam
+            membangun generasi Qur&apos;ani
+          </p>
         </div>
       </section>
 

@@ -1,0 +1,119 @@
+import { FinancialReport } from '@/components/section/report/CardFinancialReport';
+import { ProgramReport } from '@/components/section/report/CardProgramReport';
+import { TransparencyReport } from '@/components/section/report/CardTransparencyReport';
+import { DollarSign, FileText, TrendingUp, Users } from 'lucide-react';
+
+export const STATISTIC_REPORTS = [
+  {
+    id: 1,
+    title: 'Total Pemasukan 2024',
+    value: 'Rp 405M',
+    icon: TrendingUp,
+    borderColor: 'primary-500',
+  },
+  {
+    id: 2,
+    title: 'Total Pengeluaran 2024',
+    value: 'Rp 321M',
+    icon: DollarSign,
+    borderColor: 'secondary-600',
+  },
+  {
+    id: 3,
+    title: 'Saldo Akhir',
+    value: 'Rp 21M',
+    icon: FileText,
+    borderColor: 'accent-800',
+  },
+  {
+    id: 4,
+    title: 'Total Santri',
+    value: 'Rp 405M',
+    icon: Users,
+    borderColor: 'primary-500',
+  },
+];
+
+export const FINANCIAL_REPORTS: FinancialReport[] = [
+  {
+    period: 'Januari 2024',
+    type: 'Bulanan',
+    status: 'Tersedia',
+    pemasukan: 125000000,
+    pengeluaran: 98000000,
+    saldo: 27000000,
+  },
+  {
+    period: 'Februari 2024',
+    type: 'Bulanan',
+    status: 'Tersedia',
+    pemasukan: 142000000,
+    pengeluaran: 115000000,
+    saldo: 27000000,
+  },
+  {
+    period: 'Maret 2024',
+    type: 'Bulanan',
+    status: 'Tersedia',
+    pemasukan: 138000000,
+    pengeluaran: 108000000,
+    saldo: 30000000,
+  },
+  {
+    period: 'Q1 2024',
+    type: 'Triwulan',
+    status: 'Tersedia',
+    pemasukan: 405000000,
+    pengeluaran: 321000000,
+    saldo: 84000000,
+  },
+  {
+    period: '2023',
+    type: 'Tahunan',
+    status: 'Tersedia',
+    pemasukan: 1650000000,
+    pengeluaran: 1420000000,
+    saldo: 230000000,
+  },
+];
+
+export const PROGRAM_REPORTS: ProgramReport[] = [
+  {
+    program: 'Pondok Pesantren Darul Hadits',
+    santri: 145,
+    kelulusan: '98%',
+    kepuasan: '4.8/5',
+    status: 'Aktif',
+  },
+  {
+    program: "Komunitas Ta'shil Ilmi",
+    santri: 78,
+    kelulusan: '95%',
+    kepuasan: '4.7/5',
+    status: 'Aktif',
+  },
+];
+
+export const TRANSPARENCY_REPORTS: TransparencyReport[] = [
+  {
+    icon: FileText,
+    title: 'Audit Eksternal',
+    description: 'Laporan keuangan diaudit oleh Kantor Akuntan Publik terdaftar',
+    detail: 'Terakhir: Desember 2023',
+    iconColor: 'text-primary-400',
+  },
+  {
+    icon: Users,
+    title: 'Dewan Pengawas',
+    description: 'Pengawasan internal oleh dewan pengawas yang independen',
+    detail: '5 Anggota Aktif',
+    iconColor: 'text-secondary-400',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Publikasi Rutin',
+    description: 'Laporan keuangan dipublikasikan setiap bulan di website',
+    detail: 'Update Bulanan',
+    iconColor: 'text-primary-400',
+  },
+];

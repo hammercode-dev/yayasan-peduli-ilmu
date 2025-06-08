@@ -8,8 +8,17 @@ import {
   STATISTIC_REPORTS,
   TRANSPARENCY_REPORTS,
 } from '@/constants/reports';
-import { FileText, TrendingUp, Users } from 'lucide-react';
+import { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('ReportPage');
+  return {
+    title: t('meta.title'),
+    description: t('meta.description'),
+  };
+}
 
 export default function LaporanPage() {
   const t = useTranslations('ReportPage');

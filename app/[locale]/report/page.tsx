@@ -13,6 +13,7 @@ import { useTranslations } from 'next-intl';
 
 export default function LaporanPage() {
   const t = useTranslations('ReportPage');
+  const statisticReports = STATISTIC_REPORTS(t);
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -33,7 +34,7 @@ export default function LaporanPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {STATISTIC_REPORTS(t).map((item) => (
+            {statisticReports.map((item) => (
               <CardStatistic key={item.id} {...item} />
             ))}
           </div>

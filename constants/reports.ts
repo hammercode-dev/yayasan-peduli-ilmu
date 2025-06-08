@@ -3,31 +3,31 @@ import { ProgramReport } from '@/components/section/report/CardProgramReport';
 import { TransparencyReport } from '@/components/section/report/CardTransparencyReport';
 import { DollarSign, FileText, TrendingUp, Users } from 'lucide-react';
 
-export const STATISTIC_REPORTS = [
+export const STATISTIC_REPORTS = (t: (key: string) => string) => [
   {
     id: 1,
-    title: 'Total Pemasukan 2024',
+    title: `${t('ReportPage.statistic-card.card-1')} 2024`,
     value: 'Rp 405M',
     icon: TrendingUp,
     borderColor: 'primary-500',
   },
   {
     id: 2,
-    title: 'Total Pengeluaran 2024',
+    title: `${t('ReportPage.statistic-card.card-2')} 2024`,
     value: 'Rp 321M',
     icon: DollarSign,
     borderColor: 'secondary-600',
   },
   {
     id: 3,
-    title: 'Saldo Akhir',
+    title: t('ReportPage.statistic-card.card-3'),
     value: 'Rp 21M',
     icon: FileText,
     borderColor: 'accent-800',
   },
   {
     id: 4,
-    title: 'Total Santri',
+    title: t('ReportPage.statistic-card.card-4'),
     value: 'Rp 405M',
     icon: Users,
     borderColor: 'primary-500',

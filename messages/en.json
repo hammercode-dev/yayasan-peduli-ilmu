@@ -131,5 +131,35 @@
       "title": "Contact"
     },
     "rights": "All Rights Reserved"
+  },
+  "ReportPage": {
+    "meta": {
+      "title": "Foundation Report",
+      "description": "Transparency and accountability in foundation management"
+    },
+    "financial-report-section": {
+      "title": "Financial statements",
+      "description": "Foundation financial statements that can be downloaded and accessed transparently"
+    },
+    "program-report-section": {
+      "title": "Program report",
+      "description": "Evaluation and achievement of foundation education programs"
+    },
+    "audit-information-section": {
+      "title": "Audit",
+      "description": "Our commitment to the transparency and accountability of foundation management"
+    },
+    "contact": {
+      "title": "Contact the financial team",
+      "description": "For questions related to financial statements or audits",
+      "email": "E-mail",
+      "phone": "Telephone"
+    },
+    "statistic-card": {
+      "card-1": "Total income",
+      "card-2": "Total expenditure",
+      "card-3": "Ending balance",
+      "card-4": "Total Santri"
+    }
   }
 }

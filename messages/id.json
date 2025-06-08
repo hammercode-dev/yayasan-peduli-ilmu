@@ -129,5 +129,35 @@
       "title": "Kontak"
     },
     "rights": "Hak Cipta Dilindungi"
+  },
+  "ReportPage": {
+    "meta": {
+      "title": "Laporan Yayasan",
+      "description": "Transparansi dan akuntabilitas dalam pengelolaan yayasan"
+    },
+    "financial-report-section": {
+      "title": "Laporan Keuangan",
+      "description": "Laporan keuangan yayasan yang dapat diunduh dan diakses secara transparan"
+    },
+    "program-report-section": {
+      "title": "Laporan Program",
+      "description": "Evaluasi dan pencapaian program-program pendidikan yayasan"
+    },
+    "audit-information-section": {
+      "title": "Audit & Transparansi",
+      "description": "Komitmen kami terhadap transparansi dan akuntabilitas pengelolaan yayasan"
+    },
+    "contact": {
+      "title": "Hubungi Tim Keuangan",
+      "description": "Untuk pertanyaan terkait laporan keuangan atau audit",
+      "email": "Email",
+      "phone": "Telepon"
+    },
+    "statistic-card": {
+      "card-1": "Total Pemasukan",
+      "card-2": "Total Pengeluaran",
+      "card-3": "Saldo Akhir",
+      "card-4": "Total Santri"
+    }
   }
 }

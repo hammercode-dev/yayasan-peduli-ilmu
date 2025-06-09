@@ -1,5 +1,6 @@
 import React from 'react';
 import { Target, CheckCircle, Eye } from 'lucide-react';
+import { MISI } from '@/constants/home';
 
 const VisiMisiSection = () => {
   return (
@@ -42,13 +43,7 @@ const VisiMisiSection = () => {
               <h3 className="text-xl font-semibold text-accent-800">Misi</h3>
             </div>
             <div className="px-6 py-5 space-y-4">
-              {[
-                'Menyelenggarakan pendidikan Islam yang berkualitas dan terpadu',
-                'Mengembangkan dakwah Islam yang moderat dan rahmatan lil alamiin',
-                'Memberdayakan masyarakat melalui program-program sosial dan ekonomi',
-                'Membangun jaringan kerjasama dengan berbagai pihak untuk kemajuan pendidikan',
-                'Melestarikan nilai-nilai Islam dalam kehidupan bermasyarakat',
-              ].map((item, index) => (
+              {MISI.map((item, index) => (
                 <div
                   key={index}
                   className="flex items-start gap-4 bg-muted/40 p-4 rounded-lg border  hover:shadow transition-shadow"

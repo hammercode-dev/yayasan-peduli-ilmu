@@ -9,28 +9,28 @@ export const STATISTIC_REPORTS = (t: (key: string) => string) => [
     title: `${t('statistic-card.card-1')} 2024`,
     value: 'Rp 405M',
     icon: TrendingUp,
-    borderColor: 'primary-500',
+    borderColor: 'primary',
   },
   {
     id: 2,
     title: `${t('statistic-card.card-2')} 2024`,
     value: 'Rp 321M',
     icon: DollarSign,
-    borderColor: 'secondary-600',
+    borderColor: 'secondary',
   },
   {
     id: 3,
     title: t('statistic-card.card-3'),
     value: 'Rp 21M',
     icon: FileText,
-    borderColor: 'accent-800',
+    borderColor: 'accent',
   },
   {
     id: 4,
     title: t('statistic-card.card-4'),
     value: 'Rp 405M',
     icon: Users,
-    borderColor: 'primary-500',
+    borderColor: 'primary',
   },
 ];
 

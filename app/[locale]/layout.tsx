@@ -8,7 +8,8 @@ import { Inter, Amiri } from 'next/font/google';
 import { locales } from '@/config';
 
 import Navigation from '@/components/layout/navigation';
-import './globals.css';
+import '../globals.css';
+import Footer from '@/components/layout/footer';
 
 type Props = {
   children: ReactNode;
@@ -43,10 +44,15 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} className={`${inter.variable} ${amiri.variable}`}>
-      <body className="font-sans antialiased">
+      <body
+        className={
+          locale === 'ar' ? 'font-arabic antialiased' : 'font-sans antialiased'
+        }
+      >
         <NextIntlClientProvider>
           <Navigation />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

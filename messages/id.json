@@ -14,7 +14,11 @@
     "book": "Buku / Risalah"
   },
   "HomePage": {
-    "HeroSection": {
+    "meta": {
+      "title": "Beranda - Yayasan Peduli Ilmu",
+      "description": "Yayasan Peduli Ilmu berkomitmen terhadap pengembangan pendidikan Islam dan pemberdayaan masyarakat melalui program-program yang berkualitas dan berkelanjutan."
+    },
+    "hero-section": {
       "title": "Yayasan Peduli Ilmu",
       "subtitle": "Membangun Generasi Qur'ani Berakhlak Mulia",
       "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan pemberdayaan masyarakat melalui program-program berkualitas.",
@@ -22,9 +26,138 @@
         "primary": "Bergabung Sekarang",
         "secondary": "Pelajari Lebih Lanjut"
       }
+    },
+    "visimisi-section": {
+      "title": "Visi & Misi",
+      "visi": {
+        "title": "Visi",
+        "desc": "Menjadi lembaga pendidikan Islam terdepan dalam mencetak generasi Qur'ani yang berakhlak mulia dan bermanfaat bagi umat."
+      },
+      "misi": {
+        "title": "Misi",
+        "mission-1": "Menyelenggarakan pendidikan Islam berkualitas",
+        "mission-2": "Mengembangkan program tahfidz Al-Qur'an",
+        "mission-3": "Memberdayakan masyarakat melalui pendidikan",
+        "mission-4": "Membangun karakter islami yang kuat"
+      }
+    },
+    "program-section": {
+      "title": "Program Unggulan",
+      "cottage": {
+        "title": "Pondok Pesantren Darul Hadits",
+        "desc": "Program pendidikan Islam terpadu untuk putra dan putri dengan fokus pada tahfidz dan takhossus."
+      },
+      "community": {
+        "title": "Komunitas Ta'shil Ilmi",
+        "desc": "Program pembelajaran ilmu alat meliputi bahasa Arab, Ushul Fiqh, dan Ushul Tafsir."
+      }
+    },
+    "announcement-section": {
+      "title": "Pengumuman Terbaru",
+      "notice-1": {
+        "id": 1,
+        "title": "Pendaftaran Santri Baru 2024/2025",
+        "shortDesc": "Dibuka pendaftaran santri baru untuk tahun ajaran 2024/2025. Kuota terbatas.",
+        "date": "2024-01-15"
+      },
+      "notice-2": {
+        "id": 2,
+        "title": "Program Tahfidz Intensif",
+        "shortDesc": "Program tahfidz intensif untuk santri yang ingin menyelesaikan hafalan dengan cepat.",
+        "date": "2024-01-10"
+      },
+      "notice-3": {
+        "id": 3,
+        "title": "Kegiatan Bakti Sosial",
+        "shortDesc": "Yayasan mengadakan bakti sosial untuk masyarakat sekitar pondok pesantren.",
+        "date": "2024-01-10"
+      },
+      "readmore": "Baca Selengkapnya"
+    },
+    "donation-section": {
+      "title": "Ta'awun (Donasi Terbuka)",
+      "subTitle": "Mari berpartisipasi dalam pembangunan fasilitas pendidikan",
+      "donation-1": {
+        "id": 1,
+        "name": "Pembangunan Gedung Serbaguna",
+        "needed": "Rp 500.000.000",
+        "progress": "25",
+        "desc": "Gedung untuk kegiatan pembelajaran dan acara besar"
+      },
+      "donation-2": {
+        "id": 2,
+        "name": "Renovasi Asrama Putri",
+        "needed": "Rp 300.000.000",
+        "progress": "85",
+        "desc": "Perbaikan dan perluasan asrama untuk santri putri"
+      },
+      "donation-3": {
+        "id": 3,
+        "name": "Ponpes Putra Daarul Hadits Sibowi",
+        "needed": "Rp 200.000.000",
+        "progress": "45",
+        "desc": "Fasilitas sanitasi yang layak untuk santri"
+      },
+      "attributes": {
+        "needed": "Kebutuhan",
+        "progress": "Progress",
+        "action": "Donasi Sekarang"
+      }
     }
   },
   "AboutPage": {
     "title": "Contoh"
+  },
+  "Footer": {
+    "logo": {
+      "title": "Yayasan Peduli Ilmu",
+      "region": "Sulawesi Tengah",
+      "desc": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan pemberdayaan masyarakat melalui program-program berkualitas."
+    },
+    "menu": {
+      "title": "Menu",
+      "home": "Beranda",
+      "about": "Tentang",
+      "reports": "Laporan",
+      "contact": "Kontak",
+      "cottage": "Pondok Pesantren Darul Hadits",
+      "community": "Komunitas Ta'shil Ilmi (Palu)",
+      "article": "Tulisan",
+      "book": "Buku / Risalah"
+    },
+    "contact": {
+      "title": "Kontak"
+    },
+    "rights": "Hak Cipta Dilindungi"
+  },
+  "ReportPage": {
+    "meta": {
+      "title": "Laporan Yayasan",
+      "description": "Transparansi dan akuntabilitas dalam pengelolaan yayasan"
+    },
+    "financial-report-section": {
+      "title": "Laporan Keuangan",
+      "description": "Laporan keuangan yayasan yang dapat diunduh dan diakses secara transparan"
+    },
+    "program-report-section": {
+      "title": "Laporan Program",
+      "description": "Evaluasi dan pencapaian program-program pendidikan yayasan"
+    },
+    "audit-information-section": {
+      "title": "Audit & Transparansi",
+      "description": "Komitmen kami terhadap transparansi dan akuntabilitas pengelolaan yayasan"
+    },
+    "contact": {
+      "title": "Hubungi Tim Keuangan",
+      "description": "Untuk pertanyaan terkait laporan keuangan atau audit",
+      "email": "Email",
+      "phone": "Telepon"
+    },
+    "statistic-card": {
+      "card-1": "Total Pemasukan",
+      "card-2": "Total Pengeluaran",
+      "card-3": "Saldo Akhir",
+      "card-4": "Total Santri"
+    }
   }
 }

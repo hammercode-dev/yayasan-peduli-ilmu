@@ -1,97 +1,104 @@
-'use client';
-
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
-import { useLanguage } from '@/contexts/language-context';
 
 export default function Footer() {
-  const { t } = useLanguage();
-
   return (
     <footer className="bg-accent-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}
-          <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
+          <div className="md:col-span-2">
+            <div className="flex items-center mb-4">
               <Image
                 src="/logo.png"
-                alt="Yayasan Peduli Ilmu"
-                width={60}
-                height={60}
-                className="h-15 w-auto"
+                alt="Logo"
+                width={50}
+                height={50}
+                className="mr-3"
               />
               <div>
-                <h3 className="text-xl font-bold">{t('hero.title')}</h3>
-                <p className="text-gray-300">Sulawesi Tengah</p>
+                <h3 className="text-xl font-bold">Yayasan Peduli Ilmu</h3>
+                <p className="text-primary-200">Sulawesi Tengah</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-6 max-w-md">{t('hero.description')}</p>
+            <p className="text-gray-300 mb-4 leading-relaxed">
+              Berkomitmen dalam mengembangkan pendidikan Islam dan dakwah yang
+              berkualitas untuk membangun generasi yang berilmu, berakhlak mulia, dan
+              bermanfaat bagi umat.
+            </p>
             <div className="flex space-x-4">
               <a
                 href="#"
                 className="text-gray-300 hover:text-primary-400 transition-colors"
               >
-                <Facebook className="h-6 w-6" />
+                <Facebook className="h-5 w-5" />
               </a>
               <a
                 href="#"
                 className="text-gray-300 hover:text-primary-400 transition-colors"
               >
-                <Instagram className="h-6 w-6" />
+                <Instagram className="h-5 w-5" />
               </a>
               <a
                 href="#"
                 className="text-gray-300 hover:text-primary-400 transition-colors"
               >
-                <Youtube className="h-6 w-6" />
+                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Menu</h4>
+            <h4 className="text-lg font-semibold mb-4 text-primary-400">Menu</h4>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/"
-                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors"
                 >
-                  {t('nav.home')}
+                  Home
                 </Link>
               </li>
               <li>
                 <Link
                   href="/tentang"
-                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors"
                 >
-                  {t('footer.about')}
+                  Tentang
                 </Link>
               </li>
               <li>
                 <Link
                   href="/program/pondok-pesantren"
-                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors"
                 >
-                  {t('footer.programs')}
+                  Pondok Pesantren
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/program/komunitas-tashil"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Komunitas Ta&apos;shil
                 </Link>
               </li>
               <li>
                 <Link
                   href="/laporan"
-                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors"
                 >
-                  {t('nav.reports')}
+                  Laporan
                 </Link>
               </li>
               <li>
                 <Link
                   href="/kontak"
-                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors"
                 >
-                  {t('footer.contact')}
+                  Kontak
                 </Link>
               </li>
             </ul>
@@ -99,33 +106,40 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">{t('footer.contact')}</h4>
-            <ul className="space-y-3">
-              <li className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-primary-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">
-                  Jl. Contoh Alamat No. 123
-                  <br />
-                  Palu, Sulawesi Tengah 94111
-                </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">+62 451 123456</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-primary-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">
-                  info@yayasanpeduliilmu.org
-                </span>
-              </li>
-            </ul>
+            <h4 className="text-lg font-semibold mb-4 text-primary-400">Kontak</h4>
+            <div className="space-y-3">
+              <div className="flex items-start">
+                <Mail className="h-5 w-5 mr-3 mt-0.5 text-primary-400" />
+                <div>
+                  <p className="text-gray-300">info@yayasanpeduliilmu.org</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Phone className="h-5 w-5 mr-3 mt-0.5 text-primary-400" />
+                <div>
+                  <p className="text-gray-300">+62 812-3456-7890</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <MapPin className="h-5 w-5 mr-3 mt-0.5 text-primary-400" />
+                <div>
+                  <p className="text-gray-300">
+                    Jl. Pendidikan No. 123
+                    <br />
+                    Palu, Sulawesi Tengah
+                    <br />
+                    94111
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-300 text-sm">
-            © {new Date().getFullYear()} {t('hero.title')}. {t('footer.rights')}.
+          <p className="text-gray-300">
+            &copy; {new Date().getFullYear()} Yayasan Peduli Ilmu Sulawesi Tengah.
+            All rights reserved.
           </p>
         </div>
       </div>

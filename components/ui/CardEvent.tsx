@@ -1,7 +1,6 @@
-import React from "react";
-
-import Link from "next/link";
-import { ArrowRight, Calendar } from "lucide-react";
+import React from 'react';
+import { Link } from '@/i18n/navigation';
+import { ArrowRight, Calendar } from 'lucide-react';
 
 interface CardEventProps {
   date: string;
@@ -9,7 +8,7 @@ interface CardEventProps {
   title: string;
   shortDesc: string;
   href: string;
-  textColor: "primary" | "secondary";
+  textColor: 'primary' | 'secondary';
   textLink: string;
 }
 
@@ -22,30 +21,45 @@ const CardEvent = ({
   textColor,
   textLink,
 }: CardEventProps) => {
+  const colorClasses = {
+    primary: 'text-primary-600 hover:text-primary-700',
+    secondary: 'text-secondary-600 hover:text-secondary-700',
+  };
+
   return (
-    <div className="bg-white border border-gray-200 rounded-xl p-6 card-hover">
-      <div className="flex items-center mb-4">
-        <Calendar className="h-5 w-5 text-primary-600 mr-2" />
-        <span className="text-sm text-gray-500">{date}</span>
+    <div
+      className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300 cursor-pointer flex flex-col justify-between h-full"
+      dir={isRTL ? 'rtl' : 'ltr'}
+    >
+      {/* Date Section */}
+      <div className="flex items-center mb-5 text-gray-500">
+        <Calendar className="h-5 w-5 mr-2 text-gray-400 flex-shrink-0" />
+        <time className="text-sm font-medium">{date}</time>
       </div>
+
+      {/* Title */}
       <h3
-        className={`text-lg font-bold text-accent-900 mb-3 ${
-          isRTL ? "font-arabic text-right" : ""
+        className={`text-xl font-semibold text-accent-900 mb-3 ${
+          isRTL ? 'text-right' : ''
         }`}
       >
         {title}
       </h3>
+
+      {/* Description */}
       <p
-        className={`text-gray-600 mb-4 ${
-          isRTL ? "font-arabic text-right" : ""
+        className={`text-gray-700 mb-6 leading-relaxed text-base ${
+          isRTL ? 'text-right' : ''
         }`}
       >
         {shortDesc}
       </p>
 
+      {/* Link */}
       <Link
         href={href}
-        className={`inline-flex items-center font-semibold text-${textColor}-600 hover:text-${textColor}-700 text-sm`}
+        className={`inline-flex items-center font-semibold ${colorClasses[textColor]} text-sm`}
+        aria-label={`${textLink} to ${title}`}
       >
         {textLink}
         <ArrowRight className="ml-1 h-4 w-4" />

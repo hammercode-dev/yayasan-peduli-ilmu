@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { X, Menu } from 'lucide-react';
@@ -15,18 +15,18 @@ import DropdownMenu from '../ui/DropdownMenu';
 const NAV_ITEMS = [
   { href: '/', label: 'home' },
   { href: '/about', label: 'about' },
-  { href: '/laporan', label: 'reports' },
+  { href: '/report', label: 'reports' },
   { href: '/contact', label: 'contact' },
 ];
 
 const PROGRAM_ITEMS = [
   { href: '/program/pondok-pesantren', label: 'cottage', desc: 'Putra & Putri' },
-  { href: '/program/komunitas', label: 'community', desc: 'Palu' },
+  { href: '/program/komunitas-tashil', label: 'community', desc: 'Palu' },
 ];
 
 const PUBLICATION_ITEMS = [
-  { href: '/publikasi/tulisan', label: 'article' },
-  { href: '/publikasi/buku', label: 'book' },
+  { href: '/publications/article', label: 'article' },
+  { href: '/publications/book', label: 'book' },
 ];
 
 export default function Navigation() {

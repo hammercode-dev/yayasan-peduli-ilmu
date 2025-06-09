@@ -35,8 +35,8 @@ export default function Navigation() {
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20 items-center">
+      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div className="flex justify-between px-4 h-20 items-center">
           <Link
             href="/"
             className="flex items-center space-x-3 focus-ring rounded-lg p-2"
@@ -87,18 +87,19 @@ export default function Navigation() {
         <Transition
           show={isOpen}
           enter="transition ease-out duration-100"
-          enterFrom="transform opacity-0 scale-95"
-          enterTo="transform opacity-100 scale-100"
+          enterFrom="transform opacity-0 translate-x-full"
+          enterTo="transform opacity-100 translate-x-0"
           leave="transition ease-in duration-75"
-          leaveFrom="transform opacity-100 scale-100"
-          leaveTo="transform opacity-0 scale-95"
+          leaveFrom="transform opacity-100 translate-x-0"
+          leaveTo="transform opacity-0 translate-x-full"
         >
-          <div className="lg:hidden border-t border-gray-200 px-2 pt-2 pb-3 space-y-1 bg-white">
+          <div className="lg:hidden border-t border-gray-200 space-y-1 bg-white absolute w-full rounded-b-xl shadow-lg">
             {NAV_ITEMS.map((item) => (
               <NavLink
                 key={item.href}
                 href={item.href}
                 className="block px-3 py-2 btn-ghost w-full text-left hover:text-primary-600 hover:bg-gray-50 duration-300"
+                onClick={() => setIsOpen(false)}
               >
                 {t(item.label)}
               </NavLink>

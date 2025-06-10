@@ -106,7 +106,42 @@
     }
   },
   "AboutPage": {
-    "title": "Examples"
+    "meta": {
+      "title": "About Us - Yayasan Peduli Ilmu",
+      "description": "Get to know the Foundation for Caring for Science and our commitment in building the Qur'ani generation"
+    },
+    "title": "About Us",
+    "aboutus-section": {
+      "label": "About Us",
+      "title": "Peduli Ilmu Foundation of Central Sulawesi",
+      "description": {
+        "desc-1": "The Central Sulawesi Care Foundation was founded with a noble vision to develop quality Islamic education in the Central Sulawesi region. \nWe are committed to producing a generation that is not only intellectually intelligent, but also has noble character.",
+        "desc-2": "Since its establishment, this foundation has carried out various education and da'wah programs that have a positive impact on the community. \nWith the support of donors and volunteers who care, we continue to make the best contribution to the progress of Islamic education in Indonesia.",
+        "desc-3": "Our programs are designed to meet the needs of comprehensive Islamic education, ranging from formal education in Islamic boarding schools to community learning programs that are open to the general public."
+      }
+    },
+    "visimisi-section": {
+      "title": "Vision",
+      "visi": "Being an superior Islamic educational institution in printing a generation of knowledgeable, noble character, and able to contribute positively to the progress of the people and nation.",
+      "misions": {
+        "misi-1": "Organizing quality and integrated Islamic education",
+        "misi-2": "Developing moderate Islamic da'wah and rahmatan lil natural",
+        "misi-3": "Empowering the community through social and economic programs",
+        "misi-4": "Build a network of cooperation with various parties for the advancement of education",
+        "misi-5": "Preserving Islamic values ​​in social life"
+      }
+    },
+    "management-section": {
+      "title": "Foundation Management",
+      "subTitle": "An experienced and committed management team in developing Islamic education"
+    },
+    "contactinformation-section": {
+      "title": "Contact information",
+      "address": "Jl. \nExample Address No. \n123 <br> </br> Palu, Central Sulawesi 94111 <br> </br> Indonesia",
+      "addressTitle": "Address",
+      "phoneTitle": "Telephone",
+      "emailTitle": "E-mail"
+    }
   },
   "Footer": {
     "logo": {

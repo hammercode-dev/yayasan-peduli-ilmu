@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { Target, User, Mail, Phone, MapPin, Eye, CheckCircle } from 'lucide-react';
 import { useLocale } from 'next-intl';
+import HeaderBanner from '@/components/layout/HeaderBanner';
 
 export default function About() {
   // const t = useTranslations('HomePage');
@@ -38,21 +39,11 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-primary-400 text-primary-foreground py-20 sm:py-28">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
-            Tentang Kami
-          </h1>
-
-          {/* Decorative underline */}
-          <div className="mx-auto mb-8 w-20 h-1 rounded bg-primary-600"></div>
-
-          <p className="text-lg sm:text-xl text-primary-foreground/90 max-w-xl mx-auto leading-relaxed">
-            Mengenal lebih dekat Yayasan Peduli Ilmu dan komitmen kami dalam
-            membangun generasi Qur&apos;ani
-          </p>
-        </div>
-      </section>
+      <HeaderBanner
+        title="Tentang Kami"
+        description="Mengenal lebih dekat Yayasan Peduli Ilmu dan komitmen kami dalam
+            membangun generasi Qur'ani"
+      />
 
       {/* About Section */}
       <section className="py-20 bg-white">

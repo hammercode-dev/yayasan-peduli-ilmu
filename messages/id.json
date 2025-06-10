@@ -159,5 +159,19 @@
       "card-3": "Saldo Akhir",
       "card-4": "Total Santri"
     }
+  },
+  "ContactPage": {
+    "hero-section": {
+      "title": "Hubungi Kami",
+      "description": "Kami siap membantu dan menjawab pertanyaan Anda. Jangan ragu untuk menghubungi kami kapan saja."
+    },
+    "meta": {
+      "title": "Kontak Kami - Yayasan Peduli Ilmu",
+      "description": "Kami siap membantu dan menjawab pertanyaan Anda. Jangan ragu untuk menghubungi kami kapan saja"
+    },
+    "faq-section": {
+      "title": "Pertanyaan Umum",
+      "subTitle": "Beberapa pertanyaan yang sering diajukan tentang yayasan dan program kami"
+    }
   }
 }

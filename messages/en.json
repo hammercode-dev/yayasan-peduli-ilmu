@@ -161,5 +161,19 @@
       "card-3": "Ending balance",
       "card-4": "Total Santri"
     }
+  },
+  "ContactPage": {
+    "hero-section": {
+      "title": "Contact us",
+      "description": "We are ready to help and answer your questions. \nDon't hesitate to contact us anytime."
+    },
+    "meta": {
+      "title": "Contact Us - Yayasan Caring Science",
+      "description": "We are ready to help and answer your questions. \nDon't hesitate to contact us anytime"
+    },
+    "faq-section": {
+      "title": "Common question",
+      "subTitle": "Some of the questions that are often asked about our foundations and programs"
+    }
   }
 }

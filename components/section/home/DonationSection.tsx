@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Building, Home, Droplets, Heart } from 'lucide-react';
+import { formatRupiah } from '@/lib/format';
 
 const DonationSection: React.FC = () => {
   const projects = [
@@ -37,15 +38,6 @@ const DonationSection: React.FC = () => {
       urgent: false,
     },
   ];
-
-  const formatRupiah = (amount: number) => {
-    return new Intl.NumberFormat('id-ID', {
-      style: 'currency',
-      currency: 'IDR',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0,
-    }).format(amount);
-  };
 
   return (
     <section className="py-16 bg-muted/30">

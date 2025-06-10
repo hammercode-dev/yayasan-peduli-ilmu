@@ -1,4 +1,3 @@
-export { default as HeroSection } from './HeroSection';
 export { default as AboutSection } from './AboutSection';
 export { default as VisiMisiSection } from './VisiMisiSection';
 export { default as ManagementSection } from './ManagementSection';

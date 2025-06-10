@@ -1,37 +1,8 @@
 import React from 'react';
 import { Bell, Calendar, ArrowRight } from 'lucide-react';
+import { ANNOUNCEMENTS } from '@/constants/home';
 
 const AnnouncementSection = () => {
-  const announcements = [
-    {
-      id: 1,
-      title: 'Pendaftaran Santri Baru Tahun 2024/2025',
-      date: '15 Januari 2024',
-      category: 'Pendaftaran',
-      content:
-        'Dibuka pendaftaran santri baru untuk Pondok Pesantren Darul Hadits. Kuota terbatas untuk putra dan putri.',
-      urgent: true,
-    },
-    {
-      id: 2,
-      title: "Kajian Rutin Komunitas Ta'shil Ilmi",
-      date: '10 Januari 2024',
-      category: 'Kajian',
-      content:
-        'Kajian rutin setiap hari Sabtu pukul 08.00 WITA di Masjid Al-Ikhlas Palu.',
-      urgent: false,
-    },
-    {
-      id: 3,
-      title: 'Program Bantuan Beasiswa Yatim',
-      date: '5 Januari 2024',
-      category: 'Beasiswa',
-      content:
-        'Tersedia bantuan beasiswa untuk anak yatim yang ingin menuntut ilmu di pondok pesantren.',
-      urgent: false,
-    },
-  ];
-
   return (
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,7 +17,7 @@ const AnnouncementSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {announcements.map((announcement) => (
+          {ANNOUNCEMENTS.map((announcement) => (
             <div
               key={announcement.id}
               className="bg-card rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-border group hover:-translate-y-1"

@@ -159,5 +159,124 @@
       "card-3": "Saldo Akhir",
       "card-4": "Total Santri"
     }
+  },
+  "KomunitasPage": {
+    "about-section": {
+      "label": "Tentang Komunitas",
+      "title": "Komunitas Ta’shilul ‘Ilmi Palu",
+      "description": " Komunitas Ta’shil Ilmi Palu adalah sebuah komunitas yang dibentuk                 untuk mewadahi pembelajaran terkait pondasi-pondasi ilmu syar’i                 dengan mengkaji kitab-kitab para ulama secara terstruktur. Komunitas                 ini terbuka bagi ikhwah, siapa saja yang ingin belajar                 pondasi-pondasi ilmu syar’i."
+    },
+    "visimisi-section": {
+      "title": "Visi & Misi",
+      "visi": {
+        "title": "Visi",
+        "desc": "Mencetak penuntut ilmu yang menguasai dasar ilmu agama"
+      },
+      "misi": {
+        "title": "Misi"
+      },
+      "misions": {
+        "misi-1": "Mengkaji dan mengajarkan kitab-kitab para ulama salaf",
+        "misi-2": "Penekanan hafalan quran, hadits dan matan-matan ilmu",
+        "misi-3": "Penekanan terhadap cabang ilmu bahasa arab"
+      }
+    },
+    "achievement-section": {
+      "title": "Indikator Prestasi",
+      "ach-1": "Menghafal matan-matan dasar keilmuan",
+      "ach-2": "Memahami pondasi utama keilmuan",
+      "ach-3": "Mampu mengajarkan dasar-dasar ilmu agama"
+    },
+    "teacher-section": {
+      "title": "Pengajar",
+      "name": "Al-ustadz Abu Huraerah",
+      "degree": "B.A, M.A حفظه الله",
+      "university": "Alumni Fakultas Hadits, Universitas Islam Madinah"
+    },
+    "schedule-section": {
+      "title": "Jadwal Kegiatan"
+    },
+    "books-section": {
+      "title": "Daftar Kitab yang Dipelajari"
+    },
+    "books": {
+      "ajurrumiyah": {
+        "title": "Ajurrumiyah",
+        "arabic": "الاجرومية",
+        "subject": "Nahwu"
+      },
+      "mutammimah": {
+        "title": "Mutammimah",
+        "arabic": "متممة الاجرومية",
+        "subject": "Nahwu"
+      },
+      "lamiyah-afal": {
+        "title": "Lamiyah Af'al",
+        "arabic": "لامية الأفعال",
+        "subject": "Sharaf"
+      },
+      "miatul-maaani": {
+        "title": "Mi'atul Ma'aani",
+        "arabic": "مائة المعاني والبيان",
+        "subject": "Balaghah"
+      },
+      "arabic-dictionary": {
+        "title": "Kamus Bahasa Arab",
+        "arabic": "",
+        "subject": "Matan Al Lughah"
+      },
+      "al-waraqat": {
+        "title": "Al Waraqat",
+        "arabic": "الورقات في أصول الفقه",
+        "subject": "Ushul Fiqh"
+      },
+      "qawaid-fiqhiyah": {
+        "title": "Mandzumah Qawaid Fiqhiyah",
+        "arabic": "منظومة القواعد الفقهية",
+        "subject": "Qowaid Fiqh"
+      },
+      "al-baiquniyah": {
+        "title": "Mandzumah Al Baiquniyah",
+        "arabic": "المنظومة البيقونية",
+        "subject": "Musthalah Hadits"
+      },
+      "fushul-tafsir": {
+        "title": "Fushul Fii Tafsir",
+        "arabic": "فصول في أصول التفسير",
+        "subject": "Ilmu Tafsir"
+      },
+      "taqdim-ilmi": {
+        "title": "Khulasoh Ta'dzim 'Ilmi",
+        "arabic": "خلاصة تعظيم العلم",
+        "subject": "Adab"
+      }
+    },
+    "rule-section": {
+      "title": "Aturan-aturan",
+      "rules": [
+        "Berkomitmen mengikuti program ikhlas karena Allah تعالى dan bersungguh-sungguh (serius)",
+        "Program ini hanya untuk ikhwah yang serius dan berkomitmen untuk mengikuti proses belajar. Peserta belajar diharuskan (WAJIB) melakukan presensi",
+        "Membawa buku dan pena untuk mencatat",
+        "Menjaga adab ketika kegiatan belajar berlangsung",
+        "Menjaga dan mengusahakan hubungan baik, baik dengan guru, sesama pelajar dan pengurus tempat kegiatan belajar",
+        "Mengikuti peraturan tempat kegiatan berlangsung, menjaga ketertiban serta kebersihan selama berlangsungnya kegiatan belajar"
+      ]
+    },
+    "contact-section": {
+      "title": "Info Lebih Lanjut",
+      "whatsapp": "WhatsApp",
+      "contacts": {
+        "ctc-1": {
+          "name": "Abu Fatimah"
+        },
+        "ctc-2": {
+          "name": "Firman"
+        }
+      },
+      "note": {
+        "title": "Catatan Penting",
+        "body": "Apabila tidak mampu komitmen dan serius, maka tetap boleh ikut kegiatan belajar, namun dengan status sebagai mustafid saja"
+      }
+    }
   }
 }

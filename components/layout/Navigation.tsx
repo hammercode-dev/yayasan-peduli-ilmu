@@ -24,10 +24,10 @@ const PROGRAM_ITEMS = [
   { href: '/program/komunitas-tashil', label: 'community', desc: 'Palu' },
 ];
 
-const PUBLICATION_ITEMS = [
-  { href: '/publications/article', label: 'article' },
-  { href: '/publications/book', label: 'book' },
-];
+// const PUBLICATION_ITEMS = [
+//   { href: '/publications/article', label: 'article' },
+//   { href: '/publications/book', label: 'book' },
+// ];
 
 export default function Navigation() {
   const t = useTranslations('Navigation');
@@ -63,11 +63,11 @@ export default function Navigation() {
             ))}
 
             <DropdownMenu label={t('program')} items={PROGRAM_ITEMS} t={t} />
-            <DropdownMenu
+            {/* <DropdownMenu
               label={t('publications')}
               items={PUBLICATION_ITEMS}
               t={t}
-            />
+            /> */}
             <NavLocalSwitch variant="dropdown" />
           </div>
 
@@ -106,11 +106,11 @@ export default function Navigation() {
             ))}
 
             <DisclosureMenu label={t('program')} items={PROGRAM_ITEMS} t={t} />
-            <DisclosureMenu
+            {/* <DisclosureMenu
               label={t('publications')}
               items={PUBLICATION_ITEMS}
               t={t}
-            />
+            /> */}
 
             <NavLocalSwitch variant="list" />
           </div>

@@ -106,7 +106,42 @@
     }
   },
   "AboutPage": {
-    "title": "Contoh"
+    "meta": {
+      "title": "Tentang Kami - Yayasan Peduli Ilmu",
+      "description": "Mengenal lebih dekat Yayasan Peduli Ilmu dan komitmen kami dalam membangun generasi Qur'ani"
+    },
+    "title": "Tentang Kami",
+    "aboutus-section": {
+      "label": "Tentang Kami",
+      "title": "Yayasan Peduli Ilmu Sulawesi Tengah",
+      "description": {
+        "desc-1": "Yayasan Peduli Ilmu Sulawesi Tengah didirikan dengan visi mulia untuk mengembangkan pendidikan Islam yang berkualitas di wilayah Sulawesi  Tengah. Kami berkomitmen untuk mencetak generasi yang tidak hanya cerdas secara intelektual, tetapi juga memiliki akhlak yang mulia.",
+        "desc-2": " Sejak berdiri, yayasan ini telah menjalankan berbagai program                 pendidikan dan dakwah yang berdampak positif bagi masyarakat. Dengan                 dukungan para donatur dan relawan yang peduli, kami terus berupaya                 memberikan kontribusi terbaik untuk kemajuan pendidikan Islam di                 Indonesia.",
+        "desc-3": "Program-program kami dirancang untuk memenuhi kebutuhan pendidikan                 Islam yang komprehensif, mulai dari pendidikan formal di pondok                 pesantren hingga program pembelajaran komunitas yang terbuka untuk                 masyarakat umum."
+      }
+    },
+    "visimisi-section": {
+      "title": "Visi & Misi",
+      "visi": " Menjadi lembaga pendidikan Islam yang unggul dalam mencetak generasi                 yang berilmu, berakhlak mulia, dan mampu berkontribusi positif bagi                 kemajuan umat dan bangsa.",
+      "misions": {
+        "misi-1": "Menyelenggarakan pendidikan Islam yang berkualitas dan terpadu",
+        "misi-2": "Mengembangkan dakwah Islam yang moderat dan rahmatan lil alamiin",
+        "misi-3": "Memberdayakan masyarakat melalui program-program sosial dan ekonomi",
+        "misi-4": "Membangun jaringan kerjasama dengan berbagai pihak untuk kemajuan pendidikan",
+        "misi-5": "Melestarikan nilai-nilai Islam dalam kehidupan bermasyarakat"
+      }
+    },
+    "management-section": {
+      "title": " Pengurus Yayasan",
+      "subTitle": "Tim pengurus yang berpengalaman dan berkomitmen dalam mengembangkan             pendidikan Islam"
+    },
+    "contactinformation-section": {
+      "title": "   Informasi Kontak",
+      "address": "Jl. Contoh Alamat No. 123<br></br>Palu, Sulawesi Tengah 94111<br></br>Indonesia",
+      "addressTitle": "Alamat",
+      "phoneTitle": "Telepon",
+      "emailTitle": "Email"
+    }
   },
   "Footer": {
     "logo": {
@@ -277,6 +312,20 @@
         "title": "Catatan Penting",
         "body": "Apabila tidak mampu komitmen dan serius, maka tetap boleh ikut kegiatan belajar, namun dengan status sebagai mustafid saja"
       }
+    }
+  },
+  "ContactPage": {
+    "hero-section": {
+      "title": "Hubungi Kami",
+      "description": "Kami siap membantu dan menjawab pertanyaan Anda. Jangan ragu untuk menghubungi kami kapan saja."
+    },
+    "meta": {
+      "title": "Kontak Kami - Yayasan Peduli Ilmu",
+      "description": "Kami siap membantu dan menjawab pertanyaan Anda. Jangan ragu untuk menghubungi kami kapan saja"
+    },
+    "faq-section": {
+      "title": "Pertanyaan Umum",
+      "subTitle": "Beberapa pertanyaan yang sering diajukan tentang yayasan dan program kami"
     }
   }
 }

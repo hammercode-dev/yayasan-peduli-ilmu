@@ -1,8 +1,6 @@
-import React from 'react';
-
 import { Eye, Target, CheckCircle } from 'lucide-react';
 import { useTranslations, useLocale } from 'next-intl';
-import { MISSIONS } from '@/constants/about';
+import { MISSIONS } from '../constants';
 
 export default function VisiMisiSection() {
   const t = useTranslations('AboutPage');

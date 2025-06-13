@@ -1,7 +1,7 @@
-import { FinancialReport } from '@/components/section/report/CardFinancialReport';
-import { ProgramReport } from '@/components/section/report/CardProgramReport';
-import { TransparencyReport } from '@/components/section/report/CardTransparencyReport';
 import { DollarSign, FileText, TrendingUp, Users } from 'lucide-react';
+import { FinancialReport } from './components/CardFinancialReport';
+import { ProgramReport } from './components/CardProgramReport';
+import { TransparencyReport } from './components/CardTransparencyReport';
 
 export const STATISTIC_REPORTS = (t: (key: string) => string) => [
   {

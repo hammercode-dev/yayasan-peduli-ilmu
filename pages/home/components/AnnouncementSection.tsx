@@ -1,6 +1,6 @@
 import React from 'react';
 import { Bell, Calendar, ArrowRight } from 'lucide-react';
-import { ANNOUNCEMENTS } from '@/constants/home';
+import { ANNOUNCEMENTS } from '../constants';
 
 const AnnouncementSection = () => {
   return (

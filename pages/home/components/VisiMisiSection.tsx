@@ -1,6 +1,6 @@
 import React from 'react';
 import { Target, CheckCircle, Eye } from 'lucide-react';
-import { MISI } from '@/constants/home';
+import { MISI } from '../constants';
 
 const VisiMisiSection = () => {
   return (

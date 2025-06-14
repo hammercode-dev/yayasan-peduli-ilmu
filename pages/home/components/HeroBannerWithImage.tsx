@@ -3,7 +3,7 @@ import { useTranslations, useLocale } from 'next-intl';
 
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
-import { Button } from '../../ui/Button';
+import { Button } from '@/components/ui/Button';
 
 const HeroBannerWithLogoBG = () => {
   const t = useTranslations('HomePage');

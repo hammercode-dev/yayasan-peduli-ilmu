@@ -1,3 +1,4 @@
+'use client';
 import { useTranslations } from 'next-intl';
 import HeaderBanner from '@/components/layout/HeaderBanner';
 import CardStatistic from './components/CardStatistic';

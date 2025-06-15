@@ -2,8 +2,8 @@ import React from 'react';
 
 import { ChevronUp } from 'lucide-react';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
-import { FAQS } from '@/constants/contact';
 import { useTranslations } from 'next-intl';
+import { FAQS } from '../constants';
 
 export default function FAQSection() {
   const t = useTranslations('ContactPage');

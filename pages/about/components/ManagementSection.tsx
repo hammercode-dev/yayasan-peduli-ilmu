@@ -1,8 +1,7 @@
 import React from 'react';
 import { User } from 'lucide-react';
-
-import { MANAGEMENTS } from '@/constants/about';
 import { useTranslations } from 'next-intl';
+import { MANAGEMENTS } from '../constants';
 
 export default function ManagementSection() {
   const t = useTranslations('AboutPage');

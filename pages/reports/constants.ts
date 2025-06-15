@@ -1,34 +1,34 @@
-import { FinancialReport } from '@/components/section/report/CardFinancialReport';
-import { ProgramReport } from '@/components/section/report/CardProgramReport';
-import { TransparencyReport } from '@/components/section/report/CardTransparencyReport';
 import { DollarSign, FileText, TrendingUp, Users } from 'lucide-react';
+import { FinancialReport } from './components/CardFinancialReport';
+import { ProgramReport } from './components/CardProgramReport';
+import { TransparencyReport } from './components/CardTransparencyReport';
 
 export const STATISTIC_REPORTS = (t: (key: string) => string) => [
   {
     id: 1,
     title: `${t('statistic-card.card-1')} 2024`,
-    value: 'Rp 405M',
+    value: 2000000,
     icon: TrendingUp,
     borderColor: 'primary',
   },
   {
     id: 2,
     title: `${t('statistic-card.card-2')} 2024`,
-    value: 'Rp 321M',
+    value: 5200000,
     icon: DollarSign,
     borderColor: 'secondary',
   },
   {
     id: 3,
     title: t('statistic-card.card-3'),
-    value: 'Rp 21M',
+    value: 87005000,
     icon: FileText,
     borderColor: 'accent',
   },
   {
     id: 4,
     title: t('statistic-card.card-4'),
-    value: 'Rp 405M',
+    value: 2000000,
     icon: Users,
     borderColor: 'primary',
   },

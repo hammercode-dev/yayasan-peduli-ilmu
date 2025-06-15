@@ -1,21 +1,26 @@
-import React from 'react';
-import { Target, CheckCircle, Eye } from 'lucide-react';
-import { MISI } from '@/constants/home';
+import { Eye, Target, CheckCircle } from 'lucide-react';
+import { useTranslations, useLocale } from 'next-intl';
+import { MISSIONS } from '../constants';
 
-const VisiMisiSection = () => {
+export default function VisiMisiSection() {
+  const t = useTranslations('AboutPage');
+  const locale = useLocale();
+
+  const isRTL = locale === 'ar';
+
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50" dir={isRTL ? 'rtl' : 'ltr'}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section title */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-accent-800 mb-4">
-            Visi & Misi
+            {t('visimisi-section.title')}
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Dua program utama yang menjadi fokus dalam pengembangan pendidikan Islam
-            di Sulawesi Tengah
-          </p>
+          <p>{/* desc if ny*/}</p>
           <div className="w-24 h-1 bg-primary-500 mx-auto mt-4"></div>
         </div>
+
+        {/* Visi & Misi */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Visi */}
           <div className="bg-white rounded-2xl shadow-md ring-1 ring-gray-200 transition hover:shadow-xl">
@@ -27,9 +32,7 @@ const VisiMisiSection = () => {
             </div>
             <div className="px-6 py-5">
               <p className="text-muted-foreground leading-relaxed text-base">
-                Menjadi lembaga pendidikan Islam yang unggul dalam mencetak generasi
-                yang berilmu, berakhlak mulia, dan mampu berkontribusi positif bagi
-                kemajuan umat dan bangsa.
+                {t('visimisi-section.visi')}
               </p>
             </div>
           </div>
@@ -43,7 +46,7 @@ const VisiMisiSection = () => {
               <h3 className="text-xl font-semibold text-accent-800">Misi</h3>
             </div>
             <div className="px-6 py-5 space-y-4">
-              {MISI.map((item, index) => (
+              {MISSIONS.map((item, index) => (
                 <div
                   key={index}
                   className="flex items-start gap-4 bg-muted/40 p-4 rounded-lg border  hover:shadow transition-shadow"
@@ -52,7 +55,7 @@ const VisiMisiSection = () => {
                     <CheckCircle className="w-5 h-5 text-primary-600" />
                   </div>
                   <p className="text-muted-foreground text-base leading-relaxed">
-                    {item}
+                    {t(`visimisi-section.misions.${item}`, { default: item })}
                   </p>
                 </div>
               ))}
@@ -62,6 +65,4 @@ const VisiMisiSection = () => {
       </div>
     </section>
   );
-};
-
-export default VisiMisiSection;
+}

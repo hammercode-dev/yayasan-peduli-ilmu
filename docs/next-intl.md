@@ -208,23 +208,206 @@ t.rich('link', {
 });
 ```
 
-#### Datetime & Number Formatting
+#### Basic Date Formatting
 
 ```typescript
-import {useFormatter} from 'next-intl';
+import { useFormatter } from 'next-intl';
 
-function Component() {
+function BasicDateFormats() {
+  const format = useFormatter();
+  const date = new Date('2025-06-15T14:30:45');
+
+  return (
+    <div>
+      {/* Built-in formats */}
+      <p>{format.dateTime(date, 'short')}</p>
+      {/* Output: 6/15/25 */}
+
+      <p>{format.dateTime(date, 'medium')}</p>
+      {/* Output: Jun 15, 2025 */}
+
+      <p>{format.dateTime(date, 'long')}</p>
+      {/* Output: June 15, 2025 */}
+
+      <p>{format.dateTime(date, 'full')}</p>
+      {/* Output: Sunday, June 15, 2025 */}
+
+      {/* Default (full date and time) */}
+      <p>{format.dateTime(date)}</p>
+      {/* Output: 6/15/2025, 2:30:45 PM */}
+    </div>
+  );
+}
+```
+
+#### Another custom date formatting
+
+```typescript
+import { useFormatter } from 'next-intl';
+
+function CombinedFormats() {
+  const format = useFormatter();
+  const date = new Date('2025-06-15T14:30:45');
+
+  return (
+    <div>
+      {/* Blog post style */}
+      <p>{format.dateTime(date, {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      })}</p>
+      {/* Output: Sunday, June 15, 2025 at 02:30 PM */}
+
+      {/* Short timestamp */}
+      <p>{format.dateTime(date, {
+        month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit'
+      })}</p>
+      {/* Output: Jun 15, 2:30 PM */}
+
+      {/* ISO-like format */}
+      <p>{format.dateTime(date, {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      })}</p>
+      {/* Output: 2025-06-15, 14:30:45 */}
+
+      {/* Event format */}
+      <p>{format.dateTime(date, {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit',
+        timeZoneName: 'short'
+      })}</p>
+      {/* Output: June 15, 2025 at 2:30 PM GMT+7 */}
+    </div>
+  );
+}
+```
+
+#### Significant Number Formatting
+
+```typescript
+import { useFormatter } from 'next-intl';
+
+function SignificantDigits() {
   const format = useFormatter();
 
   return (
     <div>
-      <p>{format.dateTime(new Date(), 'short')}</p>
-      <p>{format.number(1234.5)}</p>
-      <p>{format.number(0.75, {style: 'percent'})}</p>
-      <p>{format.number(29.99, {
-        style: 'currency',
-        currency: 'USD'
+      {/* 2 significant digits */}
+      <p>{format.number(123.456, {
+        maximumSignificantDigits: 2
       })}</p>
+      {/* Output: 120 */}
+
+      <p>{format.number(1234.56, {
+        maximumSignificantDigits: 3
+      })}</p>
+      {/* Output: 1,230 */}
+
+      {/* Minimum significant digits */}
+      <p>{format.number(1.2, {
+        minimumSignificantDigits: 4
+      })}</p>
+      {/* Output: 1.200 */}
+
+      {/* Range significant digits */}
+      <p>{format.number(12345.6789, {
+        minimumSignificantDigits: 3,
+        maximumSignificantDigits: 5
+      })}</p>
+      {/* Output: 12,346 */}
+    </div>
+  );
+}
+```
+
+#### Unit Formatting
+
+```typescript
+function UnitNumbers() {
+  const format = useFormatter();
+
+  return (
+    <div>
+      {/* Unit formatting */}
+      <p>{format.number(25, {
+        style: 'unit',
+        unit: 'celsius'
+      })}</p>
+      {/* Output: 25°C */}
+
+      <p>{format.number(1024, {
+        style: 'unit',
+        unit: 'megabyte'
+      })}</p>
+      {/* Output: 1,024 MB */}
+
+      <p>{format.number(60, {
+        style: 'unit',
+        unit: 'kilometer-per-hour'
+      })}</p>
+      {/* Output: 60 km/h */}
+
+      {/* Unit with display options */}
+      <p>{format.number(5, {
+        style: 'unit',
+        unit: 'meter',
+        unitDisplay: 'long'
+      })}</p>
+      {/* Output: 5 meters */}
+    </div>
+  );
+}
+```
+
+#### Compact Notation (K, M, B)
+
+```typescript
+function CompactNumbers() {
+  const format = useFormatter();
+
+  return (
+    <div>
+      {/* Compact short */}
+      <p>{format.number(1200, {
+        notation: 'compact',
+        compactDisplay: 'short'
+      })}</p>
+      {/* Output: 1.2K */}
+
+      <p>{format.number(1500000, {
+        notation: 'compact',
+        compactDisplay: 'short'
+      })}</p>
+      {/* Output: 1.5M */}
+
+      <p>{format.number(2300000000, {
+        notation: 'compact',
+        compactDisplay: 'short'
+      })}</p>
+      {/* Output: 2.3B */}
+
+      {/* Compact long */}
+      <p>{format.number(1500000, {
+        notation: 'compact',
+        compactDisplay: 'long'
+      })}</p>
+      {/* Output: 1.5 million */}
     </div>
   );
 }
@@ -233,7 +416,9 @@ function Component() {
 ## 7. Metadata Internationalization
 
 ### Dynamic Metadata
+
 generateMetadata is used to generate dynamic metadata for each page.
+
 ```typescript
 import { getTranslations } from 'next-intl/server';
 
@@ -267,6 +452,7 @@ export async function generateMetadata({
 ## 8. Advanced Configuration
 
 #### VSCode Integration extension
+
 To improve the workflow for managing messages right from your code editor, you can use an extension for VSCode that includes support for next-intl.
 
 These extensions are known to support next-intl: [Vscode Integration Next Intl](https://next-intl.dev/docs/workflows/vscode-integration)
@@ -275,6 +461,7 @@ These extensions are known to support next-intl: [Vscode Integration Next Intl](
 - Sherlock
 
 #### Custom Formats (Optional)
+
 ```typescript
 export default getRequestConfig(async ({ requestLocale }) => {
   return {
@@ -298,6 +485,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
 ```
 
 ## 9. Locale Switching
+
 ```typescript
 'use client';
 import { useLocale, Locale } from 'next-intl';
@@ -363,4 +551,120 @@ export default function DropdownLanguageSwitcher() {
     </Listbox>
   );
 }
+```
+
+## 10. Currecy Formatter
+
+#### Setup custom getRequestConfig currency format
+
+```typescript
+export default getRequestConfig(async ({ requestLocale }) => {
+  const getCurrencyByLocale = (locale?: string) => {
+    switch (locale) {
+      case 'id':
+        return 'IDR';
+      case 'en':
+        return 'USD';
+      case 'ar':
+        return 'AED';
+      default:
+        return 'IDR';
+    }
+  };
+
+  const requested = await requestLocale;
+  const defaultCurrency = getCurrencyByLocale(requested);
+
+  return {
+    ...,
+    defaultCurrency,
+    formats: {
+      number: {
+        currency: {
+          style: 'currency',
+          currency: defaultCurrency,
+          minimumFractionDigits: defaultCurrency === 'IDR' ? 0 : 2,
+          maximumFractionDigits: defaultCurrency === 'IDR' ? 0 : 2,
+        },
+      },
+    },
+  };
+});
+
+```
+
+#### Create custom hooks useCurrencyByLocal
+
+This hooks use to calculate the amount currency with default locale languange
+
+```typescript
+'use client';
+import { useLocale } from 'next-intl';
+import { useMemo, useCallback } from 'react';
+
+export function useCurrencyByLocale() {
+  const locale = useLocale();
+
+  const ratesFromIDR = useMemo(
+    () => ({
+      // Default IDR
+      IDR: 1,
+      USD: 1 / 15000,
+      AED: 1 / 4085,
+    }),
+    []
+  );
+
+  const getLocaleCurrency = useCallback((): string => {
+    switch (locale) {
+      case 'id':
+        return 'IDR';
+      case 'en':
+        return 'USD';
+      case 'ar':
+        return 'AED';
+      default:
+        return 'IDR';
+    }
+  }, [locale]);
+
+  const getLocaleRate = useCallback((): number => {
+    const currency = getLocaleCurrency();
+    return ratesFromIDR[currency as keyof typeof ratesFromIDR];
+  }, [getLocaleCurrency, ratesFromIDR]);
+
+  const convertCurrency = useCallback(
+    (idrAmount: number): number => {
+      const rate = getLocaleRate();
+      return idrAmount * rate;
+    },
+    [getLocaleRate]
+  );
+
+  return {
+    convertCurrency,
+  };
+}
+```
+
+#### Usage on component
+
+```typescript
+import { useFormatter } from 'next-intl';
+import { useCurrencyByLocale } from '@/hooks/useCurrencyByLocale';
+
+const CardStatistic = ({
+  value,
+}: {
+  value: number;
+}) => {
+  const format = useFormatter();
+  const { convertCurrency } = useCurrencyByLocale();
+
+  return (
+    <div>
+      <p>{format.number(convertCurrency(value), 'currency')}</p>
+    </div>
+  );
+};
 ```

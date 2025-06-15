@@ -1,16 +1,18 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import HeaderBanner from '@/components/layout/HeaderBanner';
-import CardStatistic from './components/CardStatistic';
 import {
   FINANCIAL_REPORTS,
   PROGRAM_REPORTS,
   STATISTIC_REPORTS,
   TRANSPARENCY_REPORTS,
 } from './constants';
-import CardFinancialReport from './components/CardFinancialReport';
-import CardProgramReport from './components/CardProgramReport';
-import CardTransparencyReport from './components/CardTransparencyReport';
+import {
+  CardStatistic,
+  CardFinancialReport,
+  CardProgramReport,
+  CardTransparencyReport,
+} from './components';
 
 const ReportsPage = () => {
   const t = useTranslations('ReportPage');

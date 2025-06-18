@@ -1,4 +1,4 @@
-import PondokPesantrenPage from '@/pages/program/pondok-pesantren';
+import PondokPesantrenPage from '@/features/program/pondok-pesantren';
 
 export default function PondokPesantren() {
   return <PondokPesantrenPage />;

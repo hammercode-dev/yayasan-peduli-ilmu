@@ -1,4 +1,4 @@
-import BookPage from '@/pages/publications/book';
+import BookPage from '@/features/publications/book';
 
 export default function BukuPage() {
   return <BookPage />;

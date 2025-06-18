@@ -1,4 +1,4 @@
-import ContactPage from '@/pages/contact';
+import ContactPage from '@/features/contact';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 

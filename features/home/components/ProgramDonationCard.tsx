@@ -1,4 +1,4 @@
-import { Link } from '@/i18n/navigation';
+import Link from 'next/link';
 import { Building, Heart } from 'lucide-react';
 import { ProgramDonationProps } from '../types';
 import { formatCurrency } from '@/lib/format';

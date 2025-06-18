@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-import HomePage from '@/pages/home';
+
+import DonationDetailPage from '@/pages/donation/DonationDetail';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('HomePage');
@@ -10,6 +11,6 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function Index() {
-  return <HomePage />;
+export default function DonationDetail() {
+  return <DonationDetailPage />;
 }

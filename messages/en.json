@@ -27,84 +27,95 @@
         "secondary": "Contact us"
       }
     },
+
     "visimisi-section": {
       "title": "Vision & Mission",
+      "description": "Two core programs focused on developing Islamic education in Central Sulawesi.",
       "visi": {
         "title": "Vision",
-        "desc": "To become a leading Islamic educational institution in nurturing a Qur'anic generation with noble character and benefit to the community."
+        "desc": "To become a leading Islamic educational institution in nurturing <bold>Qur’anic</bold> generations who are <bold>morally upright</bold> and <bold>beneficial to the ummah</bold>."
       },
       "misi": {
         "title": "Mission",
-        "mission-1": "Provide quality Islamic education",
-        "mission-2": "Develop Al-Qur'an memorization programs",
-        "mission-3": "Empower communities through education",
-        "mission-4": "Build strong Islamic character"
+        "list": [
+          "Delivering high-quality Islamic education",
+          "Developing Qur'an memorization (tahfidz) programs",
+          "Empowering the community through education",
+          "Fostering strong Islamic character"
+        ]
       }
     },
+
     "program-section": {
-      "title": "Flagship Programs",
+      "title": "Our Programs",
+      "description": "Two main programs focused on the development of Islamic education in Central Sulawesi",
       "cottage": {
         "title": "Darul Hadith Islamic Boarding School",
-        "desc": "An integrated Islamic education program for boys and girls with a focus on Qur'an memorization and specialization."
+        "desc": "An integrated Islamic education program for boys and girls, focusing on Quran memorization and advanced Islamic studies.",
+        "ctaLabel": "Learn More"
       },
       "community": {
-        "title": "Ta'shil Ilmi Community",
-        "desc": "A learning program focusing on foundational sciences, including Arabic language, Usul al-Fiqh, and Usul al-Tafsir."
+        "title": "Ta’shil Ilmi Community",
+        "desc": "A program focusing on foundational Islamic sciences including Arabic, Usul al-Fiqh, and Usul al-Tafsir.",
+        "ctaLabel": "Learn More"
       }
     },
+
     "announcement-section": {
       "title": "Latest Announcements",
-      "notice-1": {
-        "id": 1,
-        "title": "New Student Registration 2024/2025",
-        "shortDesc": "Registration for new students for the 2024/2025 academic year is now open. Limited quota available.",
-        "date": "2024-01-15"
-      },
-      "notice-2": {
-        "id": 2,
-        "title": "Intensive Tahfidz Program",
-        "shortDesc": "An intensive Tahfidz program for students who want to complete their memorization quickly.",
-        "date": "2024-01-10"
-      },
-      "notice-3": {
-        "id": 3,
-        "title": "Social Service Activities",
-        "shortDesc": "The foundation organizes social service activities for the community around the pesantren.",
-        "date": "2024-01-10"
-      },
-      "readmore": "Read More"
+      "description": "The latest updates from Yayasan Peduli Ilmu of Central Sulawesi",
+      "ctaLabel": "Read More"
     },
+
     "donation-section": {
       "title": "Ta'awun (Open Donation)",
-      "subTitle": "Let’s participate in building educational facilities",
-      "donation-1": {
-        "id": 1,
-        "name": "Multipurpose Building Construction",
-        "needed": "Rp 500,000,000",
-        "progress": "25",
-        "desc": "A building for learning activities and large events"
-      },
-      "donation-2": {
-        "id": 2,
-        "name": "Girls’ Dormitory Renovation",
-        "needed": "Rp 300,000,000",
-        "progress": "85",
-        "desc": "Improvement and expansion of dormitory for female students"
-      },
-      "donation-3": {
-        "id": 3,
-        "name": "Toilet Facility Construction",
-        "needed": "Rp 150,000,000",
-        "progress": "45",
-        "desc": "Proper sanitation facilities for students"
-      },
-      "attributes": {
-        "needed": "Needed",
-        "progress": "Progress",
-        "action": "Donate Now"
+      "description": "Participate in building quality Islamic education facilities and infrastructure for future generations.",
+      "errorMsg": "Failed to load donation programs.",
+      "card": {
+        "status": "Active",
+        "progressLabel": "Progress",
+        "collectedLabel": "Collected",
+        "targetLabel": "Target",
+        "ctaLabel": "Donate Now"
       }
     }
   },
+  "DonationDetailPage": {
+    "progress-section": {
+      "title": "Project Progress",
+      "progressLabel": "Progress",
+      "collectedLabel": "Collected",
+      "targetLabel": "Target",
+      "remainingLabel": "Remaining"
+    },
+    "detail-section": {
+      "title": "Project Details",
+      "locationLabel": "Location",
+      "statusLabel": "Status",
+      "startDateLabel": "Start Date",
+      "endDateLabel": "End Date",
+      "descriptionLabel": "Project Description"
+    },
+    "sidebar-section": {
+      "fastAction": {
+        "title": "Quick Actions",
+        "ctaShareLabel": "Share Project",
+        "bankTransferLabel": "Bank Transfer",
+        "confirmPaymentLabel": "Confirm Payment",
+        "phoneNumberLabel": "Phone Number"
+      },
+      "paymentMethod": {
+        "title": "Payment Methods",
+        "bankTransferLabel": "Bank Transfer",
+        "ewalletLabel": "E-Wallet"
+      },
+      "confirmPayment": {
+        "title": "Confirm Payment",
+        "note": "Contact us to confirm your donation or if you need assistance"
+      }
+    }
+  },
+
   "AboutPage": {
     "meta": {
       "title": "About Us - Yayasan Peduli Ilmu",

@@ -27,84 +27,96 @@
         "secondary": "Pelajari Lebih Lanjut"
       }
     },
+
     "visimisi-section": {
       "title": "Visi & Misi",
+      "description": "Dua program utama yang menjadi fokus dalam pengembangan pendidikan Islam di Sulawesi Tengah.",
       "visi": {
         "title": "Visi",
-        "desc": "Menjadi lembaga pendidikan Islam terdepan dalam mencetak generasi Qur'ani yang berakhlak mulia dan bermanfaat bagi umat."
+        "desc": "Menjadi lembaga pendidikan Islam terdepan dalam mencetak generasi <bold>Qur'ani</bold> yang <bold>berakhlak mulia</bold> dan <bold>bermanfaat bagi umat</bold>."
       },
       "misi": {
         "title": "Misi",
-        "mission-1": "Menyelenggarakan pendidikan Islam berkualitas",
-        "mission-2": "Mengembangkan program tahfidz Al-Qur'an",
-        "mission-3": "Memberdayakan masyarakat melalui pendidikan",
-        "mission-4": "Membangun karakter islami yang kuat"
+        "list": [
+          "Menyelenggarakan pendidikan Islam berkualitas",
+          "Mengembangkan program tahfidz Al-Qur'an",
+          "Memberdayakan masyarakat melalui pendidikan",
+          "Membangun karakter islami yang kuat"
+        ]
       }
     },
+
     "program-section": {
-      "title": "Program Unggulan",
+      "title": "Program Kami",
+      "description": "Dua program utama yang menjadi fokus dalam pengembangan pendidikan Islam di Sulawesi Tengah",
       "cottage": {
         "title": "Pondok Pesantren Darul Hadits",
-        "desc": "Program pendidikan Islam terpadu untuk putra dan putri dengan fokus pada tahfidz dan takhossus."
+        "desc": "Program pendidikan Islam terpadu untuk putra dan putri dengan fokus pada tahfidz dan takhossus.",
+        "ctaLabel": "Selengkapnya"
       },
+
       "community": {
         "title": "Komunitas Ta'shil Ilmi",
-        "desc": "Program pembelajaran ilmu alat meliputi bahasa Arab, Ushul Fiqh, dan Ushul Tafsir."
+        "desc": "Program pembelajaran ilmu alat meliputi bahasa Arab, Ushul Fiqh, dan Ushul Tafsir.",
+        "ctaLabel": "Selengkapnya"
       }
     },
+
     "announcement-section": {
       "title": "Pengumuman Terbaru",
-      "notice-1": {
-        "id": 1,
-        "title": "Pendaftaran Santri Baru 2024/2025",
-        "shortDesc": "Dibuka pendaftaran santri baru untuk tahun ajaran 2024/2025. Kuota terbatas.",
-        "date": "2024-01-15"
-      },
-      "notice-2": {
-        "id": 2,
-        "title": "Program Tahfidz Intensif",
-        "shortDesc": "Program tahfidz intensif untuk santri yang ingin menyelesaikan hafalan dengan cepat.",
-        "date": "2024-01-10"
-      },
-      "notice-3": {
-        "id": 3,
-        "title": "Kegiatan Bakti Sosial",
-        "shortDesc": "Yayasan mengadakan bakti sosial untuk masyarakat sekitar pondok pesantren.",
-        "date": "2024-01-10"
-      },
-      "readmore": "Baca Selengkapnya"
+      "description": "Informasi terbaru dari Yayasan Peduli Ilmu Sulawesi Tengah",
+      "ctaLabel": "Baca Selengkapnya"
     },
+
     "donation-section": {
       "title": "Ta'awun (Donasi Terbuka)",
-      "subTitle": "Mari berpartisipasi dalam pembangunan fasilitas pendidikan",
-      "donation-1": {
-        "id": 1,
-        "name": "Pembangunan Gedung Serbaguna",
-        "needed": "Rp 500.000.000",
-        "progress": "25",
-        "desc": "Gedung untuk kegiatan pembelajaran dan acara besar"
-      },
-      "donation-2": {
-        "id": 2,
-        "name": "Renovasi Asrama Putri",
-        "needed": "Rp 300.000.000",
-        "progress": "85",
-        "desc": "Perbaikan dan perluasan asrama untuk santri putri"
-      },
-      "donation-3": {
-        "id": 3,
-        "name": "Ponpes Putra Daarul Hadits Sibowi",
-        "needed": "Rp 200.000.000",
-        "progress": "45",
-        "desc": "Fasilitas sanitasi yang layak untuk santri"
-      },
-      "attributes": {
-        "needed": "Kebutuhan",
-        "progress": "Progress",
-        "action": "Donasi Sekarang"
+      "description": "Mari berpartisipasi dalam membangun sarana dan prasarana pendidikan Islam yang berkualitas untuk generasi masa depan",
+      "errorMsg": "Gagal memuat program donasi.",
+      "card": {
+        "status": "Aktif",
+        "progressLabel": "Progress",
+        "collectedLabel": "Terkumpul",
+        "targetLabel": "Target",
+        "ctaLabel": "Donasi Sekarang"
       }
     }
   },
+  "DonationDetailPage": {
+    "progress-section": {
+      "title": "Progress Proyek",
+      "progressLabel": "Progress",
+      "collectedLabel": "Terkumpul",
+      "targetLabel": "Target",
+      "remainingLabel": "Tersisa"
+    },
+    "detail-section": {
+      "title": "Detail Proyek",
+      "locationLabel": "Lokasi",
+      "statusLabel": "Status",
+      "startDateLabel": "Tanggal Mulai",
+      "endDateLabel": "Tanggal Berakhir",
+      "descriptionLabel": "Deskripsi Proyek"
+    },
+    "sidebar-section": {
+      "fastAction": {
+        "title": "Aksi Cepat",
+        "ctaShareLabel": "Bagikan Proyek",
+        "bankTransferLabel": "Transfer Bank",
+        "confirmPaymentLabel": "Konfirmasi Pembayaran",
+        "phoneNumberLabel": "Nomor Telepon"
+      },
+      "paymentMethod": {
+        "title": "Metode Pembayan",
+        "bankTransferLabel": "Transfer Bank",
+        "ewalletLabel": "Dompet Elektronik"
+      },
+      "confirmPayment": {
+        "title": "Konfirmasi Pembayaran",
+        "note": "Hubungi kami untuk konfirmasi donasi atau membutuhkan bantuan"
+      }
+    }
+  },
+
   "AboutPage": {
     "meta": {
       "title": "Tentang Kami - Yayasan Peduli Ilmu",
@@ -193,6 +205,125 @@
       "card-2": "Total Pengeluaran",
       "card-3": "Saldo Akhir",
       "card-4": "Total Santri"
+    }
+  },
+  "KomunitasPage": {
+    "about-section": {
+      "label": "Tentang Komunitas",
+      "title": "Komunitas Ta’shilul ‘Ilmi Palu",
+      "description": " Komunitas Ta’shil Ilmi Palu adalah sebuah komunitas yang dibentuk                 untuk mewadahi pembelajaran terkait pondasi-pondasi ilmu syar’i                 dengan mengkaji kitab-kitab para ulama secara terstruktur. Komunitas                 ini terbuka bagi ikhwah, siapa saja yang ingin belajar                 pondasi-pondasi ilmu syar’i."
+    },
+    "visimisi-section": {
+      "title": "Visi & Misi",
+      "visi": {
+        "title": "Visi",
+        "desc": "Mencetak penuntut ilmu yang menguasai dasar ilmu agama"
+      },
+      "misi": {
+        "title": "Misi"
+      },
+      "misions": {
+        "misi-1": "Mengkaji dan mengajarkan kitab-kitab para ulama salaf",
+        "misi-2": "Penekanan hafalan quran, hadits dan matan-matan ilmu",
+        "misi-3": "Penekanan terhadap cabang ilmu bahasa arab"
+      }
+    },
+    "achievement-section": {
+      "title": "Indikator Prestasi",
+      "ach-1": "Menghafal matan-matan dasar keilmuan",
+      "ach-2": "Memahami pondasi utama keilmuan",
+      "ach-3": "Mampu mengajarkan dasar-dasar ilmu agama"
+    },
+    "teacher-section": {
+      "title": "Pengajar",
+      "name": "Al-ustadz Abu Huraerah",
+      "degree": "B.A, M.A حفظه الله",
+      "university": "Alumni Fakultas Hadits, Universitas Islam Madinah"
+    },
+    "schedule-section": {
+      "title": "Jadwal Kegiatan"
+    },
+    "books-section": {
+      "title": "Daftar Kitab yang Dipelajari"
+    },
+    "books": {
+      "ajurrumiyah": {
+        "title": "Ajurrumiyah",
+        "arabic": "الاجرومية",
+        "subject": "Nahwu"
+      },
+      "mutammimah": {
+        "title": "Mutammimah",
+        "arabic": "متممة الاجرومية",
+        "subject": "Nahwu"
+      },
+      "lamiyah-afal": {
+        "title": "Lamiyah Af'al",
+        "arabic": "لامية الأفعال",
+        "subject": "Sharaf"
+      },
+      "miatul-maaani": {
+        "title": "Mi'atul Ma'aani",
+        "arabic": "مائة المعاني والبيان",
+        "subject": "Balaghah"
+      },
+      "arabic-dictionary": {
+        "title": "Kamus Bahasa Arab",
+        "arabic": "",
+        "subject": "Matan Al Lughah"
+      },
+      "al-waraqat": {
+        "title": "Al Waraqat",
+        "arabic": "الورقات في أصول الفقه",
+        "subject": "Ushul Fiqh"
+      },
+      "qawaid-fiqhiyah": {
+        "title": "Mandzumah Qawaid Fiqhiyah",
+        "arabic": "منظومة القواعد الفقهية",
+        "subject": "Qowaid Fiqh"
+      },
+      "al-baiquniyah": {
+        "title": "Mandzumah Al Baiquniyah",
+        "arabic": "المنظومة البيقونية",
+        "subject": "Musthalah Hadits"
+      },
+      "fushul-tafsir": {
+        "title": "Fushul Fii Tafsir",
+        "arabic": "فصول في أصول التفسير",
+        "subject": "Ilmu Tafsir"
+      },
+      "taqdim-ilmi": {
+        "title": "Khulasoh Ta'dzim 'Ilmi",
+        "arabic": "خلاصة تعظيم العلم",
+        "subject": "Adab"
+      }
+    },
+    "rule-section": {
+      "title": "Aturan-aturan",
+      "rules": [
+        "Berkomitmen mengikuti program ikhlas karena Allah تعالى dan bersungguh-sungguh (serius)",
+        "Program ini hanya untuk ikhwah yang serius dan berkomitmen untuk mengikuti proses belajar. Peserta belajar diharuskan (WAJIB) melakukan presensi",
+        "Membawa buku dan pena untuk mencatat",
+        "Menjaga adab ketika kegiatan belajar berlangsung",
+        "Menjaga dan mengusahakan hubungan baik, baik dengan guru, sesama pelajar dan pengurus tempat kegiatan belajar",
+        "Mengikuti peraturan tempat kegiatan berlangsung, menjaga ketertiban serta kebersihan selama berlangsungnya kegiatan belajar"
+      ]
+    },
+    "contact-section": {
+      "title": "Info Lebih Lanjut",
+      "whatsapp": "WhatsApp",
+      "contacts": {
+        "ctc-1": {
+          "name": "Abu Fatimah"
+        },
+        "ctc-2": {
+          "name": "Firman"
+        }
+      },
+      "note": {
+        "title": "Catatan Penting",
+        "body": "Apabila tidak mampu komitmen dan serius, maka tetap boleh ikut kegiatan belajar, namun dengan status sebagai mustafid saja"
+      }
     }
   },
   "ContactPage": {

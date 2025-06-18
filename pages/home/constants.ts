@@ -1,12 +1,57 @@
-export const MISI = [
-  'Menyelenggarakan pendidikan Islam yang berkualitas dan terpadu',
-  'Mengembangkan dakwah Islam yang moderat dan rahmatan lil alamiin',
-  'Memberdayakan masyarakat melalui program-program sosial dan ekonomi',
-  'Membangun jaringan kerjasama dengan berbagai pihak untuk kemajuan pendidikan',
-  'Melestarikan nilai-nilai Islam dalam kehidupan bermasyarakat',
+import {
+  BookOpen,
+  GraduationCap,
+  Users,
+  ChurchIcon as Mosque,
+  LucideIcon,
+} from 'lucide-react';
+
+import { Features } from './types';
+
+type ProgramCardDataProps = {
+  id: string;
+  href: string;
+  icon: LucideIcon;
+  iconBg: string;
+  location: string;
+  features: Features[];
+};
+
+export const PROGRAM_CARD_DATA: ProgramCardDataProps[] = [
+  {
+    id: 'cottage',
+    href: '/program/pondok-pesantren',
+    icon: Mosque,
+    iconBg: 'bg-primary-500',
+    location: '(Putra - Putri) - Sibowi',
+    features: [
+      { label: 'Tahfidz', icon: BookOpen, iconClass: 'text-primary-500' },
+      { label: 'Takhossus', icon: GraduationCap, iconClass: 'text-secondary-600' },
+    ],
+  },
+  {
+    id: 'community',
+    href: '/program/komunitas-tashil',
+    icon: Users,
+    iconBg: 'bg-secondary-600',
+    location: 'Palu',
+    features: [
+      { label: 'Bahasa Arab', icon: BookOpen, iconClass: 'text-primary-500' },
+      { label: 'Ushul Fiqh', icon: GraduationCap, iconClass: 'text-secondary-600' },
+    ],
+  },
 ];
 
-export const ANNOUNCEMENTS = [
+type AnnouncementsProps = {
+  id: number;
+  title: string;
+  date: string;
+  category: string;
+  content: string;
+  urgent: boolean;
+};
+
+export const ANNOUNCEMENTS: AnnouncementsProps[] = [
   {
     id: 1,
     title: 'Pendaftaran Santri Baru Tahun 2024/2025',

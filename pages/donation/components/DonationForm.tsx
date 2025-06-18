@@ -60,11 +60,9 @@ function DonationForm({ programId }: { programId: number }) {
         if (uploadError) throw uploadError;
 
         // Get public URL of uploaded file
-        const { data: publicUrlData, error: publicUrlError } = supabase.storage
+        const { data: publicUrlData } = supabase.storage
           .from('donation-evidence')
           .getPublicUrl(filePath);
-
-        if (publicUrlError) throw publicUrlError;
 
         evidenceUrl = publicUrlData?.publicUrl || '';
       }

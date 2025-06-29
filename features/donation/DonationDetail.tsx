@@ -26,6 +26,7 @@ import {
 
 import useFetchProgramDetail from './hooks/useFetchProgramDetail';
 import { useTranslations, useFormatter } from 'next-intl';
+import Image from 'next/image';
 
 const DonationDetailPage = () => {
   const t = useTranslations('DonationDetailPage');
@@ -85,7 +86,7 @@ const DonationDetailPage = () => {
       {/* Header section */}
       <section className="bg-gradient-to-r from-secondary-500 to-primary-600 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center mb-4">
+          <div className="flex items-center justify-center mb-4">
             <Link
               href={`/`}
               className="flex items-center text-white hover:text-primary-200 transition-colors duration-200 mr-4"
@@ -103,7 +104,7 @@ const DonationDetailPage = () => {
               {program?.status}
             </span>
           </div>
-          <div className="grid lg:grid-cols-2 gap-8 items-start">
+          <div className="flex justify-center text-center">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">
                 {program?.title}
@@ -111,44 +112,9 @@ const DonationDetailPage = () => {
               <p className="text-primary-100 text-lg mb-4">
                 {program?.short_description}
               </p>
-              <div className="flex items-center text-primary-200">
+              <div className="flex justify-center items-center text-primary-200">
                 <MapPin className="h-5 w-5 mr-2" />
                 <span>{program?.location}</span>
-              </div>
-            </div>
-            <div className="lg:flex lg:justify-end">
-              <div className="w-full lg:w-80 h-48 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 overflow-hidden">
-                <div className="w-full h-full flex flex-col items-center justify-center p-6 relative">
-                  {/* Background Pattern */}
-                  <div className="absolute inset-0 opacity-10">
-                    <div className="grid grid-cols-6 gap-2 h-full">
-                      {Array.from({ length: 24 }).map((_, i) => (
-                        <div key={i} className="bg-white rounded-sm"></div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Main Icon */}
-                  <div className="relative z-10 mb-4">
-                    <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/30">
-                      <Building className="h-10 w-10 text-white" />
-                    </div>
-                    {/* Floating Hearts */}
-                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-secondary-500 rounded-full flex items-center justify-center animate-pulse">
-                      <Heart className="h-3 w-3 text-white fill-current" />
-                    </div>
-                    <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-primary-400 rounded-full flex items-center justify-center animate-bounce">
-                      <Heart className="h-2 w-2 text-white fill-current" />
-                    </div>
-                  </div>
-
-                  {/* Text Content */}
-                  <div className="text-center relative z-10">
-                    <h3 className="text-white font-semibold text-xl mb-1">
-                      Proyek Amal
-                    </h3>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -298,10 +264,8 @@ const DonationDetailPage = () => {
           <div className="space-y-6">
             {/* Quick Actions */}
             <div className="bg-card rounded-lg shadow-lg border border-border sticky top-4 z-10">
-              <div className="p-6 border-b border-border">
-                <h3 className="text-xl font-bold text-accent-800">
-                  {t('sidebar-section.fastAction.title')}
-                </h3>
+              <div className="border-b border-border w-full">
+                <Image src={program?.image_url as string} width={200} height={200} alt={program?.slug as string} className="w-full"/>
               </div>
               <div className="p-6 space-y-4">
                 {/* Share Project  */}
@@ -392,33 +356,6 @@ const DonationDetailPage = () => {
                             </p>
                           </div>
                           <CopyButton value={bank.account} />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* E-Wallet */}
-                <div>
-                  <h4 className="font-semibold text-accent-800 mb-3">
-                    {t('sidebar-section.paymentMethod.ewalletLabel')}
-                  </h4>
-                  <div className="grid grid-cols-2 gap-2">
-                    {eWallets.map((wallet, index) => (
-                      <div
-                        key={index}
-                        className="bg-muted p-3 rounded-lg text-center"
-                      >
-                        <p className="font-medium text-accent-800 text-sm">
-                          {wallet.name}
-                        </p>
-                        <div className="flex items-center justify-between mt-1">
-                          <p className="text-xs text-muted-foreground font-mono">
-                            {wallet.number}
-                          </p>
-                          <button className="p-1 text-primary-600 hover:text-primary-700 transition-colors duration-200">
-                            {/* <Copy className="h-3 w-3" /> */}
-                          </button>
                         </div>
                       </div>
                     ))}

@@ -15,13 +15,13 @@ import DropdownMenu from '../ui/DropdownMenu';
 const NAV_ITEMS = [
   { href: '/', label: 'home' },
   { href: '/about', label: 'about' },
-  { href: '/report', label: 'reports' },
+  // { href: '/report', label: 'reports' },
   { href: '/contact', label: 'contact' },
 ];
 
 const PROGRAM_ITEMS = [
   { href: '/program/pondok-pesantren', label: 'cottage', desc: 'Putra & Putri' },
-  { href: '/program/komunitas-tashil', label: 'community', desc: 'Palu' },
+  // { href: '/program/komunitas-tashil', label: 'community', desc: 'Palu' },
 ];
 
 // const PUBLICATION_ITEMS = [

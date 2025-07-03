@@ -25,3 +25,13 @@ export function formatCurrency(amount: number, locale: string, currency: string)
     maximumFractionDigits: 0,
   }).format(convertedAmount);
 }
+
+export const formatDate = (date?: string | Date | null, locale = 'id') => {
+  if (!date) return '-';
+  const parsed = new Date(date);
+  return parsed.toLocaleDateString(locale, {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+  });
+};

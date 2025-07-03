@@ -27,7 +27,6 @@
         "secondary": "اعرف المزيد"
       }
     },
-
     "visimisi-section": {
       "title": "الرؤية والرسالة",
       "description": "برنامجين رئيسيين يركزان على تطوير التعليم الإسلامي في سولاوسي الوسطى.",
@@ -45,7 +44,6 @@
         ]
       }
     },
-
     "program-section": {
       "title": "برامجنا",
       "description": "برنامجين رئيسيين يركزان على تطوير التعليم الإسلامي في وسط سولاويسي",
@@ -60,13 +58,11 @@
         "ctaLabel": "المزيد"
       }
     },
-
     "announcement-section": {
       "title": "آخر الإعلانات",
       "description": "آخر المستجدات من مؤسسة رعاية العلم في سولاويسي الوسطى",
       "ctaLabel": "اقرأ المزيد"
     },
-
     "donation-section": {
       "title": "التعاون (تبرع مفتوح)",
       "description": "ساهم في بناء مرافق وبنية تحتية تعليمية إسلامية ذات جودة عالية للأجيال القادمة.",
@@ -96,24 +92,31 @@
       "endDateLabel": "تاريخ الانتهاء",
       "descriptionLabel": "وصف المشروع"
     },
-    "sidebar-section": {
-      "fastAction": {
-        "title": "الإجراءات السريعة",
-        "ctaShareLabel": "مشاركة المشروع",
-        "bankTransferLabel": "التحويل البنكي",
-        "confirmPaymentLabel": "تأكيد الدفع",
-        "phoneNumberLabel": "رقم الهاتف"
-      },
-      "paymentMethod": {
-        "title": "طرق الدفع",
-        "bankTransferLabel": "التحويل البنكي",
-        "ewalletLabel": "المحفظة الإلكترونية"
-      },
-      "confirmPayment": {
-        "title": "تأكيد الدفع",
-        "note": "يرجى التواصل معنا لتأكيد التبرع أو إذا كنت بحاجة إلى مساعدة"
-      }
-    }
+    "btnBackLabel": "يعود",
+    "timeline-section": {
+      "title": "برنامج الجدول الزمني"
+    },
+    "prevPageLabel": "إلى قائمة البرامج",
+    "timelineLabel": "برنامج الجدول الزمني",
+    "donation-section": {
+      "title": "كيفية التبرع",
+      "step1label": "الخطوة 1: التحويل البنكي",
+      "noAccountLabel": "رقم الحساب",
+      "btncopyAccLabel": "تم نسخ رقم الحساب!",
+      "btncopyAccLabel2": "نسخ رقم الحساب",
+      "swiftCodeLabel": "رمز SWIFT (للمتبرعين من الخارج)",
+      "btncopySwiftLabel": "تم نسخ رمز SWIFT!",
+      "btncopySwiftLabel2": "نسخ رمز SWIFT"
+    },
+    "contact-section": {
+      "step2Label": "الخطوة 2: تأكيد التبرع",
+      "whatsappLabel": "تحدث عبر واتساب الآن",
+      "copyNumberLabel": "نسخ رقم الهاتف",
+      "copiedNumberLabel": "تم نسخ الرقم!",
+      "contactRoleLabel": "أمين صندوق المؤسسة",
+      "infoImportant": "<strong>هام:</strong> بعد إجراء التحويل، يرجى التواصل معنا عبر واتساب لتأكيد تبرعك."
+    },
+    "noTimelineMessage": "لا يوجد نشاط بعد"
   },
   "AboutPage": {
     "meta": {

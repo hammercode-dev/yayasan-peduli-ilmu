@@ -35,3 +35,22 @@ export const formatDate = (date?: string | Date | null, locale = 'id') => {
     year: 'numeric',
   });
 };
+
+export function formatCurrencyByLocale(amount: number, locale: string): string {
+  const isArabic = locale === 'ar';
+  const currency = locale === 'id' ? 'IDR' : 'USD';
+  const isIDR = currency === 'IDR';
+
+  const formatter = new Intl.NumberFormat(isArabic ? 'en' : locale, {
+    style: 'currency',
+    currency,
+    currencyDisplay: 'symbol',
+    ...(isIDR && {
+      // if it's IDR, remove all decimal digits
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    }),
+  });
+
+  return formatter.format(amount);
+}

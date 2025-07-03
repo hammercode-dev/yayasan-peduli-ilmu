@@ -1,6 +1,7 @@
-import { useTranslations, useFormatter } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useCurrencyByLocale } from '@/hooks/useCurrencyByLocale';
 import { ProgramDonationProps } from '@/features/home/types';
+import { formatCurrencyByLocale } from '@/lib/format';
 
 type DonationProgressField = Pick<
   ProgramDonationProps,
@@ -14,7 +15,7 @@ type DonationProgressProps = {
 function DonationProgress({ donation }: DonationProgressProps) {
   const t = useTranslations('DonationDetailPage.progress-section');
   const { convertCurrency } = useCurrencyByLocale();
-  const format = useFormatter();
+  const locale = useLocale();
 
   const collected = donation?.collected_amount ?? 0;
   const target = donation?.target_amount ?? 0;
@@ -46,16 +47,16 @@ function DonationProgress({ donation }: DonationProgressProps) {
       </div>
       <div className="grid md:grid-cols-3 gap-4 mt-6">
         <Stat
-          value={format.number(convertCurrency(collected), 'currency')}
+          value={formatCurrencyByLocale(convertCurrency(collected), locale)}
           label={t('collectedLabel')}
           color="text-primary-600"
         />
         <Stat
-          value={format.number(convertCurrency(target), 'currency')}
+          value={formatCurrencyByLocale(convertCurrency(target), locale)}
           label={t('targetLabel')}
         />
         <Stat
-          value={format.number(convertCurrency(remainingAmount), 'currency')}
+          value={formatCurrencyByLocale(convertCurrency(remainingAmount), locale)}
           label={t('remainingLabel')}
           color="text-secondary-600"
         />

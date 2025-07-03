@@ -27,7 +27,6 @@
         "secondary": "Pelajari Lebih Lanjut"
       }
     },
-
     "visimisi-section": {
       "title": "Visi & Misi",
       "description": "Dua program utama yang menjadi fokus dalam pengembangan pendidikan Islam di Sulawesi Tengah.",
@@ -45,7 +44,6 @@
         ]
       }
     },
-
     "program-section": {
       "title": "Program Kami",
       "description": "Dua program utama yang menjadi fokus dalam pengembangan pendidikan Islam di Sulawesi Tengah",
@@ -54,20 +52,17 @@
         "desc": "Program pendidikan Islam terpadu untuk putra dan putri dengan fokus pada tahfidz dan takhossus.",
         "ctaLabel": "Selengkapnya"
       },
-
       "community": {
         "title": "Komunitas Ta'shil Ilmi",
         "desc": "Program pembelajaran ilmu alat meliputi bahasa Arab, Ushul Fiqh, dan Ushul Tafsir.",
         "ctaLabel": "Selengkapnya"
       }
     },
-
     "announcement-section": {
       "title": "Pengumuman Terbaru",
       "description": "Informasi terbaru dari Yayasan Peduli Ilmu Sulawesi Tengah",
       "ctaLabel": "Baca Selengkapnya"
     },
-
     "donation-section": {
       "title": "Ta'awun (Donasi Terbuka)",
       "description": "Mari berpartisipasi dalam membangun sarana dan prasarana pendidikan Islam yang berkualitas untuk generasi masa depan",
@@ -97,26 +92,32 @@
       "endDateLabel": "Tanggal Berakhir",
       "descriptionLabel": "Deskripsi Proyek"
     },
-    "sidebar-section": {
-      "fastAction": {
-        "title": "Aksi Cepat",
-        "ctaShareLabel": "Bagikan Proyek",
-        "bankTransferLabel": "Transfer Bank",
-        "confirmPaymentLabel": "Konfirmasi Pembayaran",
-        "phoneNumberLabel": "Nomor Telepon"
-      },
-      "paymentMethod": {
-        "title": "Metode Pembayan",
-        "bankTransferLabel": "Transfer Bank",
-        "ewalletLabel": "Dompet Elektronik"
-      },
-      "confirmPayment": {
-        "title": "Konfirmasi Pembayaran",
-        "note": "Hubungi kami untuk konfirmasi donasi atau membutuhkan bantuan"
-      }
-    }
+    "btnBackLabel": "Kembali",
+    "timeline-section": {
+      "title": "Program Timeline"
+    },
+    "prevPageLabel": "Ke Daftar Program",
+    "timelineLabel": "Timeline Program",
+    "donation-section": {
+      "title": "Cara Donasi",
+      "step1label": "Langkah Ke-1: Transfer Bank",
+      "noAccountLabel": "No. Rekening",
+      "btncopyAccLabel": "Nomor Rekening Tersalin!",
+      "btncopyAccLabel2": "Salin Nomor Rekening",
+      "swiftCodeLabel": "SWIFT Code (untuk donatur luar negeri)",
+      "btncopySwiftLabel": "SWIFT Code Tersalin!",
+      "btncopySwiftLabel2": "Salin SWIFT Code"
+    },
+    "contact-section": {
+      "step2Label": "Langkah Ke-2: Konfirmasi Donasi",
+      "whatsappLabel": "Chat WhatsApp Sekarang",
+      "copyNumberLabel": "Salin Nomor Telepon",
+      "copiedNumberLabel": "Nomor Tersalin!",
+      "contactRoleLabel": "Bendahara Yayasan",
+      "infoImportant": "<strong>Penting:</strong> Setelah transfer, silakan hubungi kami melalui WhatsApp untuk konfirmasi donasi Anda."
+    },
+    "noTimelineMessage": "Belum ada aktivitas"
   },
-
   "AboutPage": {
     "meta": {
       "title": "Tentang Kami - Yayasan Peduli Ilmu",

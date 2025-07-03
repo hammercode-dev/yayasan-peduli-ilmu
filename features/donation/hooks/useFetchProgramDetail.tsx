@@ -2,21 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
-
-interface ProgramDonasiProps {
-  id: number;
-  title: string;
-  description: string;
-  image_url: string;
-  target_amount: number;
-  collected_amount: number;
-  status: 'active' | 'closed' | 'archived';
-  starts_at: string;
-  ends_at: string;
-  location: string;
-  slug: string;
-  short_description: string;
-}
+import { ProgramDonasiProps } from '../types';
 
 type Status = 'idle' | 'loading' | 'error' | 'success';
 
@@ -33,7 +19,18 @@ function useFetchProgramDetail(slug: string) {
       try {
         const { data, error } = await supabase
           .from('program_donation')
-          .select('*')
+          .select(
+            `*, 
+            program_timeline(
+              id,
+              date,
+              activity,
+              activity_en,
+              activity_ar,
+              cost,
+              description
+            )`
+          )
           .eq('slug', slug)
           .single();
 

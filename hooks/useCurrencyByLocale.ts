@@ -20,9 +20,8 @@ export function useCurrencyByLocale() {
       case 'id':
         return 'IDR';
       case 'en':
-        return 'USD';
       case 'ar':
-        return 'AED';
+        return 'USD';
       default:
         return 'IDR';
     }

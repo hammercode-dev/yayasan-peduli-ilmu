@@ -3,26 +3,6 @@ import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import DonationDetailPage from '../DonationDetail';
 
-// Mock next-intl hooks
-jest.mock('next-intl', () => ({
-  useTranslations: () => {
-    const t = (key: string) => key;
-    t.rich = (_key: string, options: any) =>
-      options?.strong?.('mocked rich text') ?? _key;
-    return t;
-  },
-  useFormatter: () => ({
-    number: (val: number) => val.toLocaleString(),
-    dateTime: (val: Date | string) => new Date(val).toLocaleDateString('en-US'),
-  }),
-  useLocale: () => 'en',
-}));
-
-// Mock next/navigation
-jest.mock('next/navigation', () => ({
-  useParams: () => ({ slug: 'program-abc' }),
-}));
-
 // Mock API fetching hook
 jest.mock('../hooks/useFetchProgramDetail', () => ({
   __esModule: true,
@@ -45,10 +25,6 @@ jest.mock('../hooks/useFetchProgramDetail', () => ({
   }),
 }));
 
-// Mock i18n link
-jest.mock('@/i18n/navigation', () => ({
-  Link: ({ children, href }: any) => <a href={href}>{children}</a>,
-}));
 
 describe('DonationDetailPage (unit test)', () => {
   it('renders the mocked program title as heading', async () => {

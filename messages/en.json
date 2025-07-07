@@ -27,7 +27,6 @@
         "secondary": "Contact us"
       }
     },
-
     "visimisi-section": {
       "title": "Vision & Mission",
       "description": "Two core programs focused on developing Islamic education in Central Sulawesi.",
@@ -45,7 +44,6 @@
         ]
       }
     },
-
     "program-section": {
       "title": "Our Programs",
       "description": "Two main programs focused on the development of Islamic education in Central Sulawesi",
@@ -60,13 +58,11 @@
         "ctaLabel": "Learn More"
       }
     },
-
     "announcement-section": {
       "title": "Latest Announcements",
       "description": "The latest updates from Yayasan Peduli Ilmu of Central Sulawesi",
       "ctaLabel": "Read More"
     },
-
     "donation-section": {
       "title": "Ta'awun (Open Donation)",
       "description": "Participate in building quality Islamic education facilities and infrastructure for future generations.",
@@ -96,26 +92,32 @@
       "endDateLabel": "End Date",
       "descriptionLabel": "Project Description"
     },
-    "sidebar-section": {
-      "fastAction": {
-        "title": "Quick Actions",
-        "ctaShareLabel": "Share Project",
-        "bankTransferLabel": "Bank Transfer",
-        "confirmPaymentLabel": "Confirm Payment",
-        "phoneNumberLabel": "Phone Number"
-      },
-      "paymentMethod": {
-        "title": "Payment Methods",
-        "bankTransferLabel": "Bank Transfer",
-        "ewalletLabel": "E-Wallet"
-      },
-      "confirmPayment": {
-        "title": "Confirm Payment",
-        "note": "Contact us to confirm your donation or if you need assistance"
-      }
-    }
+    "btnBackLabel": "Return",
+    "timeline-section": {
+      "title": "Timeline Program"
+    },
+    "prevPageLabel": "To the program list",
+    "timelineLabel": "Timeline Program",
+    "donation-section": {
+      "title": "How to Donate",
+      "step1label": "Step 1: Bank Transfer",
+      "noAccountLabel": "Account Number",
+      "btncopyAccLabel": "Account Number Copied!",
+      "btncopyAccLabel2": "Copy Account Number",
+      "swiftCodeLabel": "SWIFT Code (for international donors)",
+      "btncopySwiftLabel": "SWIFT Code Copied!",
+      "btncopySwiftLabel2": "Copy SWIFT Code"
+    },
+    "contact-section": {
+      "step2Label": "Step 2: Confirm Your Donation",
+      "whatsappLabel": "Chat on WhatsApp Now",
+      "copyNumberLabel": "Copy Phone Number",
+      "copiedNumberLabel": "Number Copied!",
+      "contactRoleLabel": "Foundation Treasurer",
+      "infoImportant": "<strong>Important:</strong> After transferring, please contact us via WhatsApp to confirm your donation."
+    },
+    "noTimelineMessage": "There is no activity yet"
   },
-
   "AboutPage": {
     "meta": {
       "title": "About Us - Yayasan Peduli Ilmu",

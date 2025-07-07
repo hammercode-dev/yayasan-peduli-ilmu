@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Yayasan Peduli Ilmu
 
-## Getting Started
+A modern donation platform for **Yayasan Peduli Ilmu**, designed to support multilingual communities, simplify fundraising, and ensure transparency for educational initiatives.
 
-First, run the development server:
+---
+
+## 🚀 Getting Started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install       # Install dependencies
+npm dev           # Start development server
+npm build         # Production build
+npm start         # Start production server
+npm test          # Run unit/integration tests
+npm format        # Format codebase with Prettier
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Make sure to create `.env.example` into `.env` and update your Supabase keys.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Tech Stack
 
-## Learn More
+- **Framework**: [Next.js 15](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **UI/UX**: [Tailwind CSS](https://tailwindcss.com), [Headless UI](https://headlessui.com), [Lucide Icons](https://lucide.dev)
+- **i18n**: [next-intl v4](https://next-intl-docs.vercel.app)
+- **Backend**: [Supabase](https://supabase.com)
+- **Testing**: [Jest](https://jestjs.io), [Testing Library](https://testing-library.com)
+- **Linting/Formatting**: ESLint, Prettier, Husky (with commitlint)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Developer Docs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+We maintain internal documentation in the [`/docs`](./docs) folder:
 
-## Deploy on Vercel
+- [`next-intl.md`](./docs/next-intl.md) — How to use `next-intl` across routes and components
+- [`supabase.md`](./docs/supabase.md) — Supabase schemas, auth rules, and storage usage
+- [`helpers.md`](./docs/helpers.md) - globally reusable utility functions and custom hooks
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+> Docs help onboard future devs and maintain consistency across the team.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🧪 Testing
+
+```bash
+npm run test          # Run all tests once
+npm run test:watch    # Watch mode
+```
+
+We use:
+
+- **Jest**: Test runner
+- **@testing-library/react**: Component + DOM testing
+- **Mocking**: For next-intl, Supabase, router, etc.
+
+Tests are colocated next to their source files as `*.test.tsx`.
+
+---
+
+## 📦 Environment Variables
+
+```env
+# .env.example
+NEXT_PUBLIC_SUPABASE_URL=https://<your-project>.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+> Use `.env.local` for development and keep your secrets safe.
+
+---
+
+## ✅ Commit Convention
+
+We follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for consistent changelogs and CI/CD pipelines.
+
+Example:
+
+```bash
+feat(donation): redesign donation card layout and improve logic
+fix(timeline): correct date formatting issue in program timeline
+```
+
+Setup: Husky + Commitlint
+
+---
+
+## 👥 Contributing
+
+- Use feature folders and follow component separation
+- Write tests for logic-heavy components or hooks
+- Update `/docs` if adding/removing architecture-related decisions
+
+---
+
+## 📝 License
+
+MIT License © Yayasan Peduli Ilmu 2025
+
+---
+
+> Built with ❤️ by a small team of dedicated volunteers. Contributions and feedback welcome!

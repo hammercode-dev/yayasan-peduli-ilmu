@@ -3,7 +3,13 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['uegsbnqzpdfvntuiuold.supabase.co'], // your Supabase project domain
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'uegsbnqzpdfvntuiuold.supabase.co',
+        pathname: '/storage/v1/object/public/**',
+      },
+    ],
   },
 };
 

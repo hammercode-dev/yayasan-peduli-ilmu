@@ -23,6 +23,9 @@ export function generateStaticParams() {
 export const metadata: Metadata = {
   title: 'Yayasan Peduli Ilmu',
   description: "Yayasan Peduli Ilmu Sulawesi Tengah - Membangun Generasi Qur'ani",
+  icons:{
+    icon: "/logo.ico"
+  }
 };
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });

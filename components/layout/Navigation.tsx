@@ -15,7 +15,7 @@ import DropdownMenu from '../ui/DropdownMenu';
 const NAV_ITEMS = [
   { href: '/', label: 'home' },
   { href: '/about', label: 'about' },
-  { href: '/report', label: 'reports' },
+  // { href: '/report', label: 'reports' },
   { href: '/contact', label: 'contact' },
 ];
 

@@ -48,7 +48,7 @@ const ProgramDetailSection = ({ data }: ProgramDetailSectionProps) => {
       </div>
 
       <div className="p-4 bg-muted/30 rounded-lg mt-6">
-        <p className="text-muted-foreground mb-2 font-medium">
+        <p className="font-bold mb-6 font-medium">
           {t('descriptionLabel')}
         </p>
         <div className="prose prose-lg text-muted-foreground">

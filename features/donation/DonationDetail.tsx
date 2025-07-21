@@ -95,7 +95,7 @@ const DonationDetailPage = () => {
 
             <ProgramDetailSection data={program} />
 
-            <ProgramTimeline program={program?.program_timeline} />
+            <ProgramTimeline timeline={program?.program_timeline} />
 
             {/* Donation Methods */}
             <div className="border-t border-border pt-8 mb-8">

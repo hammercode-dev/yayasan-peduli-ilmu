@@ -1,0 +1,12 @@
+.markdown {}
+
+.markdown h1 {
+  font-size: 24px;
+}
+
+.markdown h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* TODO: fill the styles here */

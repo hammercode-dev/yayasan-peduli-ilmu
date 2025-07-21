@@ -278,8 +278,8 @@ const PondokPesantrenPage = () => {
             <div className="grid md:grid-cols-2 gap-6 text-sm text-white/90">
               <div>
                 <p className="font-semibold mb-1">Telepon / WhatsApp</p>
-                <p className="mb-1">+62 812-3456-7890</p>
-                <p>+62 821-9876-5432</p>
+                <p className="mb-1">+6282231504555</p>
+                <p>+6285225575696</p>
               </div>
               <div>
                 <p className="font-semibold mb-1">Email</p>

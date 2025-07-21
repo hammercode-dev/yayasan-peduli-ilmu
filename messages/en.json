@@ -8,7 +8,8 @@
     "reports": "Reports",
     "publications": "Publications",
     "contact": "Contact",
-    "cottage": "Darul Hadits Islamic Boarding School",
+    "cottage": "Darul Hadits Islamic Boarding School - Men",
+    "cottage2": "Darul Hadits Islamic Boarding School - Women",
     "community": "Ta'shil Ilmi Community (Palu)",
     "article": "Articles",
     "book": "Books / Treatises"
@@ -145,7 +146,7 @@
       }
     },
     "management-section": {
-      "title": "Foundation Management",
+      "title": "Board and Leadership Team",
       "subTitle": "An experienced and committed management team in developing Islamic education"
     },
     "contactinformation-section": {
@@ -335,7 +336,7 @@
       "description": "We are ready to help and answer your questions. \nDon't hesitate to contact us anytime."
     },
     "meta": {
-      "title": "Contact Us - Yayasan Caring Science",
+      "title": "Contact Us - Yayasan Peduli Ilmu",
       "description": "We are ready to help and answer your questions. \nDon't hesitate to contact us anytime"
     },
     "faq-section": {

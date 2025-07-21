@@ -29,9 +29,9 @@ export default function ContactInformationSection() {
               {t('contactinformation-section.addressTitle')}
             </h3>
             <p className={`text-gray-600 `}>
-              {t.rich('contactinformation-section.address', {
-                br: () => <br />,
-              })}
+              Jl. Sungai Manonda Atas, Lrg. Masjid Imam Muslim Besar
+              RT/RW. 007/001 Kel. Duyu, Kec. Tatanga
+              Kota Palu, Sulawesi Tengah
             </p>
           </div>
           {/* phone numbers */}
@@ -43,9 +43,9 @@ export default function ContactInformationSection() {
               {t('contactinformation-section.phoneTitle')}
             </h3>
             <p className={`text-gray-600 `}>
-              +62 451 123456
+              +6282231504555
               <br />
-              +62 812 3456 7890
+              +6285225575696
             </p>
           </div>
           {/* emails */}
@@ -57,9 +57,7 @@ export default function ContactInformationSection() {
               {t('contactinformation-section.emailTitle')}
             </h3>
             <p className={`text-gray-600 `}>
-              info@yayasanpeduliilmu.org
-              <br />
-              admin@yayasanpeduliilmu.org
+              info@peduliilmu.org
             </p>
           </div>
         </div>

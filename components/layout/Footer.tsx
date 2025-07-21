@@ -111,24 +111,24 @@ export default function Footer() {
               <div className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 mt-0.5 text-primary-400" />
                 <div>
-                  <p className="text-gray-300">info@yayasanpeduliilmu.org</p>
+                  <p className="text-gray-300">info@peduliilmu.org</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <Phone className="h-5 w-5 mr-3 mt-0.5 text-primary-400" />
                 <div>
-                  <p className="text-gray-300">+62 812-3456-7890</p>
+                  <p className="text-gray-300">+6282231504555</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-0.5 text-primary-400" />
                 <div>
                   <p className="text-gray-300">
-                    Jl. Pendidikan No. 123
+                    Jl. Sungai Manonda Atas, Lrg. Masjid Imam Muslim Besar
                     <br />
-                    Palu, Sulawesi Tengah
+                    RT/RW. 007/001 Kel. Duyu, Kec. Tatanga
                     <br />
-                    94111
+                    Kota Palu, Sulawesi Tengah
                   </p>
                 </div>
               </div>

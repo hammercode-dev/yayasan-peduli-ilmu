@@ -20,8 +20,9 @@ const NAV_ITEMS = [
 ];
 
 const PROGRAM_ITEMS = [
-  { href: '/program/pondok-pesantren', label: 'cottage', desc: 'Putra & Putri' },
-  { href: '/program/komunitas-tashil', label: 'community', desc: 'Palu' },
+  { href: '/program/darul-hadits-sibowi-putra', label: 'cottage' },
+  { href: '/program/darul-hadits-putra-putri', label: 'cottage2' },
+  // { href: '/program/komunitas-tashil', label: 'community', desc: 'Palu' },
 ];
 
 // const PUBLICATION_ITEMS = [

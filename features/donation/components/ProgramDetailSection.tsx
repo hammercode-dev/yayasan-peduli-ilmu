@@ -6,6 +6,7 @@ import useLocalizedField from '@/hooks/useLocalizedField';
 import { formatDate } from '@/lib/format';
 
 import type { ProgramDonasiProps } from '../types';
+import MarkdownRenderer from '@/components/ui/MarkdownRenderer';
 
 type ProgramDetailFields = Pick<
   ProgramDonasiProps,
@@ -51,9 +52,7 @@ const ProgramDetailSection = ({ data }: ProgramDetailSectionProps) => {
           {t('descriptionLabel')}
         </p>
         <div className="prose prose-lg text-muted-foreground">
-          <p className="font-semibold text-foreground leading-relaxed text-base sm:text-lg mb-6">
-            {getField(data, 'description') ?? '-'}
-          </p>
+          <MarkdownRenderer markdown={getField(data, 'description') ?? '-'} />
         </div>
       </div>
     </section>

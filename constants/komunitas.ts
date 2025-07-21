@@ -136,12 +136,12 @@ export const BOOKS = [
 export const CONTACTS = [
   {
     name: 'ctc-1.name',
-    phone: '+62 5225 5756 96',
-    link: 'https://wa.me/6285225575696',
+    phone: '082231504555',
+    link: 'https://wa.me/+15716345553',
   },
-  {
-    name: 'ctc-2.name',
-    phone: '+62 82292 1344 42',
-    link: 'https://wa.me/6282292134442',
-  },
+  // {
+  //   name: 'ctc-2.name',
+  //   phone: '+62 82292 1344 42',
+  //   link: 'https://wa.me/6282292134442',
+  // },
 ];

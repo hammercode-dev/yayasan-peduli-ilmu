@@ -8,7 +8,8 @@
     "reports": "Laporan",
     "publications": "Publikasi",
     "contact": "Kontak",
-    "cottage": "Pondok Pesantren Darul Hadits",
+    "cottage": "Pondok Pesantren Darul Hadits Putra",
+    "cottage2": "Pondok Pesantren Darul Hadits Putri",
     "community": "Komunitas Ta'shil Ilmi (Palu)",
     "article": "Tulisan",
     "book": "Buku / Risalah"
@@ -145,8 +146,8 @@
       }
     },
     "management-section": {
-      "title": " Pengurus Yayasan",
-      "subTitle": "Tim pengurus yang berpengalaman dan berkomitmen dalam mengembangkan             pendidikan Islam"
+      "title": " Struktur Yayasan",
+      "subTitle": "Tim pengurus yang berkomitmen dalam mengembangkan pendidikan Islam"
     },
     "contactinformation-section": {
       "title": "   Informasi Kontak",
@@ -168,7 +169,7 @@
       "about": "Tentang",
       "reports": "Laporan",
       "contact": "Kontak",
-      "cottage": "Pondok Pesantren Darul Hadits",
+      "cottage": "Pondok Pesantren Darul Hadits Putra",
       "community": "Komunitas Ta'shil Ilmi (Palu)",
       "article": "Tulisan",
       "book": "Buku / Risalah"

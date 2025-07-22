@@ -28,15 +28,15 @@ const ProgramDetailSection = ({ data }: ProgramDetailSectionProps) => {
 
   return (
     <section className="border-border mb-8">
-      <p className="mb-2 md:mb-6 font-medium">
+      {/* <p className="mb-2 md:mb-6 font-semibold text-foreground text-xl sm:text-2xl">
         {t('title')}
-      </p>
+      </p> */}
       {/* <div className="mb-4 md:mb-6 grid grid-cols-3 gap-6 text-base">
         <p>{t('locationLabel')} {data?.location}</p>
         <p>{t('statusLabel')} {data?.status}</p>
         <p>{t('endDateLabel')} {formatDate(data?.ends_at, locale)}</p>
       </div> */}
-      <p className="mb-2 md:mb-6 font-medium">
+      <p className="mb-2 md:mb-6 font-semibold text-red-900 text-foreground text-xl sm:text-2xl">
         {t('descriptionLabel')}
       </p>
       {/* <h3 className="font-semibold text-foreground mb-6 text-xl sm:text-2xl">

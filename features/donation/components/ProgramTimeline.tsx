@@ -22,7 +22,7 @@ function ProgramTimeline({ timeline = [] }: ProgramTimelineProps) {
 
   return (
     <div className="border-t border-border pt-8 mb-8">
-      <h3 className="font-semibold text-foreground mb-6 text-xl sm:text-2xl">
+      <h3 className="text-red-900 font-semibold text-foreground mb-6 text-xl sm:text-2xl">
         {t('timelineLabel')}
       </h3>
       <div className="space-y-6">

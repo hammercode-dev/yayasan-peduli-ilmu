@@ -2,10 +2,8 @@
 
 import { useState } from 'react';
 import { useParams } from 'next/navigation';
-import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { ArrowLeft } from 'lucide-react';
 
 // hooks global
 import useLocalizedField from '@/hooks/useLocalizedField';

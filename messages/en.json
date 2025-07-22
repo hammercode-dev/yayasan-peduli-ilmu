@@ -72,8 +72,8 @@
       "card": {
         "status": "Active",
         "progressLabel": "Progress",
-        "collectedLabel": "Collected",
-        "targetLabel": "Target",
+        "collectedLabel": "Raised",
+        "targetLabel": "Goal",
         "ctaLabel": "Donate Now"
       }
     }
@@ -82,8 +82,8 @@
     "progress-section": {
       "title": "Project Progress",
       "progressLabel": "Progress",
-      "collectedLabel": "Collected",
-      "targetLabel": "Target",
+      "collectedLabel": "Raised",
+      "targetLabel": "Goal",
       "remainingLabel": "Remaining"
     },
     "detail-section": {

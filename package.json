@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
+    "gentype": "npx supabase gen types typescript --project-id giogdrxzrflspxtqdhsz > database.types.ts",
     "format": "prettier --write .",
     "test": "jest",
     "test:watch": "jest --watch"

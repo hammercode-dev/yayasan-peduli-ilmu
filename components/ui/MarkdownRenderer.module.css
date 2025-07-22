@@ -1,6 +1,8 @@
 /* TODO: fill the rest styles here. need to prefix with .markdown */
 
-.markdown {}
+.markdown {
+  color: #000;
+}
 
 .markdown h1 {
   font-size: 24px;
@@ -15,6 +17,11 @@
   margin-bottom: 1rem;
 }
 
+.markdown a {
+  color: blue;
+  text-decoration: underline;
+}
+
 .markdown ul {
   padding-left: 1rem;
   margin-bottom: 1.5rem;
@@ -22,4 +29,5 @@
 
 .markdown ul > li {
   margin-bottom: 0.5rem;
+  list-style: disc;
 }

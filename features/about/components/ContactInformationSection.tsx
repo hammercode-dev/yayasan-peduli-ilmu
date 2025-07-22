@@ -7,7 +7,7 @@ export default function ContactInformationSection() {
   const t = useTranslations('AboutPage');
 
   return (
-    <section className="py-20 bg-gradient-to-br from-accent-50 to-primary-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-accent-50 to-primary-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title Section */}
         <div className="text-center mb-12">

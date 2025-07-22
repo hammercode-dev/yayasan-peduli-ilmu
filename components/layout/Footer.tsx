@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/program/pondok-pesantren"
+                  href="/program/darul-hadits-sibowi-putra"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Pondok Pesantren
@@ -79,23 +79,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/program/komunitas-tashil"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Komunitas Ta&apos;shil
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/laporan"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Laporan
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/kontak"
+                  href="/about#contact"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Kontak
@@ -141,6 +125,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Yayasan Peduli Ilmu Sulawesi Tengah.
             All rights reserved.
           </p>
+
+          <p className="mt-2">Developed by <a href="https://hammercode.org" target="_blank" className="hover:text-amber-500 underline">hammercode</a></p>
         </div>
       </div>
     </footer>

@@ -16,7 +16,7 @@ const NAV_ITEMS = [
   { href: '/', label: 'home' },
   { href: '/about', label: 'about' },
   // { href: '/report', label: 'reports' },
-  { href: '/contact', label: 'contact' },
+  { href: '/about#contact', label: 'contact' },
 ];
 
 const PROGRAM_ITEMS = [

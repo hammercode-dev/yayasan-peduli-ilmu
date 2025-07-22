@@ -1,22 +1,19 @@
+export const BOARD_MEMBERS = [
+  {
+    name: 'Ustad Abu Huraerah B.A, M.A',
+    position: 'Pembina',
+    description:
+      'Alumnae of Post-Graduate Islamic University of Madiah in Ilmil Alhadits, KSA',
+  },
+  {
+    name: 'Ustad Imam Ghazali Sabran',
+    position: 'Pembina',
+    description:
+      "Alumane of Mah'ad Ittibaus Sunnah Magetan",
+  },
+];
+
 export const MANAGEMENTS = [
-  {
-    name: 'Abu Huraerah B.A, M.A',
-    position: 'Pembina',
-    description:
-      '',
-  },
-  {
-    name: 'Imam Ghazali Sabran',
-    position: 'Pembina',
-    description:
-      '',
-  },
-  {
-    name: 'Priyatri Santoso',
-    position: 'Pengawas',
-    description:
-      '',
-  },
   {
     name: 'Muhammad Rizki Rijal',
     position: 'Ketua',
@@ -36,5 +33,14 @@ export const MANAGEMENTS = [
       '',
   },
 ];
+
+export const CONTROLS = [
+  {
+    name: 'Priyatri Santoso',
+    position: 'Pengawas',
+    description:
+      '',
+  }
+]
 
 export const MISSIONS = ['misi-1', 'misi-2', 'misi-3', 'misi-4', 'misi-5'];

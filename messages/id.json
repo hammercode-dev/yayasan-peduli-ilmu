@@ -17,15 +17,15 @@
   "HomePage": {
     "meta": {
       "title": "Beranda - Yayasan Peduli Ilmu",
-      "description": "Yayasan Peduli Ilmu berkomitmen terhadap pengembangan pendidikan Islam dan pemberdayaan masyarakat melalui program-program yang berkualitas dan berkelanjutan."
+      "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan dakwah sosial"
     },
     "hero-section": {
       "title": "Yayasan Peduli Ilmu",
-      "subtitle": "Membangun Generasi Qur'ani Berakhlak Mulia",
-      "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan pemberdayaan masyarakat melalui program-program berkualitas.",
+      "subtitle": "Membangun Generasi Quran dan Hadits",
+      "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan dakwah sosial",
       "cta": {
-        "primary": "Bergabung Sekarang",
-        "secondary": "Pelajari Lebih Lanjut"
+        "primary": "Pembangunan Pondok Pesantren",
+        "secondary": "Baca Lebih Lengkap"
       }
     },
     "visimisi-section": {

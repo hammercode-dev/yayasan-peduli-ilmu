@@ -1,8 +1,12 @@
-import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import LocalizedLink from '../ui/LocalizedLink';
+import { NAV_LINKS, PROGRAM_LINKS } from '@/lib/constant';
 
 export default function Footer() {
+  const t = useTranslations('Navigation');
+
   return (
     <footer className="bg-accent-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -53,38 +57,19 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-primary-400">Menu</h4>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/tentang"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Tentang
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/program/darul-hadits-sibowi-putra"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Pondok Pesantren
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about#contact"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Kontak
-                </Link>
-              </li>
+              {NAV_LINKS.map((item) => (
+                <li key={item.href}>
+                  <LocalizedLink href={item.href} withActive>
+                    {t(item.label)}
+                  </LocalizedLink>
+                </li>
+              ))}
+
+              {PROGRAM_LINKS.map((item) => (
+                <li key={item.href}>
+                  <LocalizedLink href={item.href}>{t(item.label)}</LocalizedLink>
+                </li>
+              ))}
             </ul>
           </div>
 

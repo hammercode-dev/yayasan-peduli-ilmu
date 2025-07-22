@@ -7,29 +7,11 @@ import { useTranslations } from 'next-intl';
 import { X, Menu } from 'lucide-react';
 import { Transition } from '@headlessui/react';
 
-import NavLink from '../ui/NavLink';
+import LocalizedLink from '../ui/LocalizedLink';
 import NavLocalSwitch from './NavLocalSwitch';
 import DisclosureMenu from '../ui/DisclosureMenu';
 import DropdownMenu from '../ui/DropdownMenu';
-
-const NAV_ITEMS = [
-  { href: '/', label: 'home' },
-  { href: '/about', label: 'about' },
-  // { href: '/report', label: 'reports' },
-  { href: '/about#contact', label: 'contact' },
-];
-
-const PROGRAM_ITEMS = [
-  { href: '/program/darul-hadits-sibowi-putra', label: 'cottage' },
-  { href: '/program/darul-hadits-sibowi-putri', label: 'cottage2' },
-  { href: '/program/takhossus', label: 'cottage3' },
-  // { href: '/program/komunitas-tashil', label: 'community', desc: 'Palu' },
-];
-
-// const PUBLICATION_ITEMS = [
-//   { href: '/publications/article', label: 'article' },
-//   { href: '/publications/book', label: 'book' },
-// ];
+import { NAV_LINKS, PROGRAM_LINKS } from '@/lib/constant';
 
 export default function Navigation() {
   const t = useTranslations('Navigation');
@@ -58,13 +40,13 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {NAV_ITEMS.map((item) => (
-              <NavLink key={item.href} href={item.href}>
+            {NAV_LINKS.map((item) => (
+              <LocalizedLink key={item.href} href={item.href} withActive={true}>
                 {t(item.label)}
-              </NavLink>
+              </LocalizedLink>
             ))}
 
-            <DropdownMenu label={t('program')} items={PROGRAM_ITEMS} t={t} />
+            <DropdownMenu label={t('program')} items={PROGRAM_LINKS} t={t} />
             {/* <DropdownMenu
               label={t('publications')}
               items={PUBLICATION_ITEMS}
@@ -96,18 +78,18 @@ export default function Navigation() {
           leaveTo="transform opacity-0 translate-x-full"
         >
           <div className="lg:hidden border-t border-gray-200 space-y-1 bg-white absolute w-full rounded-b-xl shadow-lg">
-            {NAV_ITEMS.map((item) => (
-              <NavLink
+            {NAV_LINKS.map((item) => (
+              <LocalizedLink
                 key={item.href}
                 href={item.href}
                 className="block px-3 py-2 btn-ghost w-full text-left hover:text-primary-600 hover:bg-gray-50 duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 {t(item.label)}
-              </NavLink>
+              </LocalizedLink>
             ))}
 
-            <DisclosureMenu label={t('program')} items={PROGRAM_ITEMS} t={t} />
+            <DisclosureMenu label={t('program')} items={PROGRAM_LINKS} t={t} />
             {/* <DisclosureMenu
               label={t('publications')}
               items={PUBLICATION_ITEMS}

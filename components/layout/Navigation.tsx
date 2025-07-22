@@ -21,7 +21,8 @@ const NAV_ITEMS = [
 
 const PROGRAM_ITEMS = [
   { href: '/program/darul-hadits-sibowi-putra', label: 'cottage' },
-  { href: '/program/darul-hadits-putra-putri', label: 'cottage2' },
+  { href: '/program/darul-hadits-sibowi-putri', label: 'cottage2' },
+  { href: '/program/takhossus', label: 'cottage3' },
   // { href: '/program/komunitas-tashil', label: 'community', desc: 'Palu' },
 ];
 

@@ -29,12 +29,15 @@ const ProgramDetailSection = ({ data }: ProgramDetailSectionProps) => {
   const locale = useLocale();
 
   return (
-    <section className="border-border pt-8 mb-8">
-      <h3 className="font-semibold text-foreground mb-6 text-xl sm:text-2xl">
+    <section className="border-border mb-8">
+      <p className="mb-2 md:mb-6 font-medium">
+        {t('descriptionLabel')}
+      </p>
+      {/* <h3 className="font-semibold text-foreground mb-6 text-xl sm:text-2xl">
         {t('title')}
-      </h3>
+      </h3> */}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base">
         <DetailBox label={t('locationLabel')} value={data?.location} />
         <DetailBox label={t('statusLabel')} value={data?.status} />
         <DetailBox
@@ -45,12 +48,10 @@ const ProgramDetailSection = ({ data }: ProgramDetailSectionProps) => {
           label={t('endDateLabel')}
           value={formatDate(data?.ends_at, locale)}
         />
-      </div>
+      </div> */}
 
-      <div className="p-4 bg-muted/30 rounded-lg mt-6">
-        <p className="font-bold mb-6 font-medium">
-          {t('descriptionLabel')}
-        </p>
+      <div className="md:p-4 md:bg-muted/30 rounded-lg mt-2 md:mt-6">
+        
         <div className="prose prose-lg text-muted-foreground">
           <MarkdownRenderer markdown={getField(data, 'description') ?? '-'} />
         </div>

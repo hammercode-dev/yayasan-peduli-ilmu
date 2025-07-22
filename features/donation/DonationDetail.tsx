@@ -20,6 +20,7 @@ import {
   ProgramTimeline,
 } from './components';
 import useFetchProgramDetail from './hooks/useFetchProgramDetail';
+import SmallBankTransferInfo from './components/SmallBankTransferInfo';
 
 const DonationDetailPage = () => {
   const t = useTranslations('DonationDetailPage');
@@ -49,8 +50,8 @@ const DonationDetailPage = () => {
   return (
     <div className="min-h-screen">
       {/* button back */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="py-4">
+      {/* <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="md:py-4">
           <div className="flex items-center space-x-3">
             <Link
               href={'/'}
@@ -68,11 +69,11 @@ const DonationDetailPage = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* end button back */}
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
-        <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden">
+      <div className="max-w-4xl mx-auto py-0 px-0 md:px-6 md:py-6">
+        <div className="bg-card md:rounded-2xl shadow-sm border border-border overflow-hidden">
           {/* image */}
           <div className="aspect-video w-full relative">
             <Image
@@ -86,12 +87,17 @@ const DonationDetailPage = () => {
           {/* end image */}
 
           {/* Content */}
-          <div className="p-6 sm:p-8">
-            <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-6 leading-tight">
+          <div className="px-3 py-6 sm:p-8">
+            <h1 className="text-lg sm:text-2xl font-bold text-foreground mb-6 leading-tight">
               {getField(program, 'title')}
             </h1>
 
             <DonationProgress donation={program} />
+
+            <SmallBankTransferInfo
+                copiedText={copiedText}
+                copyToClipboard={copyToClipboard}
+              />
 
             <ProgramDetailSection data={program} />
 

@@ -8,6 +8,7 @@ import { BANK_ACCOUNTS } from '@/lib/constant';
 
 type BankTransferSectionProps = {
   copiedText: string;
+  variant?: 'default' | 'compact';
   copyToClipboard: (value: string, label: string) => void;
 };
 

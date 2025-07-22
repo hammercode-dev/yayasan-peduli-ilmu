@@ -31,11 +31,8 @@ function ProgramTimeline({ timeline = [] }: ProgramTimelineProps) {
             <div key={item.date + item.activity} className="flex gap-4">
               <div className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0"></div>
               <div className="min-w-0 flex-1">
-                <p className="font-medium text-foreground text-base mb-1">
-                  {formatDate(item.date)}
-                </p>
-                <p className="text-muted-foreground text-base">
-                  {getField(item, 'activity')}
+                <p className="font-medium text-muted-foreground text-foreground text-base mb-1">
+                  {formatDate(item.date)} - {getField(item, 'activity')}
                 </p>
                 <div className="mt-4">
                   <MarkdownRenderer markdown={item.description} />

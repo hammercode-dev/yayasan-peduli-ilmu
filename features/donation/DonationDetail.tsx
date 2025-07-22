@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 // hooks global
 import useLocalizedField from '@/hooks/useLocalizedField';
@@ -22,7 +22,14 @@ import SmallBankTransferInfo from './components/SmallBankTransferInfo';
 
 const DonationDetailPage = () => {
   const t = useTranslations('DonationDetailPage');
+  const currentLocale = useLocale();
 
+  const confirmationWhatsapp = currentLocale === 'id'
+    ? '+62 823-4992-2884'
+    : '+62 852-2557-5696'
+  const confirmationPosition = currentLocale === 'id'
+    ? 'Bendahara Yayasan'
+    : 'Foundation Management Chairman'
   const params = useParams<{ slug: string }>();
   const slug = params?.slug ?? '';
 
@@ -46,7 +53,7 @@ const DonationDetailPage = () => {
   if (error) return <PageError />;
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" dir={currentLocale === 'ar' ? 'rtl' : 'ltr'}>
       {/* button back */}
       {/* <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="md:py-4">
@@ -121,8 +128,8 @@ const DonationDetailPage = () => {
               <ContactSection
                 copiedText={copiedText}
                 copyToClipboard={copyToClipboard}
-                contactNumber="+62 823-4992-2884"
-                contactName="Bendahara Yayasan"
+                contactNumber={confirmationWhatsapp}
+                contactName={confirmationPosition}
               />
             </div>
             {/* end donation method */}

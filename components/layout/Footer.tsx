@@ -111,7 +111,7 @@ export default function Footer() {
             All rights reserved.
           </p>
 
-          <p className="mt-2">Developed by <a href="https://hammercode.org" target="_blank" className="hover:text-amber-500 underline">hammercode</a></p>
+          <p className="mt-6">Developed by <a href="https://hammercode.org" target="_blank" className="hover:text-amber-500 underline">hammercode</a></p>
         </div>
       </div>
     </footer>

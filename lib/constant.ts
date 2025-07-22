@@ -16,12 +16,14 @@ export const BANK_ACCOUNTS = [
 export const NAV_LINKS = [
   { href: '/', label: 'home' },
   { href: '/about', label: 'about' },
-  { href: '/contact', label: 'contact' },
+  { href: '/about#contact', label: 'contact' },
   // { href: '/report', label: 'reports' },
 ];
 
 export const PROGRAM_LINKS = [
-  { href: '/program/pondok-pesantren', label: 'cottage', desc: 'Putra & Putri' },
+  { href: '/program/darul-hadits-sibowi-putra', label: 'cottage' },
+  { href: '/program/darul-hadits-sibowi-putri', label: 'cottage2' },
+  { href: '/program/takhossus', label: 'cottage3' },
   // { href: '/program/komunitas-tashil', label: 'community', desc: 'Palu' },
 ];
 

@@ -27,9 +27,9 @@ const HomePage = async () => {
     .order('ends_at', { ascending: false });
 
   return (
-    <div className="min-h-screen bg-white">
+    <div style={{ background: '#fffbf1' }} className="min-h-screen bg-white">
       {/* Hero Banner */}
-      <section className="relative bg-gradient-to-b from-white to-primary-50 py-28 sm:py-36 overflow-hidden isolate">
+      <section className="relative bg-gradient-to-b from-white to-primary-50 pt-28 sm:pt-36 overflow-hidden isolate">
         {/* Decorative Background Logo */}
         <div
           aria-hidden
@@ -67,7 +67,7 @@ const HomePage = async () => {
             )}
           >
             <Button
-              href="/program/pondok-pesantren"
+              href="/donation/ponpes-putra-daarul-hadiits-sibowi"
               variant="primary"
               size="lg"
               className="group"
@@ -88,7 +88,7 @@ const HomePage = async () => {
       </section>
       {/* end hero banner */}
 
-      <VisiMisiSection
+      {/* <VisiMisiSection
         title={t('visimisi-section.title')}
         description={t('visimisi-section.description')}
         visi={{
@@ -104,17 +104,17 @@ const HomePage = async () => {
         isRTL={locale === 'ar'}
         visiIcon={<Eye className="h-5 w-5 text-primary-600" />}
         misiIcon={<Target className="h-5 w-5 text-secondary-600" />}
-      />
+      /> */}
 
       {/* Program Section */}
-      <section className="min-h-screen grid grid-rows-[auto_1fr_auto] py-16">
+      {/* <section className="min-h-screen grid grid-rows-[auto_1fr_auto] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <TitleSection
             title={t('program-section.title')}
             shortDesc={t('program-section.description')}
           />
 
-          {/* Program Cards */}
+
           <div className="grid md:grid-cols-2 gap-8 pb-16">
             {PROGRAM_CARD_DATA.map((program, idx) => (
               <ProgramCard
@@ -131,11 +131,11 @@ const HomePage = async () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* end program section */}
 
       {/* Announcement section  */}
-      <section className="bg-muted py-16">
+      {/* <section className="bg-muted py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <TitleSection
             title={t('announcement-section.title')}
@@ -148,7 +148,7 @@ const HomePage = async () => {
                 key={announcement.id}
                 className="bg-card rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-border group hover:-translate-y-1 flex flex-col"
               >
-                {/* Header */}
+
                 <div className="p-6 border-b border-border">
                   <div className="flex items-center justify-between mb-2">
                     <span
@@ -171,7 +171,7 @@ const HomePage = async () => {
                   </h3>
                 </div>
 
-                {/* Content & Button */}
+
                 <div className="p-6 flex flex-col h-full flex-1">
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     {announcement.content}
@@ -188,11 +188,11 @@ const HomePage = async () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* end announcement section  */}
 
       {/* donation section */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <TitleSection
             title={t('donation-section.title')}
@@ -216,7 +216,7 @@ const HomePage = async () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* end donation section */}
     </div>
   );

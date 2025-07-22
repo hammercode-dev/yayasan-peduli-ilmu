@@ -1,28 +1,46 @@
-export const MANAGEMENTS = [
+export const BOARD_MEMBERS = [
   {
-    name: 'Dr. H. Ahmad Syahid, M.Ag',
-    position: 'Ketua Yayasan',
+    name: 'Ustad Abu Huraerah B.A, M.A',
+    position: 'Pembina',
     description:
-      'Doktor Ilmu Agama Islam, berpengalaman 20+ tahun dalam pendidikan Islam',
+      'Alumnae of Post-Graduate Islamic University of Madiah in Ilmil Alhadits, KSA',
   },
   {
-    name: 'Ustadz Muhammad Farid, Lc',
-    position: 'Direktur Pondok Pesantren',
+    name: 'Ustad Imam Ghazali Sabran',
+    position: 'Pembina',
     description:
-      'Lulusan Universitas Al-Azhar, spesialis dalam bidang Hadits dan Tafsir',
-  },
-  {
-    name: 'Ustadzah Siti Aisyah, M.Pd.I',
-    position: 'Koordinator Program Putri',
-    description:
-      'Magister Pendidikan Islam, fokus pada pengembangan pendidikan perempuan',
-  },
-  {
-    name: 'H. Baharuddin, S.E',
-    position: 'Bendahara',
-    description:
-      'Sarjana Ekonomi, berpengalaman dalam manajemen keuangan organisasi',
+      "Alumane of Mah'ad Ittibaus Sunnah Magetan",
   },
 ];
+
+export const MANAGEMENTS = [
+  {
+    name: 'Muhammad Rizki Rijal',
+    position: 'Ketua',
+    description:
+      '',
+  },
+  {
+    name: 'Fakhruddin Nur',
+    position: 'Sekertaris',
+    description:
+      '',
+  },
+  {
+    name: 'Hardisan',
+    position: 'Bendahara',
+    description:
+      '',
+  },
+];
+
+export const CONTROLS = [
+  {
+    name: 'Priyatri Santoso',
+    position: 'Pengawas',
+    description:
+      '',
+  }
+]
 
 export const MISSIONS = ['misi-1', 'misi-2', 'misi-3', 'misi-4', 'misi-5'];

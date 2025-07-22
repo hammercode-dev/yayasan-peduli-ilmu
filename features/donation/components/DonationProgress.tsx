@@ -45,7 +45,7 @@ function DonationProgress({ donation }: DonationProgressProps) {
           style={{ width: `${Math.min(progress, 100)}%` }}
         />
       </div>
-      <div className="grid md:grid-cols-3 gap-4 mt-6">
+      <div className="grid grid-cols-3 gap-4 mt-6">
         <Stat
           value={formatCurrencyByLocale(convertCurrency(collected), locale)}
           label={t('collectedLabel')}
@@ -74,7 +74,7 @@ type StatProps = {
 const Stat = ({ value, label, color = 'text-accent-800' }: StatProps) => {
   return (
     <div className="text-center">
-      <p className={`text-2xl font-bold ${color}`}>{value}</p>
+      <p className={`text-sm md:text-2xl ${color}`}>{value}</p>
       <p className="text-sm text-muted-foreground">{label}</p>
     </div>
   );

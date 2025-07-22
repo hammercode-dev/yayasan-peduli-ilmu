@@ -8,7 +8,9 @@
     "reports": "Laporan",
     "publications": "Publikasi",
     "contact": "Kontak",
-    "cottage": "Pondok Pesantren Darul Hadits",
+    "cottage": "Pondok Pesantren Darul Hadits Putra",
+    "cottage2": "Pondok Pesantren Darul Hadits Putri",
+    "cottage3": "Takhossus",
     "community": "Komunitas Ta'shil Ilmi (Palu)",
     "article": "Tulisan",
     "book": "Buku / Risalah"
@@ -16,15 +18,15 @@
   "HomePage": {
     "meta": {
       "title": "Beranda - Yayasan Peduli Ilmu",
-      "description": "Yayasan Peduli Ilmu berkomitmen terhadap pengembangan pendidikan Islam dan pemberdayaan masyarakat melalui program-program yang berkualitas dan berkelanjutan."
+      "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan dakwah sosial"
     },
     "hero-section": {
       "title": "Yayasan Peduli Ilmu",
-      "subtitle": "Membangun Generasi Qur'ani Berakhlak Mulia",
-      "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan pemberdayaan masyarakat melalui program-program berkualitas.",
+      "subtitle": "Membangun Generasi Quran dan Hadits",
+      "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan dakwah sosial",
       "cta": {
-        "primary": "Bergabung Sekarang",
-        "secondary": "Pelajari Lebih Lanjut"
+        "primary": "Pembangunan Pondok Pesantren",
+        "secondary": "Baca Lebih Lengkap"
       }
     },
     "visimisi-section": {
@@ -145,8 +147,8 @@
       }
     },
     "management-section": {
-      "title": " Pengurus Yayasan",
-      "subTitle": "Tim pengurus yang berpengalaman dan berkomitmen dalam mengembangkan             pendidikan Islam"
+      "title": " Struktur Yayasan",
+      "subTitle": "Tim pengurus yang berkomitmen dalam mengembangkan pendidikan Islam"
     },
     "contactinformation-section": {
       "title": "   Informasi Kontak",
@@ -168,7 +170,7 @@
       "about": "Tentang",
       "reports": "Laporan",
       "contact": "Kontak",
-      "cottage": "Pondok Pesantren Darul Hadits",
+      "cottage": "Pondok Pesantren Darul Hadits Putra",
       "community": "Komunitas Ta'shil Ilmi (Palu)",
       "article": "Tulisan",
       "book": "Buku / Risalah"

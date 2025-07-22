@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Building, Heart } from 'lucide-react';
 import { ProgramDonationProps } from '../types';
 import { formatCurrency } from '@/lib/format';
+import { useMemo } from 'react';
 
 interface Props {
   program: ProgramDonationProps;
@@ -21,6 +22,11 @@ const ProgramDonationCard = ({ program, t, locale }: Props) => {
   };
 
   const currency = currencyMap[locale] || 'IDR';
+  const shortDesc = useMemo(() => {
+    if (locale === 'ar') return program.short_description_ar
+    if (locale === 'en') return program.short_description_en
+    return program.short_description
+  }, [program, locale])
 
   return (
     <div className="bg-card rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-border group hover:-translate-y-1 flex flex-col">
@@ -44,7 +50,7 @@ const ProgramDonationCard = ({ program, t, locale }: Props) => {
 
       <div className="p-6 flex flex-col h-full">
         <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-          {program.description}
+          {shortDesc}
         </p>
 
         <div className="space-y-3">

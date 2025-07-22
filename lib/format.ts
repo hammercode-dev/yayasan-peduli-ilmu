@@ -44,7 +44,7 @@ export function formatCurrencyByLocale(amount: number, locale: string): string {
   const formatter = new Intl.NumberFormat(isArabic ? 'en' : locale, {
     style: 'currency',
     currency,
-    currencyDisplay: 'symbol',
+    currencyDisplay: 'code',
     ...(isIDR && {
       // if it's IDR, remove all decimal digits
       minimumFractionDigits: 0,

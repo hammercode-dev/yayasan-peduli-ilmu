@@ -10,6 +10,9 @@ export interface ProgramDonationProps {
   id: number;
   title: string;
   description: string;
+  short_description: string;
+  short_description_en: string;
+  short_description_ar: string;
   image_url: string;
   target_amount: number;
   collected_amount: number;

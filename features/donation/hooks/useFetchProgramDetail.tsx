@@ -1,49 +1,44 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { supabase } from '@/lib/supabase';
 import { ProgramDonasiProps } from '../types';
+import { getCachedProgramDetail } from '../lib/cached-program';
 
 type Status = 'idle' | 'loading' | 'error' | 'success';
 
-function useFetchProgramDetail(slug: string) {
+export interface UseFetchProgramDetailReturn {
+  program: ProgramDonasiProps | null;
+  status: Status;
+  error: string | null;
+}
+
+
+function useFetchProgramDetail(slug: string): UseFetchProgramDetailReturn {
   const [program, setProgram] = useState<ProgramDonasiProps | null>(null);
   const [status, setStatus] = useState<Status>('idle');
   const [error, setError] = useState<null | string>(null);
 
   useEffect(() => {
     const fetchProgram = async () => {
+      if (!slug) return;
+      
       setStatus('loading');
       setError(null);
 
       try {
-        const { data, error } = await supabase
-          .from('program_donation')
-          .select(
-            `*, 
-            program_timeline(
-              id,
-              date,
-              activity,
-              activity_en,
-              activity_ar,
-              cost,
-              description
-            )`
-          )
-          .eq('slug', slug)
-          .single();
+        const cachedData = await getCachedProgramDetail(slug);
 
-        if (error) {
-          setError(error.message);
-          setStatus('error');
-        } else {
-          setProgram(data || []);
+        if (cachedData) {
+          setProgram(cachedData);
           setStatus('success');
+        } else {
+          setError('Program not found');
+          setStatus('error');
         }
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (err: any) {
-        setError(err.message || 'Unexpected error');
+        console.error('Error in useFetchProgramDetail:', err);
+        setError(err.message || 'Failed to fetch program data');
         setStatus('error');
       }
     };

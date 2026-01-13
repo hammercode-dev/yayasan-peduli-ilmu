@@ -21,9 +21,9 @@ export const NAV_LINKS = [
 ];
 
 export const PROGRAM_LINKS = [
-  { href: '/program/darul-hadits-sibowi-putra', label: 'cottage' },
+  // { href: '/program/darul-hadits-sibowi-putra', label: 'cottage' },
   { href: '/program/darul-hadits-sibowi-putri', label: 'cottage2' },
-  { href: '/program/takhossus', label: 'cottage3' },
+  // { href: '/program/takhossus', label: 'cottage3' },
   // { href: '/program/komunitas-tashil', label: 'community', desc: 'Palu' },
 ];
 

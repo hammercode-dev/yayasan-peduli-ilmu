@@ -67,7 +67,7 @@ const HomePage = async () => {
             )}
           >
             <Button
-              href="/donation/ponpes-putra-daarul-hadiits-sibowi"
+              href="/donation/ponpes-putri-daarul-hadiits-sibowi"
               variant="primary"
               size="lg"
               className="group"

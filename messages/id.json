@@ -26,7 +26,7 @@
       "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan dakwah sosial",
       "cta": {
         "primary": "Pembangunan Pondok Pesantren",
-        "secondary": "Baca Lebih Lengkap"
+        "secondary": "Tentang Yayasan"
       }
     },
     "visimisi-section": {
@@ -342,5 +342,11 @@
       "title": "Pertanyaan Umum",
       "subTitle": "Beberapa pertanyaan yang sering diajukan tentang yayasan dan program kami"
     }
+  },
+  "MahadWomen": {
+    "title": "Pondok Putri Darul Hadits Sibowi",
+    "subtitle": "Program pendidikan Islam terpadu untuk santri putri dengan fokus pada tahfidz Al-Quran dan ilmu syar'i",
+    "about": "Tentang Ma'had",
+    "description": "Pondok Pesantren Daarul Hadiits Putri Sibowi merupakan lembaga pendidikan Islam khusus putri yang berdiri sejak tahun 2020. Pesantren ini berfokus pada pembelajaran aqidah yang lurus serta pembinaan keilmuan syar’i melalui hafalan Al-Qur’an dan hadits, fiqh, tajwid, adab, serta penguasaan bahasa Arab. Dengan menekankan pemahaman agama yang benar dan pembentukan akhlak mulia, Pondok Pesantren Daarul Hadiits Putri Sibowi berkomitmen mencetak generasi muslimah yang berilmu, beradab, dan berpegang teguh pada Al-Qur’an dan Sunnah. \n\n Tahun 2026 markas pondok akan berpindah dari kota Palu ke lokasi permanen di Desa Sibowi, Kecamatan Sigi Biromaru, Kabupaten Sigi, Sulawesi Tengah."
   }
 }

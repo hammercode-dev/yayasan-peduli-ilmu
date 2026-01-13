@@ -25,8 +25,8 @@
       "subtitle": "Building a Quranic Generation with Noble Character",
       "description": "A foundation committed to developing Islamic education and community empowerment through quality programs.",
       "cta": {
-        "primary": "Learn more",
-        "secondary": "Contact us"
+        "primary": "بناء المدرسة الداخلية",
+        "secondary": "عن المؤسسة"
       }
     },
     "visimisi-section": {
@@ -344,5 +344,11 @@
       "title": "Common question",
       "subTitle": "Some of the questions that are often asked about our foundations and programs"
     }
+  },
+  "MahadWomen": {
+    "title": "Pondok Putri Darul Hadits Sibowi",
+    "subtitle": "Program pendidikan Islam terpadu untuk santri putri dengan fokus pada tahfidz Al-Quran dan ilmu syar'i",
+    "about": "About the Boarding School",
+    "description": "Daarul Hadiits Putri Sibowi Islamic Boarding School is an Islamic educational institution for girls established in 2020. This boarding school focuses on teaching correct aqidah and developing Islamic knowledge through memorization of the Qur'an and hadith, fiqh, tajwid, etiquette, and mastery of the Arabic language. By emphasizing proper religious understanding and the formation of noble character, Daarul Hadiits Putri Sibowi Islamic Boarding School is committed to producing knowledgeable, well-mannered Muslim women who adhere firmly to the Qur'an and Sunnah."
   }
 }

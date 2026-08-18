@@ -1,16 +1,19 @@
+'use server';
+
 import { cache } from 'react';
 import { supabase } from '@/lib/supabase';
-import { ProgramDonasiProps } from '../types';
+import { ProgramChild, ProgramDonasiProps } from '../types';
 
-/* this is the “Memoizing data requests” approach from the nextjs documentation, 
-i tried this approach for generate meta data and it worked */
-export const getCachedProgramDetail = cache(
+const getProgramDetail = cache(
   async (slug: string): Promise<ProgramDonasiProps | null> => {
-    try {
-      const { data, error } = await supabase
-        .from('program_donation')
-        .select(
-          `*, 
+    const { data, error } = await supabase
+      .from('program_donation')
+      .select(
+        `*,
+        donation_evidences(amount),
+        children:program_donation!parent_id(
+          donation_evidences(amount)
+        ),
         program_timeline(
           id,
           date,
@@ -20,17 +23,33 @@ export const getCachedProgramDetail = cache(
           cost,
           description
         )`
-        )
-        .eq('slug', slug)
-        .single();
+      )
+      .eq('slug', slug)
+      .single();
 
-      if (error) {
-        throw error;
-      }
-
-      return data;
-    } catch (err) {
-      throw err
+    if (error) {
+      throw error;
     }
+
+    if (!data) {
+      return null;
+    }
+
+    const { donation_evidences, children, ...program } = data;
+
+    const collected_amount = [
+      ...(donation_evidences ?? []),
+      ...(children ?? []).flatMap(
+        (child: ProgramChild) => child.donation_evidences ?? []
+      ),
+    ].reduce((total, { amount }) => total + (Number(amount) || 0), 0);
+
+    return { ...program, collected_amount };
   }
 );
+
+export async function getCachedProgramDetail(
+  slug: string
+): Promise<ProgramDonasiProps | null> {
+  return getProgramDetail(slug);
+}

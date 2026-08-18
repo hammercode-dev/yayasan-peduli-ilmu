@@ -1,3 +1,11 @@
+export interface DonationEvidenceAmount {
+  amount: number | string | null;
+}
+
+export interface ProgramChild {
+  donation_evidences: DonationEvidenceAmount[] | null;
+}
+
 export interface ProgramTimelineItem {
   id: number;
   date: string;
